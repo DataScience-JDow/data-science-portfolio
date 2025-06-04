@@ -13,15 +13,16 @@ Welcome to my data science portfolio! This repository showcases weekly projects 
 
 
 
-## Week 1: Environment Setup
+## Week 1: Environment Setup and Iris Dataset Exploration
 
-Installed Python, VS Code, Git.
-Set up GitHub repository.
-Tested with Iris dataset exploration (see scripts/explore_iris.py).
+- Installed Python, VS Code, Git.
+- Set up GitHub repository with SSH for secure version control.
+- Downloaded the Iris dataset and performed basic exploration (see 'scripts/explore_iris.py').
+- Created a scatter plot of sepal dimensions by species (see 'plots/iris_sepal_scatter.png').
 
 ## Future Projects
 
 Clustering, data pipelines, CI/CD workflows, and more.
 
-License: MIT
+**License**: MIT
 
