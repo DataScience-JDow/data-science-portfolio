@@ -1,0 +1,1 @@
+# Week 2: Customer Segmentation with K-Means Clustering
