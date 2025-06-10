@@ -3,6 +3,8 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # Load dataset
 df = pd.read_csv('data/customer_segmentation.csv')
@@ -59,5 +61,15 @@ final_clusters = final_kmeans.fit_predict(scaled_features)
 
 # Add cluster labels to the preprocessed DataFrame
 preprocessed_df['Cluster'] = final_clusters
-preprocessed_df.to_csv('data/cluster_segmentation_preprocessed.csv', index=False)
+preprocessed_df.to_csv('data/customer_segmentation_preprocessed.csv', index=False)
 print("Updated preprocessed data with cluster labels saved.")
+
+# Visualization
+plt.figure(figsize=(10,6))
+sns.scatterplot(x='Income_scaled', y='Spending_scaled', hue='Cluster', data=preprocessed_df, palette='deep', s=100)
+plt.title('Customer Segments Based on Income and Spending Score')
+plt.xlabel('Annual Income (Scaled)')
+plt.ylabel('Spending Score (Scaled)')
+plt.legend(title='Cluster')
+plt.savefig('plots/cluster_segmentation_clusters.png')
+plt.show()
