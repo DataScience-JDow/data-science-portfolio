@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
+from sklearn.cluster import KMeans
+from sklearn.metrics import silhouette_score
 
 # Load dataset
 df = pd.read_csv('data/customer_segmentation.csv')
@@ -34,3 +36,28 @@ scaled_features = scaler.fit_transform(features)
 preprocessed_df = pd.DataFrame(scaled_features, columns=['Age_scaled', 'Income_scaled', 'Spending_scaled'])
 preprocessed_df.to_csv('data/customer_segmentation_preprocessed.csv', index=False)
 print("\nPreprocessed data saved to data/customer_segmentation_preprocessed.csv")
+
+# K-Means Clustering
+range_n_clusters = range(2,11) # Test 2 to 10 clusters
+best_score = -1
+best_n_clusters = 2
+
+for n_clusters in range_n_clusters:
+    kmeans = KMeans(n_clusters=n_clusters, random_state=42)
+    cluster_labels = kmeans.fit_predict(scaled_features)
+    silhouette_avg = silhouette_score(scaled_features, cluster_labels)
+    print(f"Silhouette Score for {n_clusters} clusters: {silhouette_avg:.3f}")
+    if silhouette_avg > best_score:
+        best_score = silhouette_avg
+        best_n_clusters = n_clusters
+
+print(f"\nBest number of clusters: {best_n_clusters} with Silhouette Score: {best_score:.3f}")
+
+# Fit final K-Means with the best number of clusters
+final_kmeans = KMeans(n_clusters=best_n_clusters, random_state=42)
+final_clusters = final_kmeans.fit_predict(scaled_features)
+
+# Add cluster labels to the preprocessed DataFrame
+preprocessed_df['Cluster'] = final_clusters
+preprocessed_df.to_csv('data/cluster_segmentation_preprocessed.csv', index=False)
+print("Updated preprocessed data with cluster labels saved.")
