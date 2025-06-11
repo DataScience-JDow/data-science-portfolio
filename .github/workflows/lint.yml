@@ -1,0 +1,31 @@
+name: Python Lint
+
+on:
+  push:
+    branches:
+      -feature/week2-customer-segmentation
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actons/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip Install --upgrade pip
+        pip install flake8
+
+    - name: Run linting
+      run: |
+        flake8 . --max-line-length-88 --extend-ignore=E203
