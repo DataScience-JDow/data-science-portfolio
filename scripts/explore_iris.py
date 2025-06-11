@@ -11,7 +11,7 @@ print("\nSummary satatistics:")
 print(df.describe())
 
 # Visualize: Scatter plot of sepal dimensions by species
-plt.figure(figsize=(8,6))
+plt.figure(figsize=(8, 6))
 sns.scatterplot(x='sepal_length', y='sepal_width', hue='species', data=df)
 plt.title('Iris Sepal Dimensions by Species')
 plt.xlabel('Sepal Length (cm)')

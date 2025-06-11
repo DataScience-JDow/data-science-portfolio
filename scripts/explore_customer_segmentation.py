@@ -35,13 +35,13 @@ scaled_features = scaler.fit_transform(features)
 
 # Save preprocessed data to a new CSV
 preprocessed_df = pd.DataFrame(
-    scaled_features, 
+    scaled_features,
     columns=['Age_scaled', 'Income_scaled', 'Spending_scaled'])
 preprocessed_df.to_csv('data/customer_segmentation_preprocessed.csv', index=False)
 print("\nPreprocessed data saved to data/customer_segmentation_preprocessed.csv")
 
 # K-Means Clustering
-range_n_clusters = range(2,11)  # Test 2 to 10 clusters
+range_n_clusters = range(2, 11)  # Test 2 to 10 clusters
 best_score = -1
 best_n_clusters = 2
 
@@ -54,7 +54,10 @@ for n_clusters in range_n_clusters:
         best_score = silhouette_avg
         best_n_clusters = n_clusters
 
-print(f"\nBest number of clusters: {best_n_clusters} with Silhouette Score: {best_score:.3f}")
+print(
+    f"\nBest number of clusters: {best_n_clusters} with Silhouette Score: "
+    f"{best_score:.3f}"
+)
 
 # Fit final K-Means with the best number of clusters
 final_kmeans = KMeans(n_clusters=best_n_clusters, random_state=42)
@@ -66,9 +69,9 @@ preprocessed_df.to_csv('data/customer_segmentation_preprocessed.csv', index=Fals
 print("Updated preprocessed data with cluster labels saved.")
 
 # Visualization
-plt.figure(figsize=(10,6))
+plt.figure(figsize=(10, 6))
 sns.scatterplot(
-    x='Income_scaled', y='Spending_scaled', hue='Cluster', 
+    x='Income_scaled', y='Spending_scaled', hue='Cluster',
     data=preprocessed_df, palette='deep', s=100)
 plt.title('Customer Segments Based on Income and Spending Score')
 plt.xlabel('Annual Income (Scaled)')
