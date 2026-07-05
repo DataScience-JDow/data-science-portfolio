@@ -1,0 +1,16 @@
+.DS_Store
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Local experiment outputs
+artifacts/
+outputs/
+models/
+projects/**/submissions/*.csv
+
+# Kaggle competition data should stay local
+projects/**/data/raw/
+projects/**/data/interim/
+projects/**/data/processed/

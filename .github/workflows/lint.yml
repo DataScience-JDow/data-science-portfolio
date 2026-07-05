@@ -3,7 +3,7 @@ name: Python Lint
 on:
   push:
     branches:
-      - feature/week2-customer-segmentation
+      - main
   pull_request:
     branches:
       - main

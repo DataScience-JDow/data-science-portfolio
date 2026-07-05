@@ -1,28 +1,52 @@
 # Data Science Portfolio
-Welcome to my data science portfolio! This repository showcases weekly projects to build skills in machine learning, data engineering, version control, CI/CD, and Python.
 
-## Setup
+Public portfolio of applied machine learning and analytics projects, with a focus on clean problem framing, reproducible workflows, and concise write-ups.
 
-- Tools: Python 3.11, VS Code, Git, GitHub.
-- Compute/Storage: Google Colab, Kaggle, Google Drive, AWS Free Tier.
-- Structure:
-  - data/: Datasets (e.g., Iris).
-  - scripts/: Python scripts.
-  - plots/: Visualizations.
-  - docs/: Documentation.
+This repo is organized as a curated project monorepo. Each featured project is meant to show a complete slice of work: the business or modeling problem, the approach, the result, and what I learned.
 
+## Featured Projects
 
+| Project | Type | Status | Stack | Result |
+| --- | --- | --- | --- | --- |
+| [Playground Series S6E7: Predicting Student Health Risk](projects/kaggle/playground-s6e7-student-health-risk/README.md) | Kaggle classification | Active | Python, pandas, scikit-learn | Public LB `0.94997` |
 
-## Week 1: Environment Setup and Iris Dataset Exploration
+## Repo Structure
 
-- Installed Python, VS Code, Git.
-- Set up GitHub repository with SSH for secure version control.
-- Downloaded the Iris dataset and performed basic exploration (see 'scripts/explore_iris.py').
-- Created a scatter plot of sepal dimensions by species (see 'plots/iris_sepal_scatter.png').
+```text
+projects/
+  kaggle/
+    playground-s6e7-student-health-risk/
+templates/
+  kaggle-project/
+```
 
-## Future Projects
+## Working Principles
 
-Clustering, data pipelines, CI/CD workflows, and more.
+- Ship a baseline quickly, then improve in small, visible steps.
+- Keep raw competition data out of the repo unless licensing clearly allows it.
+- Use notebooks for exploration and `src/` for reusable code.
+- End each project with a short case-study style README.
 
-**License**: MIT
+## Active Focus
 
+Current active project:
+
+- `Playground Series - Season 6, Episode 7: Predicting Student Health Risk`
+
+Near-term goals:
+
+- continue iterating on the leading tabular model
+- document the progression from baseline to current best result
+- add another Kaggle case study to the portfolio
+
+## How This Repo Will Grow
+
+Over time, this portfolio will include:
+
+- Kaggle competition projects
+- independent machine learning case studies
+- analytics engineering and decision-support projects
+
+## License
+
+MIT
