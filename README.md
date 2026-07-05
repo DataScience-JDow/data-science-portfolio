@@ -20,6 +20,10 @@ templates/
   kaggle-project/
 ```
 
+## Current Best Result
+
+- `Playground Series S6E7`: public leaderboard `0.94997`
+
 ## Working Principles
 
 - Ship a baseline quickly, then improve in small, visible steps.
