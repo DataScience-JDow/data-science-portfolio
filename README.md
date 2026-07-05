@@ -1,23 +1,21 @@
-# Data Science Portfolio
+# Kaggle Data Science Portfolio
 
-Public portfolio of applied machine learning and analytics projects, with a focus on clean problem framing, reproducible workflows, and concise write-ups.
+Public portfolio of Kaggle competition projects, with a focus on clean problem framing, reproducible workflows, and concise write-ups.
 
-This repo is organized as a curated project monorepo. Each featured project is meant to show a complete slice of work: the business or modeling problem, the approach, the result, and what I learned.
+Each competition lives in its own self-contained directory at the repo root so the work is easy to browse, reproduce, and extend.
 
 ## Featured Projects
 
 | Project | Type | Status | Stack | Result |
 | --- | --- | --- | --- | --- |
-| [Playground Series S6E7: Predicting Student Health Risk](projects/kaggle/playground-s6e7-student-health-risk/README.md) | Kaggle classification | Active | Python, pandas, scikit-learn | Public LB `0.94997` |
+| [Playground Series S6E7: Predicting Student Health Risk](playground-s6e7-student-health-risk/README.md) | Kaggle classification | Active | Python, pandas, scikit-learn | Public LB `0.94997` |
 
 ## Repo Structure
 
 ```text
-projects/
-  kaggle/
-    playground-s6e7-student-health-risk/
-templates/
-  kaggle-project/
+playground-s6e7-student-health-risk/
+future-competition-slug/
+future-competition-slug/
 ```
 
 ## Current Best Result
@@ -31,25 +29,9 @@ templates/
 - Use notebooks for exploration and `src/` for reusable code.
 - End each project with a short case-study style README.
 
-## Active Focus
-
-Current active project:
-
-- `Playground Series - Season 6, Episode 7: Predicting Student Health Risk`
-
-Near-term goals:
-
-- continue iterating on the leading tabular model
-- document the progression from baseline to current best result
-- add another Kaggle case study to the portfolio
-
 ## How This Repo Will Grow
 
-Over time, this portfolio will include:
-
-- Kaggle competition projects
-- independent machine learning case studies
-- analytics engineering and decision-support projects
+Each new competition should be added as another top-level directory in this repository. That keeps the portfolio focused, public, and easy for recruiters or collaborators to scan.
 
 ## License
 

@@ -78,14 +78,14 @@ From the repo root:
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-python projects/kaggle/playground-s6e7-student-health-risk/src/train_histgb_balanced_missing_flags.py
+python playground-s6e7-student-health-risk/src/train_histgb_balanced_missing_flags.py
 ```
 
 Expected local input files:
 
-- `projects/kaggle/playground-s6e7-student-health-risk/data/raw/train.csv`
-- `projects/kaggle/playground-s6e7-student-health-risk/data/raw/test.csv`
-- `projects/kaggle/playground-s6e7-student-health-risk/data/raw/sample_submission.csv`
+- `playground-s6e7-student-health-risk/data/raw/train.csv`
+- `playground-s6e7-student-health-risk/data/raw/test.csv`
+- `playground-s6e7-student-health-risk/data/raw/sample_submission.csv`
 
 ## Notes
 
