@@ -1,0 +1,103 @@
+{
+  "method": "baseline_last_known_tvt",
+  "train_wells": 773,
+  "validation_rows": 3783989,
+  "overall_rmse": 15.909852870734552,
+  "per_well_rmse_mean": 12.812466352749581,
+  "per_well_rmse_median": 10.665140786694133,
+  "per_well_rmse_p90": 22.972536567136345,
+  "per_well_rmse_p95": 29.010764433298714,
+  "per_well_rmse_max": 70.63937461968057,
+  "worst_wells": [
+    {
+      "well_id": "1b1eba53",
+      "known_rows": 2055,
+      "target_rows": 4655,
+      "last_known_tvt": 12726.15,
+      "rmse": 70.63937461968057,
+      "mean_error": 65.93120515574701,
+      "max_abs_error": 98.92000000000189
+    },
+    {
+      "well_id": "86454a6f",
+      "known_rows": 1136,
+      "target_rows": 7964,
+      "last_known_tvt": 12177.94,
+      "rmse": 70.26338513734783,
+      "mean_error": 65.82880713209407,
+      "max_abs_error": 96.68999999999869
+    },
+    {
+      "well_id": "a959858c",
+      "known_rows": 1366,
+      "target_rows": 4404,
+      "last_known_tvt": 12133.85,
+      "rmse": 65.35865899088088,
+      "mean_error": 63.665921889191424,
+      "max_abs_error": 91.05999999999949
+    },
+    {
+      "well_id": "2fd68f7b",
+      "known_rows": 1651,
+      "target_rows": 4730,
+      "last_known_tvt": 10810.63,
+      "rmse": 60.74015262396321,
+      "mean_error": 56.01974418604745,
+      "max_abs_error": 75.13000000000102
+    },
+    {
+      "well_id": "5f4d2a52",
+      "known_rows": 1887,
+      "target_rows": 5225,
+      "last_known_tvt": 10865.83,
+      "rmse": 56.914917258531396,
+      "mean_error": 47.166553110048056,
+      "max_abs_error": 93.29000000000087
+    },
+    {
+      "well_id": "f88ddb26",
+      "known_rows": 1595,
+      "target_rows": 4990,
+      "last_known_tvt": 12186.8,
+      "rmse": 51.40308485650886,
+      "mean_error": -46.50006613226367,
+      "max_abs_error": 78.61999999999898
+    },
+    {
+      "well_id": "ba48188d",
+      "known_rows": 1368,
+      "target_rows": 4166,
+      "last_known_tvt": 12271.54,
+      "rmse": 50.93720227649117,
+      "mean_error": -38.34164666346689,
+      "max_abs_error": 103.78000000000065
+    },
+    {
+      "well_id": "389ae58f",
+      "known_rows": 1738,
+      "target_rows": 6463,
+      "last_known_tvt": 11707.31,
+      "rmse": 49.76304894845995,
+      "mean_error": 47.81213213677923,
+      "max_abs_error": 68.56000000000131
+    },
+    {
+      "well_id": "f6d009f4",
+      "known_rows": 1288,
+      "target_rows": 6715,
+      "last_known_tvt": 11001.490000000002,
+      "rmse": 47.03924865295554,
+      "mean_error": 40.277885331346255,
+      "max_abs_error": 84.7599999999984
+    },
+    {
+      "well_id": "43e16325",
+      "known_rows": 2125,
+      "target_rows": 3720,
+      "last_known_tvt": 10952.1,
+      "rmse": 45.776662453735184,
+      "mean_error": 37.50433602150516,
+      "max_abs_error": 84.1299999999992
+    }
+  ]
+}
