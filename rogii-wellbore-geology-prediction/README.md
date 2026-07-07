@@ -10,7 +10,7 @@ This project starts a baseline for Kaggle's ROGII wellbore geology prediction co
 - Problem type: regression on post-start horizontal-well TVT values
 - Metric: RMSE
 - Status: active
-- Current best public leaderboard score: `15.883`
+- Current best public leaderboard score: `14.304`
 - Kaggle page: <https://www.kaggle.com/competitions/rogii-wellbore-geology-prediction>
 
 ## Project Structure
@@ -40,6 +40,7 @@ This deliberately simple baseline won the first local sanity check against local
 | Version | Key change | Local validation RMSE | Public LB |
 | --- | --- | --- | --- |
 | `baseline_last_known_tvt` | Carry forward last known `TVT_input` per well | `15.90985` | `15.883` |
+| `residual_correction_hgb` | Add blended HGB residual correction on top of baseline | `15.33328` | `14.304` |
 
 ## Reproduction
 
@@ -60,8 +61,13 @@ The script writes:
 
 - `rogii-wellbore-geology-prediction/submissions/last_known_tvt_submission.csv`
 - `rogii-wellbore-geology-prediction/reports/baseline-metrics.json`
+- `rogii-wellbore-geology-prediction/submissions/residual_correction_submission.csv`
+- `rogii-wellbore-geology-prediction/reports/residual-correction-metrics.json`
 
-The code-competition submission is packaged in `kaggle-kernel/` and pushed to Kaggle as `jdow76/rogii-last-known-tvt-baseline`.
+The code-competition submissions are packaged as Kaggle kernels:
+
+- Baseline: `jdow76/rogii-last-known-tvt-baseline`
+- Residual correction: `jdow76/rogii-residual-correction`
 
 ## Notes
 
