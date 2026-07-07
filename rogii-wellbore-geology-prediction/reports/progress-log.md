@@ -84,8 +84,29 @@ The public leaderboard improved from `15.883` to `14.304`, a `9.94%` public RMSE
 | --- | ---: | ---: | ---: |
 | Local RMSE | `15.33328` | `15.28302` | `-0.05026` |
 | Relative local improvement | - | - | `0.33%` |
-| Kaggle public RMSE | `14.304` | pending | pending |
+| Kaggle public RMSE | `14.304` | `14.395` | `+0.091` |
 
 ### Interpretation
 
-The typewell GR features helped locally, but the gain was small. This suggests the simple "nearest GR value inside a TVT window" feature contains some signal, but it is still a rough proxy for the real geology matching problem. A stronger version should compare short GR sequences rather than one row at a time.
+The typewell GR features helped locally, but the public score got worse. This suggests the simple "nearest GR value inside a TVT window" feature contains some signal, but it is not stable enough on the public test wells. A stronger version should compare short GR sequences rather than one row at a time.
+
+## typewell_gr_window_experiment
+
+- Tested a short-window GR pattern match instead of a single-row GR match.
+- For each horizontal row, summarized a centered `41`-row GR window using count, mean, standard deviation, and end-to-end GR delta.
+- Built rolling typewell GR windows with the same summary shape.
+- Used nearest-neighbor matching to find the most similar typewell GR window within `+/-220` TVT feet of the last known horizontal `TVT_input`.
+- Added match features: matched TVT delta, match distance, GR-mean delta, and match availability.
+- Validated on a grouped-by-well sampled frame of `926,518` target rows because the full multi-million-row HGB fit was too slow with the extra window features.
+
+### Result
+
+| Metric | Base sampled residual | Window-match sampled residual | Impact |
+| --- | ---: | ---: | ---: |
+| Sampled local RMSE | `15.21663` | `15.20325` | `-0.01339` |
+| Relative sampled improvement | - | - | `0.09%` |
+| Kaggle public RMSE | `14.304` best current | not submitted | not applicable |
+
+### Decision
+
+The window feature moved validation in the right direction, but the gain was too small to justify a Kaggle submission. The prior typewell-GR model already showed that small local GR gains may not transfer to public score, so the safer move is to stop here and rethink the GR alignment rather than submit a weak candidate.

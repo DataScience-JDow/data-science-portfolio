@@ -41,7 +41,8 @@ This deliberately simple baseline won the first local sanity check against local
 | --- | --- | --- | --- |
 | `baseline_last_known_tvt` | Carry forward last known `TVT_input` per well | `15.90985` | `15.883` |
 | `residual_correction_hgb` | Add blended HGB residual correction on top of baseline | `15.33328` | `14.304` |
-| `typewell_gr_residual_hgb` | Add typewell GR matching features to residual model | `15.28302` | pending |
+| `typewell_gr_residual_hgb` | Add single-point typewell GR matching features to residual model | `15.28302` | `14.395` |
+| `typewell_gr_window_experiment` | Compare short GR windows against rolling typewell windows | sampled `15.20325` | not submitted |
 
 ## Reproduction
 
