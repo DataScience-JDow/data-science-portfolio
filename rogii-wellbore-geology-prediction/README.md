@@ -41,6 +41,7 @@ This deliberately simple baseline won the first local sanity check against local
 | --- | --- | --- | --- |
 | `baseline_last_known_tvt` | Carry forward last known `TVT_input` per well | `15.90985` | `15.883` |
 | `residual_correction_hgb` | Add blended HGB residual correction on top of baseline | `15.33328` | `14.304` |
+| `typewell_gr_residual_hgb` | Add typewell GR matching features to residual model | `15.28302` | pending |
 
 ## Reproduction
 
@@ -63,11 +64,14 @@ The script writes:
 - `rogii-wellbore-geology-prediction/reports/baseline-metrics.json`
 - `rogii-wellbore-geology-prediction/submissions/residual_correction_submission.csv`
 - `rogii-wellbore-geology-prediction/reports/residual-correction-metrics.json`
+- `rogii-wellbore-geology-prediction/submissions/typewell_gr_residual_submission.csv`
+- `rogii-wellbore-geology-prediction/reports/typewell-gr-residual-metrics.json`
 
 The code-competition submissions are packaged as Kaggle kernels:
 
 - Baseline: `jdow76/rogii-last-known-tvt-baseline`
 - Residual correction: `jdow76/rogii-residual-correction`
+- Typewell GR residual correction: `jdow76/rogii-typewell-gr-residual`
 
 ## Notes
 

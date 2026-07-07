@@ -69,3 +69,23 @@ The alpha sweep showed the best local blend around `0.60`:
 ### Public Leaderboard Impact
 
 The public leaderboard improved from `15.883` to `14.304`, a `9.94%` public RMSE reduction from the baseline submission.
+
+## typewell_gr_residual_hgb
+
+- Added simple typewell GR matching features to the residual model.
+- For each horizontal row with `GR`, searched the paired typewell within `+/-180` TVT feet of the last known horizontal `TVT_input`.
+- Added five GR-alignment features: typewell GR at the baseline TVT, horizontal-minus-typewell GR at the baseline, nearest-GR matched TVT delta, nearest-GR match error, and match availability.
+- Kept the same modeling guardrails as the residual model: grouped validation by well, at most `1,400` sampled training rows per well, residual clipping at `+/-60`, and `0.60` residual blending.
+- Submitted Kaggle kernel `jdow76/rogii-typewell-gr-residual`, version 1, as submission ref `54412802`.
+
+### Result
+
+| Metric | Residual correction | Typewell GR residual | Impact |
+| --- | ---: | ---: | ---: |
+| Local RMSE | `15.33328` | `15.28302` | `-0.05026` |
+| Relative local improvement | - | - | `0.33%` |
+| Kaggle public RMSE | `14.304` | pending | pending |
+
+### Interpretation
+
+The typewell GR features helped locally, but the gain was small. This suggests the simple "nearest GR value inside a TVT window" feature contains some signal, but it is still a rough proxy for the real geology matching problem. A stronger version should compare short GR sequences rather than one row at a time.

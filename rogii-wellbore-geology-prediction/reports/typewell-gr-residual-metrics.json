@@ -1,0 +1,98 @@
+{
+  "method": "typewell_gr_residual_hgb",
+  "base_method": "residual_correction_hgb",
+  "train_wells": 773,
+  "validation_rows": 3783989,
+  "train_sample_per_well": 1400,
+  "residual_blend": 0.6,
+  "residual_clip": 60.0,
+  "typewell_tvt_window": 180.0,
+  "baseline_last_known_tvt_rmse": 15.909870927192397,
+  "typewell_gr_residual_rmse": 15.283021789060003,
+  "previous_residual_model_rmse": 15.33328070147783,
+  "absolute_rmse_improvement_vs_previous": 0.05025891241782787,
+  "relative_rmse_improvement_pct_vs_previous": 0.3277766408657991,
+  "alpha_sweep": [
+    {
+      "alpha": 0.0,
+      "rmse": 15.909866082049096
+    },
+    {
+      "alpha": 0.1,
+      "rmse": 15.732063322573143
+    },
+    {
+      "alpha": 0.2,
+      "rmse": 15.582639945705111
+    },
+    {
+      "alpha": 0.3,
+      "rmse": 15.462418718455245
+    },
+    {
+      "alpha": 0.4,
+      "rmse": 15.372084804199579
+    },
+    {
+      "alpha": 0.5,
+      "rmse": 15.312167171419249
+    },
+    {
+      "alpha": 0.6,
+      "rmse": 15.283023568613412
+    },
+    {
+      "alpha": 0.7,
+      "rmse": 15.284830027429635
+    },
+    {
+      "alpha": 0.8,
+      "rmse": 15.317575597703234
+    },
+    {
+      "alpha": 0.9,
+      "rmse": 15.381062676896235
+    },
+    {
+      "alpha": 1.0,
+      "rmse": 15.474912911069472
+    }
+  ],
+  "folds": [
+    {
+      "fold": 1,
+      "validation_rows": 757738,
+      "train_sample_rows": 863718,
+      "baseline_rmse": 15.233373865342145,
+      "blended_typewell_gr_rmse": 14.574678363162889
+    },
+    {
+      "fold": 2,
+      "validation_rows": 756650,
+      "train_sample_rows": 864711,
+      "baseline_rmse": 15.825464053227634,
+      "blended_typewell_gr_rmse": 14.649930653066193
+    },
+    {
+      "fold": 3,
+      "validation_rows": 756255,
+      "train_sample_rows": 865118,
+      "baseline_rmse": 14.81658389937659,
+      "blended_typewell_gr_rmse": 14.661320376608202
+    },
+    {
+      "fold": 4,
+      "validation_rows": 757101,
+      "train_sample_rows": 864207,
+      "baseline_rmse": 16.97363480708988,
+      "blended_typewell_gr_rmse": 16.130786419384904
+    },
+    {
+      "fold": 5,
+      "validation_rows": 756245,
+      "train_sample_rows": 865118,
+      "baseline_rmse": 16.597797367163096,
+      "blended_typewell_gr_rmse": 16.299625621779054
+    }
+  ]
+}
