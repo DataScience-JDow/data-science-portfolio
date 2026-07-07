@@ -10,7 +10,7 @@ This project explores a tabular multi-class classification problem from Kaggle's
 - Problem type: tabular multi-class classification
 - Metric: balanced accuracy
 - Status: active
-- Current best public leaderboard score: `0.94997`
+- Current best public leaderboard score: `0.95003`
 - Kaggle page: <https://www.kaggle.com/competitions/playground-series-s6e7>
 
 ## Project Structure
@@ -35,6 +35,7 @@ submissions/
 | `v2` | Logistic regression with balanced class weights | `0.85657` | `0.85171` |
 | `v3` | HistGradientBoosting with balanced sample weights and `id` removed | `0.90892` | `0.90503` |
 | `v4` | `v3` plus missingness-indicator features | `0.94919` | `0.94997` |
+| `v5` | `v4` blended with CatBoost probabilities | `0.94954` | `0.95003` |
 
 ## Modeling Approach
 
@@ -46,6 +47,7 @@ The current workflow uses:
 - one-hot encoding for categorical variables
 - class-balanced sample weights during training
 - missingness indicator features for columns with nulls
+- probability blending between HistGradientBoosting and CatBoost
 - stratified cross-validation scored with balanced accuracy
 
 ## Why The Best Version Improved
@@ -65,6 +67,8 @@ Key training scripts:
 - `src/train_logreg_balanced.py`
 - `src/train_histgb_balanced_no_id.py`
 - `src/train_histgb_balanced_missing_flags.py`
+- `src/train_hgb_catboost_ensemble.py`
+- `src/train_hgb_lgbm_xgb_ensemble.py`
 
 EDA notebook:
 
@@ -80,6 +84,9 @@ source .venv/bin/activate
 pip install -r requirements.txt
 python playground-s6e7-student-health-risk/src/train_histgb_balanced_missing_flags.py
 ```
+
+On macOS, LightGBM and XGBoost may also require the OpenMP runtime
+(`libomp`) to be installed outside Python.
 
 Expected local input files:
 

@@ -17,9 +17,14 @@
 - Tested a class-weighted logistic regression variant: public score `0.85171`.
 - Improved the gradient boosting approach by removing `id` and using balanced sample weights: public score `0.90503`.
 - Added missingness-indicator features and promoted the strongest version so far: public score `0.94997`.
+- Tested a CatBoost model family and a HistGradientBoosting/CatBoost probability blend.
+- Submitted a 52/48 HistGradientBoosting/CatBoost ensemble: public score `0.95003`.
+- Enabled LightGBM and XGBoost locally by adding an OpenMP runtime workaround.
+- Tested a HistGradientBoosting/LightGBM/XGBoost OOF-weighted ensemble: CV `0.94980`, public score `0.95001`.
 
 ## Next
 
 - continue targeted error analysis by class
-- compare missingness-driven gains against additional feature engineering
+- test whether CatBoost stacks with the LightGBM/XGBoost blend
+- test whether threshold tuning stacks with the ensemble
 - add a second Kaggle project to the portfolio
