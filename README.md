@@ -8,8 +8,8 @@ Each competition lives in its own self-contained directory at the repo root so t
 
 | Project | Type | Status | Stack | Result |
 | --- | --- | --- | --- | --- |
-| [Playground Series S6E7: Predicting Student Health Risk](playground-s6e7-student-health-risk/README.md) | Kaggle classification | Active | Python, pandas, scikit-learn | Public LB `0.94997` |
-| [ROGII: Wellbore Geology Prediction](rogii-wellbore-geology-prediction/README.md) | Kaggle regression | Active | Python, pandas | Public LB `15.883` |
+| [Playground Series S6E7: Predicting Student Health Risk](playground-s6e7-student-health-risk/README.md) | Kaggle classification | Active | Python, pandas, scikit-learn, CatBoost | Public LB `0.95003` |
+| [ROGII: Wellbore Geology Prediction](rogii-wellbore-geology-prediction/README.md) | Kaggle regression | Active | Python, pandas, scikit-learn | Public LB `14.304` |
 
 ## Repo Structure
 
@@ -21,8 +21,8 @@ future-competition-slug/
 
 ## Current Best Result
 
-- `Playground Series S6E7`: public leaderboard `0.94997`
-- `ROGII Wellbore Geology Prediction`: public leaderboard RMSE `15.883`
+- `Playground Series S6E7`: public leaderboard `0.95003`
+- `ROGII Wellbore Geology Prediction`: public leaderboard RMSE `14.304`
 
 ## Working Principles
 
