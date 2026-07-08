@@ -110,3 +110,26 @@ The typewell GR features helped locally, but the public score got worse. This su
 ### Decision
 
 The window feature moved validation in the right direction, but the gain was too small to justify a Kaggle submission. The prior typewell-GR model already showed that small local GR gains may not transfer to public score, so the safer move is to stop here and rethink the GR alignment rather than submit a weak candidate.
+
+## typewell_gr_sequence_residual_hgb
+
+- Tested a more direct sequence-shape match instead of summary-stat window matching.
+- For each horizontal target row, extracted a centered `31`-row GR sequence.
+- Linearly filled missing values inside the local window when at least `14` values were present, then normalized the mini-sequence to zero mean and unit variance.
+- Built matching normalized `31`-row GR sequences from the paired typewell within `+/-240` TVT feet of the last known horizontal `TVT_input`.
+- Used nearest-neighbor matching on the normalized sequence shape, then added matched TVT delta, match distance, mean delta, standard-deviation delta, match availability, and local valid-fraction features.
+- Validated on `618,007` grouped-by-well sampled target rows. The model trained on up to `700` sampled rows per well and used the same `0.60` residual blend and `+/-60` residual clip.
+- Pushed Kaggle kernel `jdow76/rogii-sequence-gr-residual`, version 1, and submitted output as Kaggle submission `54443515`.
+
+### Result
+
+| Metric | Base sampled residual | Sequence-match sampled residual | Impact |
+| --- | ---: | ---: | ---: |
+| Sampled local RMSE | `15.15077` | `15.11805` | `-0.03272` |
+| Relative sampled improvement | - | - | `0.22%` |
+| Sequence match availability | - | `80.53%` | - |
+| Kaggle public RMSE | `14.304` best current | `14.596` | worse by `0.292` |
+
+### Interpretation
+
+This is the first GR approach that compares the actual shape of the GR curve rather than one value or a few window summaries. The local improvement was larger than the previous window-summary experiment and had much better match coverage, but the public score got worse. That means the sequence-shape signal is probably real on the sampled validation rows, but it does not transfer cleanly to the hidden public wells in this form. The current best remains the simpler residual correction model.

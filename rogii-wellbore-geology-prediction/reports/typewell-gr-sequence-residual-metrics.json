@@ -1,0 +1,86 @@
+{
+  "method": "typewell_gr_sequence_residual_hgb",
+  "base_method": "residual_correction_hgb",
+  "validation_type": "grouped_by_well_sampled_rows",
+  "validation_rows": 618007,
+  "train_wells": 773,
+  "validation_sample_per_well": 800,
+  "train_sample_per_well": 700,
+  "sequence_window": 31,
+  "min_sequence_values": 14,
+  "typewell_tvt_window": 240.0,
+  "residual_blend": 0.6,
+  "residual_clip": 60.0,
+  "sequence_available_rate": 0.805270791053772,
+  "base_sampled_rmse": 15.150768177461746,
+  "sequence_sampled_rmse": 15.118045942196087,
+  "absolute_rmse_improvement_vs_sampled_base": 0.032722235265659094,
+  "relative_rmse_improvement_pct_vs_sampled_base": 0.2159774005012936,
+  "kaggle_kernel": "jdow76/rogii-sequence-gr-residual",
+  "kaggle_submission_ref": 54443515,
+  "kaggle_public_rmse": 14.596,
+  "base_folds": [
+    {
+      "fold": 1,
+      "validation_rows": 124000,
+      "train_sample_rows": 432307,
+      "rmse": 14.383613990942251
+    },
+    {
+      "fold": 2,
+      "validation_rows": 124000,
+      "train_sample_rows": 432307,
+      "rmse": 16.210017857950625
+    },
+    {
+      "fold": 3,
+      "validation_rows": 123607,
+      "train_sample_rows": 432600,
+      "rmse": 14.887657614385281
+    },
+    {
+      "fold": 4,
+      "validation_rows": 123200,
+      "train_sample_rows": 433007,
+      "rmse": 15.11953460057835
+    },
+    {
+      "fold": 5,
+      "validation_rows": 123200,
+      "train_sample_rows": 433007,
+      "rmse": 15.092741559382786
+    }
+  ],
+  "sequence_folds": [
+    {
+      "fold": 1,
+      "validation_rows": 124000,
+      "train_sample_rows": 432307,
+      "rmse": 14.356721352664294
+    },
+    {
+      "fold": 2,
+      "validation_rows": 124000,
+      "train_sample_rows": 432307,
+      "rmse": 16.172706236185494
+    },
+    {
+      "fold": 3,
+      "validation_rows": 123607,
+      "train_sample_rows": 432600,
+      "rmse": 14.856546704415154
+    },
+    {
+      "fold": 4,
+      "validation_rows": 123200,
+      "train_sample_rows": 433007,
+      "rmse": 15.149464391928339
+    },
+    {
+      "fold": 5,
+      "validation_rows": 123200,
+      "train_sample_rows": 433007,
+      "rmse": 14.994623873815158
+    }
+  ]
+}
