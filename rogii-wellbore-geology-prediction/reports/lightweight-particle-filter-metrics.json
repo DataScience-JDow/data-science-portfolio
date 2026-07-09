@@ -1,0 +1,6434 @@
+{
+  "method": "lightweight_particle_filter",
+  "validation_type": "sampled_all_training_wells",
+  "train_wells": 773,
+  "validation_rows": 618007,
+  "particles": 350,
+  "pf_seeds": [
+    11,
+    23,
+    37,
+    53
+  ],
+  "kaggle_kernel": "jdow76/rogii-lightweight-particle-filter",
+  "kaggle_submission_ref": 54480888,
+  "kaggle_submission_status": "pending",
+  "previous_best_public_rmse": 14.161,
+  "validation_sample_per_well": 800,
+  "baseline_rmse": 15.600386960114772,
+  "pf_rmse": 17.13176948255017,
+  "best_baseline_pf_alpha": {
+    "alpha": 0.4,
+    "rmse": 14.467948333532243
+  },
+  "alpha_sweep": [
+    {
+      "alpha": 0.0,
+      "rmse": 15.600386960114772
+    },
+    {
+      "alpha": 0.05,
+      "rmse": 15.335283196469671
+    },
+    {
+      "alpha": 0.1,
+      "rmse": 15.102875440428166
+    },
+    {
+      "alpha": 0.15,
+      "rmse": 14.904693249604556
+    },
+    {
+      "alpha": 0.2,
+      "rmse": 14.742116998690662
+    },
+    {
+      "alpha": 0.25,
+      "rmse": 14.616334861514268
+    },
+    {
+      "alpha": 0.3,
+      "rmse": 14.528302530141215
+    },
+    {
+      "alpha": 0.35,
+      "rmse": 14.478708591350774
+    },
+    {
+      "alpha": 0.4,
+      "rmse": 14.467948333532243
+    },
+    {
+      "alpha": 0.45,
+      "rmse": 14.496108234033688
+    },
+    {
+      "alpha": 0.5,
+      "rmse": 14.562962518884566
+    },
+    {
+      "alpha": 0.55,
+      "rmse": 14.667982109431788
+    },
+    {
+      "alpha": 0.6,
+      "rmse": 14.810355142309794
+    },
+    {
+      "alpha": 0.65,
+      "rmse": 14.989017251395444
+    },
+    {
+      "alpha": 0.7,
+      "rmse": 15.202689082082646
+    },
+    {
+      "alpha": 0.75,
+      "rmse": 15.44991815295073
+    },
+    {
+      "alpha": 0.8,
+      "rmse": 15.729122193620185
+    },
+    {
+      "alpha": 0.85,
+      "rmse": 16.03863140898719
+    },
+    {
+      "alpha": 0.9,
+      "rmse": 16.376727646493435
+    },
+    {
+      "alpha": 0.95,
+      "rmse": 16.74167906107543
+    },
+    {
+      "alpha": 1.0,
+      "rmse": 17.13176948255017
+    }
+  ],
+  "per_well": [
+    {
+      "well_id": "000d7d20",
+      "rows": 800,
+      "baseline_rmse": 7.453960063282284,
+      "pf_rmse": 16.911164726623806,
+      "best_alpha_prediction_rmse": 10.899555044440271,
+      "mean_pf_std": 11.119464874267578
+    },
+    {
+      "well_id": "00bbac68",
+      "rows": 800,
+      "baseline_rmse": 15.25803090998322,
+      "pf_rmse": 15.075537868609786,
+      "best_alpha_prediction_rmse": 15.066281722022701,
+      "mean_pf_std": 10.161023139953613
+    },
+    {
+      "well_id": "00e12e8b",
+      "rows": 800,
+      "baseline_rmse": 7.9226304107286625,
+      "pf_rmse": 16.52113186931957,
+      "best_alpha_prediction_rmse": 10.381870782879082,
+      "mean_pf_std": 5.45840311050415
+    },
+    {
+      "well_id": "015fe0d2",
+      "rows": 800,
+      "baseline_rmse": 23.14935741008759,
+      "pf_rmse": 16.57129303261576,
+      "best_alpha_prediction_rmse": 20.475956805718653,
+      "mean_pf_std": 7.003818511962891
+    },
+    {
+      "well_id": "01869cd4",
+      "rows": 800,
+      "baseline_rmse": 10.61344302641686,
+      "pf_rmse": 7.275017143850088,
+      "best_alpha_prediction_rmse": 7.9449766684133705,
+      "mean_pf_std": 7.001565933227539
+    },
+    {
+      "well_id": "01982c1d",
+      "rows": 800,
+      "baseline_rmse": 6.336249610376703,
+      "pf_rmse": 5.5901645123382755,
+      "best_alpha_prediction_rmse": 5.436119789450034,
+      "mean_pf_std": 14.119826316833496
+    },
+    {
+      "well_id": "028d7b28",
+      "rows": 800,
+      "baseline_rmse": 7.389500532850636,
+      "pf_rmse": 26.851204308633267,
+      "best_alpha_prediction_rmse": 12.97262260678254,
+      "mean_pf_std": 7.487723350524902
+    },
+    {
+      "well_id": "02e7fe5a",
+      "rows": 800,
+      "baseline_rmse": 8.421208716687127,
+      "pf_rmse": 7.134763691051826,
+      "best_alpha_prediction_rmse": 7.672687909706377,
+      "mean_pf_std": 9.457437515258789
+    },
+    {
+      "well_id": "0390d174",
+      "rows": 800,
+      "baseline_rmse": 8.513013031529756,
+      "pf_rmse": 2.6420255171945906,
+      "best_alpha_prediction_rmse": 5.215741313105332,
+      "mean_pf_std": 2.8901965618133545
+    },
+    {
+      "well_id": "03a935ae",
+      "rows": 800,
+      "baseline_rmse": 35.054414869956034,
+      "pf_rmse": 6.717945765232579,
+      "best_alpha_prediction_rmse": 23.221185966617476,
+      "mean_pf_std": 2.674412250518799
+    },
+    {
+      "well_id": "044af7d1",
+      "rows": 800,
+      "baseline_rmse": 9.864040278962374,
+      "pf_rmse": 5.552693160951556,
+      "best_alpha_prediction_rmse": 7.214851093494524,
+      "mean_pf_std": 12.183826446533203
+    },
+    {
+      "well_id": "0498acab",
+      "rows": 800,
+      "baseline_rmse": 5.995966540100601,
+      "pf_rmse": 9.576289926890496,
+      "best_alpha_prediction_rmse": 5.609172314502393,
+      "mean_pf_std": 5.042957305908203
+    },
+    {
+      "well_id": "052d64df",
+      "rows": 800,
+      "baseline_rmse": 7.3957546268111365,
+      "pf_rmse": 5.318071897587018,
+      "best_alpha_prediction_rmse": 6.452989524327232,
+      "mean_pf_std": 3.5004918575286865
+    },
+    {
+      "well_id": "05948241",
+      "rows": 800,
+      "baseline_rmse": 4.9940987550304285,
+      "pf_rmse": 2.12265427909691,
+      "best_alpha_prediction_rmse": 3.203377698107483,
+      "mean_pf_std": 2.673802375793457
+    },
+    {
+      "well_id": "059c8f24",
+      "rows": 800,
+      "baseline_rmse": 10.917701263314484,
+      "pf_rmse": 4.890587028823294,
+      "best_alpha_prediction_rmse": 7.762355496759062,
+      "mean_pf_std": 3.644432306289673
+    },
+    {
+      "well_id": "05a0ee4d",
+      "rows": 800,
+      "baseline_rmse": 18.349455557318226,
+      "pf_rmse": 4.758360831977766,
+      "best_alpha_prediction_rmse": 11.304172134539153,
+      "mean_pf_std": 5.096503734588623
+    },
+    {
+      "well_id": "060ab2b8",
+      "rows": 800,
+      "baseline_rmse": 9.050383658994765,
+      "pf_rmse": 3.6156729321282617,
+      "best_alpha_prediction_rmse": 5.976737956969351,
+      "mean_pf_std": 2.0012454986572266
+    },
+    {
+      "well_id": "06df5958",
+      "rows": 800,
+      "baseline_rmse": 3.0879088393277194,
+      "pf_rmse": 7.762515262131572,
+      "best_alpha_prediction_rmse": 4.258288004870408,
+      "mean_pf_std": 3.2613420486450195
+    },
+    {
+      "well_id": "071d7b45",
+      "rows": 800,
+      "baseline_rmse": 17.10966929107586,
+      "pf_rmse": 5.000316275025352,
+      "best_alpha_prediction_rmse": 11.52904162121787,
+      "mean_pf_std": 6.8494696617126465
+    },
+    {
+      "well_id": "0849b4e2",
+      "rows": 800,
+      "baseline_rmse": 14.580368565300299,
+      "pf_rmse": 9.012340558148864,
+      "best_alpha_prediction_rmse": 12.176461226122566,
+      "mean_pf_std": 10.653463363647461
+    },
+    {
+      "well_id": "084d66f9",
+      "rows": 800,
+      "baseline_rmse": 10.697104468031782,
+      "pf_rmse": 9.503563635648211,
+      "best_alpha_prediction_rmse": 9.97065750739786,
+      "mean_pf_std": 2.384377956390381
+    },
+    {
+      "well_id": "08fecf00",
+      "rows": 800,
+      "baseline_rmse": 4.760209974360471,
+      "pf_rmse": 9.909830146556175,
+      "best_alpha_prediction_rmse": 6.103013167817015,
+      "mean_pf_std": 3.804187059402466
+    },
+    {
+      "well_id": "09053135",
+      "rows": 800,
+      "baseline_rmse": 13.256974876457386,
+      "pf_rmse": 20.39263842173526,
+      "best_alpha_prediction_rmse": 16.070883045710225,
+      "mean_pf_std": 7.315013408660889
+    },
+    {
+      "well_id": "09441b8d",
+      "rows": 800,
+      "baseline_rmse": 15.933290330312037,
+      "pf_rmse": 10.793436786591169,
+      "best_alpha_prediction_rmse": 13.819632741732155,
+      "mean_pf_std": 5.468116283416748
+    },
+    {
+      "well_id": "0955cd6c",
+      "rows": 800,
+      "baseline_rmse": 8.02345829427614,
+      "pf_rmse": 5.461628551710015,
+      "best_alpha_prediction_rmse": 6.845904135734833,
+      "mean_pf_std": 6.342736721038818
+    },
+    {
+      "well_id": "09ec2ca9",
+      "rows": 800,
+      "baseline_rmse": 6.134319196129473,
+      "pf_rmse": 8.410302607656831,
+      "best_alpha_prediction_rmse": 5.988656255008974,
+      "mean_pf_std": 5.654665946960449
+    },
+    {
+      "well_id": "0a57a29c",
+      "rows": 800,
+      "baseline_rmse": 6.957330926799882,
+      "pf_rmse": 4.044795852451028,
+      "best_alpha_prediction_rmse": 5.380125359537096,
+      "mean_pf_std": 7.169913291931152
+    },
+    {
+      "well_id": "0bbf5e67",
+      "rows": 800,
+      "baseline_rmse": 18.373962297228296,
+      "pf_rmse": 1.3750550104727262,
+      "best_alpha_prediction_rmse": 10.95731242064025,
+      "mean_pf_std": 1.1588764190673828
+    },
+    {
+      "well_id": "0be01c24",
+      "rows": 800,
+      "baseline_rmse": 8.270546717115678,
+      "pf_rmse": 8.350245688773201,
+      "best_alpha_prediction_rmse": 8.077765530540246,
+      "mean_pf_std": 5.546144962310791
+    },
+    {
+      "well_id": "0c1b160c",
+      "rows": 800,
+      "baseline_rmse": 8.429382220838638,
+      "pf_rmse": 11.533483405521554,
+      "best_alpha_prediction_rmse": 7.507242356198883,
+      "mean_pf_std": 5.793755531311035
+    },
+    {
+      "well_id": "0d99f8e4",
+      "rows": 800,
+      "baseline_rmse": 9.341599909812007,
+      "pf_rmse": 12.098036125595305,
+      "best_alpha_prediction_rmse": 8.907991665980264,
+      "mean_pf_std": 14.061763763427734
+    },
+    {
+      "well_id": "0dc5e64d",
+      "rows": 800,
+      "baseline_rmse": 18.040833946910887,
+      "pf_rmse": 16.667694605019502,
+      "best_alpha_prediction_rmse": 15.576032813287648,
+      "mean_pf_std": 10.762721061706543
+    },
+    {
+      "well_id": "0dc835f3",
+      "rows": 800,
+      "baseline_rmse": 7.239596475287747,
+      "pf_rmse": 5.445798864422639,
+      "best_alpha_prediction_rmse": 5.554739805186422,
+      "mean_pf_std": 4.594574451446533
+    },
+    {
+      "well_id": "0dd99dc5",
+      "rows": 800,
+      "baseline_rmse": 8.230111625913954,
+      "pf_rmse": 16.470655405375346,
+      "best_alpha_prediction_rmse": 11.113781033700239,
+      "mean_pf_std": 13.023221015930176
+    },
+    {
+      "well_id": "0e5e560d",
+      "rows": 800,
+      "baseline_rmse": 10.290901685469573,
+      "pf_rmse": 6.156903726387271,
+      "best_alpha_prediction_rmse": 8.450202346730453,
+      "mean_pf_std": 7.732226371765137
+    },
+    {
+      "well_id": "109d9d70",
+      "rows": 800,
+      "baseline_rmse": 9.380252528583572,
+      "pf_rmse": 10.624710723670638,
+      "best_alpha_prediction_rmse": 9.615899216196903,
+      "mean_pf_std": 24.835678100585938
+    },
+    {
+      "well_id": "10a1281a",
+      "rows": 800,
+      "baseline_rmse": 3.590790825152376,
+      "pf_rmse": 5.861488130135181,
+      "best_alpha_prediction_rmse": 3.3175425482295666,
+      "mean_pf_std": 0.5717466473579407
+    },
+    {
+      "well_id": "10b89021",
+      "rows": 800,
+      "baseline_rmse": 14.713862936020497,
+      "pf_rmse": 27.48705166991323,
+      "best_alpha_prediction_rmse": 19.572069888222426,
+      "mean_pf_std": 3.2695298194885254
+    },
+    {
+      "well_id": "10be2420",
+      "rows": 800,
+      "baseline_rmse": 13.260178675265893,
+      "pf_rmse": 5.731922555076084,
+      "best_alpha_prediction_rmse": 9.774336871145609,
+      "mean_pf_std": 1.346255898475647
+    },
+    {
+      "well_id": "113011eb",
+      "rows": 800,
+      "baseline_rmse": 5.174814368651345,
+      "pf_rmse": 24.01998683584672,
+      "best_alpha_prediction_rmse": 11.11854981539157,
+      "mean_pf_std": 1.5122967958450317
+    },
+    {
+      "well_id": "1131525f",
+      "rows": 800,
+      "baseline_rmse": 14.671770556071086,
+      "pf_rmse": 4.813141806408393,
+      "best_alpha_prediction_rmse": 10.28197702534521,
+      "mean_pf_std": 4.52368688583374
+    },
+    {
+      "well_id": "11d0f5ac",
+      "rows": 800,
+      "baseline_rmse": 22.163676494435574,
+      "pf_rmse": 35.992576902350635,
+      "best_alpha_prediction_rmse": 27.647709001187582,
+      "mean_pf_std": 3.993959903717041
+    },
+    {
+      "well_id": "12203f2a",
+      "rows": 800,
+      "baseline_rmse": 13.756596890219335,
+      "pf_rmse": 16.24316845664869,
+      "best_alpha_prediction_rmse": 14.682161685154867,
+      "mean_pf_std": 2.5967252254486084
+    },
+    {
+      "well_id": "122bd617",
+      "rows": 800,
+      "baseline_rmse": 11.666093154951225,
+      "pf_rmse": 14.571098943264232,
+      "best_alpha_prediction_rmse": 11.38106572554585,
+      "mean_pf_std": 14.466378211975098
+    },
+    {
+      "well_id": "125be846",
+      "rows": 800,
+      "baseline_rmse": 18.43880144898252,
+      "pf_rmse": 11.057077418266212,
+      "best_alpha_prediction_rmse": 15.066239570491437,
+      "mean_pf_std": 5.7676520347595215
+    },
+    {
+      "well_id": "1285a37b",
+      "rows": 800,
+      "baseline_rmse": 5.546081319273194,
+      "pf_rmse": 7.425118624259584,
+      "best_alpha_prediction_rmse": 5.859066540018251,
+      "mean_pf_std": 10.500699043273926
+    },
+    {
+      "well_id": "1295a25b",
+      "rows": 800,
+      "baseline_rmse": 9.712879876740804,
+      "pf_rmse": 8.472487700098657,
+      "best_alpha_prediction_rmse": 8.994458188771649,
+      "mean_pf_std": 1.5337203741073608
+    },
+    {
+      "well_id": "12f0cd90",
+      "rows": 800,
+      "baseline_rmse": 7.8947697005675765,
+      "pf_rmse": 7.961564366680118,
+      "best_alpha_prediction_rmse": 7.466836241107937,
+      "mean_pf_std": 6.975130081176758
+    },
+    {
+      "well_id": "137d1e44",
+      "rows": 800,
+      "baseline_rmse": 25.005527656400428,
+      "pf_rmse": 28.29392267080326,
+      "best_alpha_prediction_rmse": 26.227385375176578,
+      "mean_pf_std": 4.777669906616211
+    },
+    {
+      "well_id": "13ce113d",
+      "rows": 800,
+      "baseline_rmse": 3.385811368786021,
+      "pf_rmse": 12.577784618979795,
+      "best_alpha_prediction_rmse": 5.0201849132020255,
+      "mean_pf_std": 4.2010297775268555
+    },
+    {
+      "well_id": "13f598d9",
+      "rows": 800,
+      "baseline_rmse": 15.16537175607595,
+      "pf_rmse": 18.329585579658275,
+      "best_alpha_prediction_rmse": 5.980411435078613,
+      "mean_pf_std": 8.609394073486328
+    },
+    {
+      "well_id": "14a53cb3",
+      "rows": 800,
+      "baseline_rmse": 8.946354641696242,
+      "pf_rmse": 6.390222023467212,
+      "best_alpha_prediction_rmse": 5.0972349194031565,
+      "mean_pf_std": 10.216631889343262
+    },
+    {
+      "well_id": "14ab73fb",
+      "rows": 800,
+      "baseline_rmse": 14.826960852616367,
+      "pf_rmse": 3.8482626400753923,
+      "best_alpha_prediction_rmse": 9.400555649479632,
+      "mean_pf_std": 2.8376152515411377
+    },
+    {
+      "well_id": "14ad5efb",
+      "rows": 800,
+      "baseline_rmse": 6.294643228571353,
+      "pf_rmse": 6.567243398453482,
+      "best_alpha_prediction_rmse": 4.917844634904023,
+      "mean_pf_std": 9.667340278625488
+    },
+    {
+      "well_id": "14fee784",
+      "rows": 800,
+      "baseline_rmse": 21.409538907926407,
+      "pf_rmse": 22.696932056222728,
+      "best_alpha_prediction_rmse": 21.78990791011114,
+      "mean_pf_std": 1.974149465560913
+    },
+    {
+      "well_id": "153552f5",
+      "rows": 800,
+      "baseline_rmse": 5.161585984462061,
+      "pf_rmse": 12.670446802939578,
+      "best_alpha_prediction_rmse": 7.941945588796126,
+      "mean_pf_std": 5.623859882354736
+    },
+    {
+      "well_id": "1550491d",
+      "rows": 800,
+      "baseline_rmse": 21.16034548690129,
+      "pf_rmse": 17.62039603723055,
+      "best_alpha_prediction_rmse": 19.402134268194228,
+      "mean_pf_std": 7.543417930603027
+    },
+    {
+      "well_id": "155887bb",
+      "rows": 800,
+      "baseline_rmse": 11.802495196990069,
+      "pf_rmse": 26.39318088427791,
+      "best_alpha_prediction_rmse": 17.24349819891411,
+      "mean_pf_std": 28.349756240844727
+    },
+    {
+      "well_id": "1590af81",
+      "rows": 800,
+      "baseline_rmse": 5.5589462580599065,
+      "pf_rmse": 7.842186464606143,
+      "best_alpha_prediction_rmse": 5.64914383037727,
+      "mean_pf_std": 4.814755439758301
+    },
+    {
+      "well_id": "15e154a1",
+      "rows": 800,
+      "baseline_rmse": 23.217590774561057,
+      "pf_rmse": 10.78566758563936,
+      "best_alpha_prediction_rmse": 17.90270699342172,
+      "mean_pf_std": 5.2439165115356445
+    },
+    {
+      "well_id": "1619e2ca",
+      "rows": 800,
+      "baseline_rmse": 7.809124894954952,
+      "pf_rmse": 6.168858529631996,
+      "best_alpha_prediction_rmse": 6.425320537998198,
+      "mean_pf_std": 17.330007553100586
+    },
+    {
+      "well_id": "16e4a047",
+      "rows": 800,
+      "baseline_rmse": 10.711838573512912,
+      "pf_rmse": 6.020378165310729,
+      "best_alpha_prediction_rmse": 5.836832782973522,
+      "mean_pf_std": 6.986906051635742
+    },
+    {
+      "well_id": "173ed841",
+      "rows": 800,
+      "baseline_rmse": 17.57285988036682,
+      "pf_rmse": 16.46185763665431,
+      "best_alpha_prediction_rmse": 16.926583204738503,
+      "mean_pf_std": 8.410022735595703
+    },
+    {
+      "well_id": "1770d7c6",
+      "rows": 800,
+      "baseline_rmse": 12.327929900231076,
+      "pf_rmse": 5.83971196435711,
+      "best_alpha_prediction_rmse": 8.213695870917427,
+      "mean_pf_std": 27.750926971435547
+    },
+    {
+      "well_id": "177622d7",
+      "rows": 800,
+      "baseline_rmse": 9.796776491529716,
+      "pf_rmse": 4.475586149693258,
+      "best_alpha_prediction_rmse": 5.355177722030448,
+      "mean_pf_std": 1.6523826122283936
+    },
+    {
+      "well_id": "18d24f7b",
+      "rows": 800,
+      "baseline_rmse": 7.532904428240247,
+      "pf_rmse": 7.645007349735305,
+      "best_alpha_prediction_rmse": 7.469317549854077,
+      "mean_pf_std": 1.7614902257919312
+    },
+    {
+      "well_id": "19137a89",
+      "rows": 800,
+      "baseline_rmse": 18.13280804232971,
+      "pf_rmse": 24.35011471749487,
+      "best_alpha_prediction_rmse": 20.48445333743101,
+      "mean_pf_std": 5.151930332183838
+    },
+    {
+      "well_id": "1944513c",
+      "rows": 800,
+      "baseline_rmse": 5.739596741061369,
+      "pf_rmse": 6.110905143394261,
+      "best_alpha_prediction_rmse": 3.4113951009741386,
+      "mean_pf_std": 6.645197868347168
+    },
+    {
+      "well_id": "197f8a5a",
+      "rows": 800,
+      "baseline_rmse": 24.602095266460303,
+      "pf_rmse": 23.68552731333205,
+      "best_alpha_prediction_rmse": 23.142140617752514,
+      "mean_pf_std": 25.954853057861328
+    },
+    {
+      "well_id": "19871e7f",
+      "rows": 800,
+      "baseline_rmse": 5.3531092366959205,
+      "pf_rmse": 3.048875234096748,
+      "best_alpha_prediction_rmse": 4.370551875786507,
+      "mean_pf_std": 7.051827907562256
+    },
+    {
+      "well_id": "198a5607",
+      "rows": 800,
+      "baseline_rmse": 9.940296505889695,
+      "pf_rmse": 12.839008514106247,
+      "best_alpha_prediction_rmse": 11.032858851944185,
+      "mean_pf_std": 6.247991561889648
+    },
+    {
+      "well_id": "19fb4f7b",
+      "rows": 800,
+      "baseline_rmse": 11.086899160720895,
+      "pf_rmse": 11.744530028751324,
+      "best_alpha_prediction_rmse": 10.079381295070384,
+      "mean_pf_std": 13.065878868103027
+    },
+    {
+      "well_id": "1a518997",
+      "rows": 800,
+      "baseline_rmse": 10.760045562172113,
+      "pf_rmse": 2.041185287608413,
+      "best_alpha_prediction_rmse": 5.965514786311342,
+      "mean_pf_std": 1.3497109413146973
+    },
+    {
+      "well_id": "1a68190b",
+      "rows": 800,
+      "baseline_rmse": 16.423298188092314,
+      "pf_rmse": 17.872223420678857,
+      "best_alpha_prediction_rmse": 16.82124236959737,
+      "mean_pf_std": 2.714468479156494
+    },
+    {
+      "well_id": "1a730ac2",
+      "rows": 800,
+      "baseline_rmse": 16.34405789576146,
+      "pf_rmse": 18.215567970785056,
+      "best_alpha_prediction_rmse": 17.06042285616893,
+      "mean_pf_std": 1.405674934387207
+    },
+    {
+      "well_id": "1aaf1da0",
+      "rows": 800,
+      "baseline_rmse": 9.289416376983988,
+      "pf_rmse": 12.547845488855534,
+      "best_alpha_prediction_rmse": 10.568632105374357,
+      "mean_pf_std": 5.01671028137207
+    },
+    {
+      "well_id": "1b08ed48",
+      "rows": 800,
+      "baseline_rmse": 11.835564588349365,
+      "pf_rmse": 5.607882470500849,
+      "best_alpha_prediction_rmse": 8.845164388140677,
+      "mean_pf_std": 3.094128370285034
+    },
+    {
+      "well_id": "1b1c5372",
+      "rows": 800,
+      "baseline_rmse": 17.833154978858975,
+      "pf_rmse": 27.995768247060255,
+      "best_alpha_prediction_rmse": 21.658554431164756,
+      "mean_pf_std": 4.439254283905029
+    },
+    {
+      "well_id": "1b1eba53",
+      "rows": 800,
+      "baseline_rmse": 70.62097471449302,
+      "pf_rmse": 33.27324699031635,
+      "best_alpha_prediction_rmse": 55.21660443760252,
+      "mean_pf_std": 7.119118690490723
+    },
+    {
+      "well_id": "1b6ba517",
+      "rows": 800,
+      "baseline_rmse": 7.814564935106239,
+      "pf_rmse": 12.231633736144152,
+      "best_alpha_prediction_rmse": 9.139365851946696,
+      "mean_pf_std": 13.844693183898926
+    },
+    {
+      "well_id": "1b82b665",
+      "rows": 800,
+      "baseline_rmse": 6.106078559517724,
+      "pf_rmse": 7.892224257496001,
+      "best_alpha_prediction_rmse": 6.465467438977272,
+      "mean_pf_std": 6.374050140380859
+    },
+    {
+      "well_id": "1bcb2fcf",
+      "rows": 800,
+      "baseline_rmse": 6.209848569006916,
+      "pf_rmse": 7.5189371972046395,
+      "best_alpha_prediction_rmse": 4.651877826922363,
+      "mean_pf_std": 2.867156982421875
+    },
+    {
+      "well_id": "1beca81d",
+      "rows": 800,
+      "baseline_rmse": 8.153297768387482,
+      "pf_rmse": 6.54414598635283,
+      "best_alpha_prediction_rmse": 7.252281075523578,
+      "mean_pf_std": 9.506614685058594
+    },
+    {
+      "well_id": "1d3fbf02",
+      "rows": 800,
+      "baseline_rmse": 5.904657631903309,
+      "pf_rmse": 5.206821961501221,
+      "best_alpha_prediction_rmse": 4.0730600323340065,
+      "mean_pf_std": 8.552569389343262
+    },
+    {
+      "well_id": "1d78281a",
+      "rows": 800,
+      "baseline_rmse": 11.875872831080182,
+      "pf_rmse": 7.110483974277601,
+      "best_alpha_prediction_rmse": 9.29094275360833,
+      "mean_pf_std": 2.896852731704712
+    },
+    {
+      "well_id": "1e30dedf",
+      "rows": 800,
+      "baseline_rmse": 12.12833148561677,
+      "pf_rmse": 5.386439143449347,
+      "best_alpha_prediction_rmse": 9.133606774632263,
+      "mean_pf_std": 5.174621105194092
+    },
+    {
+      "well_id": "1e5e3573",
+      "rows": 800,
+      "baseline_rmse": 11.92072265007508,
+      "pf_rmse": 23.100491031192345,
+      "best_alpha_prediction_rmse": 11.262896239973148,
+      "mean_pf_std": 11.317298889160156
+    },
+    {
+      "well_id": "1f9afacb",
+      "rows": 800,
+      "baseline_rmse": 2.5172791362899902,
+      "pf_rmse": 7.54937298997174,
+      "best_alpha_prediction_rmse": 2.7088468761436713,
+      "mean_pf_std": 7.505904674530029
+    },
+    {
+      "well_id": "1fdbba44",
+      "rows": 800,
+      "baseline_rmse": 5.837750872553275,
+      "pf_rmse": 10.834340463817451,
+      "best_alpha_prediction_rmse": 7.6380366647146465,
+      "mean_pf_std": 7.860006332397461
+    },
+    {
+      "well_id": "1fee2b62",
+      "rows": 800,
+      "baseline_rmse": 8.266872919974231,
+      "pf_rmse": 30.560319169753978,
+      "best_alpha_prediction_rmse": 15.916337293458408,
+      "mean_pf_std": 15.320439338684082
+    },
+    {
+      "well_id": "20096916",
+      "rows": 800,
+      "baseline_rmse": 10.45010817527702,
+      "pf_rmse": 9.178396227737025,
+      "best_alpha_prediction_rmse": 8.339580497321373,
+      "mean_pf_std": 10.458725929260254
+    },
+    {
+      "well_id": "200d233d",
+      "rows": 800,
+      "baseline_rmse": 12.772413842928087,
+      "pf_rmse": 30.248659520410182,
+      "best_alpha_prediction_rmse": 19.714295932610142,
+      "mean_pf_std": 2.6577248573303223
+    },
+    {
+      "well_id": "201661b5",
+      "rows": 800,
+      "baseline_rmse": 12.369358143210475,
+      "pf_rmse": 11.043275941582484,
+      "best_alpha_prediction_rmse": 11.789583750872074,
+      "mean_pf_std": 2.5246148109436035
+    },
+    {
+      "well_id": "203721ab",
+      "rows": 800,
+      "baseline_rmse": 10.031853256003789,
+      "pf_rmse": 10.042061823526849,
+      "best_alpha_prediction_rmse": 9.957699268091785,
+      "mean_pf_std": 2.707063674926758
+    },
+    {
+      "well_id": "20402d71",
+      "rows": 800,
+      "baseline_rmse": 11.661318230585485,
+      "pf_rmse": 19.342011107759337,
+      "best_alpha_prediction_rmse": 13.994949720706929,
+      "mean_pf_std": 15.478833198547363
+    },
+    {
+      "well_id": "2043abc5",
+      "rows": 800,
+      "baseline_rmse": 18.046763982774138,
+      "pf_rmse": 20.807640054858243,
+      "best_alpha_prediction_rmse": 18.57141628199067,
+      "mean_pf_std": 6.054769515991211
+    },
+    {
+      "well_id": "204cc64b",
+      "rows": 800,
+      "baseline_rmse": 6.1029346424486315,
+      "pf_rmse": 6.619781009951753,
+      "best_alpha_prediction_rmse": 5.787144234031401,
+      "mean_pf_std": 13.230425834655762
+    },
+    {
+      "well_id": "206b6193",
+      "rows": 800,
+      "baseline_rmse": 36.52594929293345,
+      "pf_rmse": 48.927345244703325,
+      "best_alpha_prediction_rmse": 41.46034813733987,
+      "mean_pf_std": 2.6597135066986084
+    },
+    {
+      "well_id": "2075c696",
+      "rows": 800,
+      "baseline_rmse": 21.89590650669644,
+      "pf_rmse": 4.093994658867311,
+      "best_alpha_prediction_rmse": 13.463126533161857,
+      "mean_pf_std": 2.8948850631713867
+    },
+    {
+      "well_id": "22c5f93f",
+      "rows": 800,
+      "baseline_rmse": 7.091336633526998,
+      "pf_rmse": 19.773192201970854,
+      "best_alpha_prediction_rmse": 10.931439829570646,
+      "mean_pf_std": 11.907509803771973
+    },
+    {
+      "well_id": "230eaaa3",
+      "rows": 800,
+      "baseline_rmse": 25.339563825666026,
+      "pf_rmse": 25.636882911539956,
+      "best_alpha_prediction_rmse": 24.84230284598228,
+      "mean_pf_std": 7.172670841217041
+    },
+    {
+      "well_id": "2364716c",
+      "rows": 800,
+      "baseline_rmse": 19.66295370423839,
+      "pf_rmse": 12.73508508477915,
+      "best_alpha_prediction_rmse": 16.77217190480841,
+      "mean_pf_std": 7.12357234954834
+    },
+    {
+      "well_id": "23b9beb0",
+      "rows": 800,
+      "baseline_rmse": 5.498194896964015,
+      "pf_rmse": 11.041914678445755,
+      "best_alpha_prediction_rmse": 6.355805361623204,
+      "mean_pf_std": 5.260171890258789
+    },
+    {
+      "well_id": "24d8997e",
+      "rows": 800,
+      "baseline_rmse": 5.6377896267068115,
+      "pf_rmse": 6.439702146243241,
+      "best_alpha_prediction_rmse": 5.881052983076547,
+      "mean_pf_std": 6.186313629150391
+    },
+    {
+      "well_id": "25050f63",
+      "rows": 800,
+      "baseline_rmse": 37.98641541558066,
+      "pf_rmse": 5.583168420708764,
+      "best_alpha_prediction_rmse": 24.78633940535873,
+      "mean_pf_std": 2.2244904041290283
+    },
+    {
+      "well_id": "25939962",
+      "rows": 800,
+      "baseline_rmse": 11.092551825436772,
+      "pf_rmse": 22.278628854308124,
+      "best_alpha_prediction_rmse": 14.960363843887569,
+      "mean_pf_std": 5.116588592529297
+    },
+    {
+      "well_id": "25fd32b3",
+      "rows": 800,
+      "baseline_rmse": 3.1774614867851882,
+      "pf_rmse": 1.127714984602244,
+      "best_alpha_prediction_rmse": 1.9742618868588269,
+      "mean_pf_std": 0.8249633312225342
+    },
+    {
+      "well_id": "261785ee",
+      "rows": 800,
+      "baseline_rmse": 23.575710978145747,
+      "pf_rmse": 18.122058106782475,
+      "best_alpha_prediction_rmse": 20.040243007252943,
+      "mean_pf_std": 1.0849612951278687
+    },
+    {
+      "well_id": "264feceb",
+      "rows": 800,
+      "baseline_rmse": 10.859876138796539,
+      "pf_rmse": 7.59486689899243,
+      "best_alpha_prediction_rmse": 9.27635414353373,
+      "mean_pf_std": 4.880551338195801
+    },
+    {
+      "well_id": "26623a50",
+      "rows": 800,
+      "baseline_rmse": 21.667072898756203,
+      "pf_rmse": 34.26613967524266,
+      "best_alpha_prediction_rmse": 26.635805371374484,
+      "mean_pf_std": 20.3343505859375
+    },
+    {
+      "well_id": "26d3a96a",
+      "rows": 800,
+      "baseline_rmse": 9.073917187465513,
+      "pf_rmse": 13.084323211448124,
+      "best_alpha_prediction_rmse": 10.49884422395802,
+      "mean_pf_std": 9.043587684631348
+    },
+    {
+      "well_id": "272abef3",
+      "rows": 800,
+      "baseline_rmse": 10.017803888577824,
+      "pf_rmse": 11.721153125458084,
+      "best_alpha_prediction_rmse": 10.624349383404361,
+      "mean_pf_std": 6.374650955200195
+    },
+    {
+      "well_id": "27300fd5",
+      "rows": 800,
+      "baseline_rmse": 17.380933044575066,
+      "pf_rmse": 4.972609484819695,
+      "best_alpha_prediction_rmse": 11.812449166416114,
+      "mean_pf_std": 17.91326904296875
+    },
+    {
+      "well_id": "276b012a",
+      "rows": 800,
+      "baseline_rmse": 27.073143271976683,
+      "pf_rmse": 12.568177833504148,
+      "best_alpha_prediction_rmse": 20.09299278461414,
+      "mean_pf_std": 8.527915000915527
+    },
+    {
+      "well_id": "27c3155b",
+      "rows": 800,
+      "baseline_rmse": 18.106236335859776,
+      "pf_rmse": 8.775050179515356,
+      "best_alpha_prediction_rmse": 14.186045740016658,
+      "mean_pf_std": 5.948324680328369
+    },
+    {
+      "well_id": "27ebb9b9",
+      "rows": 800,
+      "baseline_rmse": 9.982867267223536,
+      "pf_rmse": 7.899869698860624,
+      "best_alpha_prediction_rmse": 8.618279712166565,
+      "mean_pf_std": 8.29963493347168
+    },
+    {
+      "well_id": "283269ac",
+      "rows": 800,
+      "baseline_rmse": 1.115562526262268,
+      "pf_rmse": 2.892141277266948,
+      "best_alpha_prediction_rmse": 1.5163084707757197,
+      "mean_pf_std": 3.4481420516967773
+    },
+    {
+      "well_id": "28473855",
+      "rows": 800,
+      "baseline_rmse": 4.555320213771998,
+      "pf_rmse": 5.764477871981259,
+      "best_alpha_prediction_rmse": 4.621573914269025,
+      "mean_pf_std": 1.9239059686660767
+    },
+    {
+      "well_id": "28f4eda9",
+      "rows": 800,
+      "baseline_rmse": 12.159010280447129,
+      "pf_rmse": 4.756636901834037,
+      "best_alpha_prediction_rmse": 8.6682118319496,
+      "mean_pf_std": 4.64126443862915
+    },
+    {
+      "well_id": "29b24409",
+      "rows": 800,
+      "baseline_rmse": 13.754564733206374,
+      "pf_rmse": 8.974238111287617,
+      "best_alpha_prediction_rmse": 11.727897730533462,
+      "mean_pf_std": 1.4494656324386597
+    },
+    {
+      "well_id": "29de15c8",
+      "rows": 800,
+      "baseline_rmse": 4.5836066176101635,
+      "pf_rmse": 4.47745939804344,
+      "best_alpha_prediction_rmse": 4.265150149915778,
+      "mean_pf_std": 2.523543119430542
+    },
+    {
+      "well_id": "2ab29395",
+      "rows": 800,
+      "baseline_rmse": 2.4588012831459256,
+      "pf_rmse": 3.7587079402105177,
+      "best_alpha_prediction_rmse": 1.5299199338944132,
+      "mean_pf_std": 4.734923839569092
+    },
+    {
+      "well_id": "2ac7cb6b",
+      "rows": 800,
+      "baseline_rmse": 19.614740264020536,
+      "pf_rmse": 20.454726435708253,
+      "best_alpha_prediction_rmse": 19.301614088563547,
+      "mean_pf_std": 4.032081604003906
+    },
+    {
+      "well_id": "2acc78d4",
+      "rows": 800,
+      "baseline_rmse": 13.619883791721314,
+      "pf_rmse": 17.99768558593725,
+      "best_alpha_prediction_rmse": 15.00636324156061,
+      "mean_pf_std": 3.717831611633301
+    },
+    {
+      "well_id": "2b034622",
+      "rows": 800,
+      "baseline_rmse": 6.803844391224249,
+      "pf_rmse": 7.776201103844968,
+      "best_alpha_prediction_rmse": 6.4904553029994725,
+      "mean_pf_std": 14.775912284851074
+    },
+    {
+      "well_id": "2b06ad65",
+      "rows": 800,
+      "baseline_rmse": 2.744523182630995,
+      "pf_rmse": 10.500083665887317,
+      "best_alpha_prediction_rmse": 5.65780172339349,
+      "mean_pf_std": 4.396686553955078
+    },
+    {
+      "well_id": "2b547943",
+      "rows": 800,
+      "baseline_rmse": 12.239617814702676,
+      "pf_rmse": 4.565255609136376,
+      "best_alpha_prediction_rmse": 8.933271789157818,
+      "mean_pf_std": 1.6535519361495972
+    },
+    {
+      "well_id": "2be5c96a",
+      "rows": 800,
+      "baseline_rmse": 3.659865827458621,
+      "pf_rmse": 6.102982818665267,
+      "best_alpha_prediction_rmse": 4.241665824751991,
+      "mean_pf_std": 3.005664587020874
+    },
+    {
+      "well_id": "2bff06cf",
+      "rows": 800,
+      "baseline_rmse": 28.413645392663888,
+      "pf_rmse": 15.780097010811643,
+      "best_alpha_prediction_rmse": 21.275604890779793,
+      "mean_pf_std": 2.036094903945923
+    },
+    {
+      "well_id": "2c0c4a4e",
+      "rows": 800,
+      "baseline_rmse": 8.04613127533926,
+      "pf_rmse": 3.1737168349605915,
+      "best_alpha_prediction_rmse": 5.8248155895253895,
+      "mean_pf_std": 1.6699762344360352
+    },
+    {
+      "well_id": "2cee0cba",
+      "rows": 800,
+      "baseline_rmse": 10.662913544149506,
+      "pf_rmse": 7.494358981821012,
+      "best_alpha_prediction_rmse": 8.97412511561954,
+      "mean_pf_std": 7.41490364074707
+    },
+    {
+      "well_id": "2d0c268a",
+      "rows": 800,
+      "baseline_rmse": 14.871961088740733,
+      "pf_rmse": 17.129741753859715,
+      "best_alpha_prediction_rmse": 15.697270342290505,
+      "mean_pf_std": 4.109804153442383
+    },
+    {
+      "well_id": "2d179ded",
+      "rows": 800,
+      "baseline_rmse": 7.745569007503417,
+      "pf_rmse": 11.408611472371916,
+      "best_alpha_prediction_rmse": 8.959791586804936,
+      "mean_pf_std": 3.365403413772583
+    },
+    {
+      "well_id": "2d196986",
+      "rows": 800,
+      "baseline_rmse": 11.992631362631865,
+      "pf_rmse": 6.54477918483646,
+      "best_alpha_prediction_rmse": 7.962828040364015,
+      "mean_pf_std": 12.490943908691406
+    },
+    {
+      "well_id": "2d2d0c6b",
+      "rows": 800,
+      "baseline_rmse": 3.047135909341439,
+      "pf_rmse": 4.911240247326283,
+      "best_alpha_prediction_rmse": 3.4730623334243242,
+      "mean_pf_std": 10.0625581741333
+    },
+    {
+      "well_id": "2d35f86d",
+      "rows": 800,
+      "baseline_rmse": 11.213169283257967,
+      "pf_rmse": 39.47991070935882,
+      "best_alpha_prediction_rmse": 19.064633959058053,
+      "mean_pf_std": 9.329492568969727
+    },
+    {
+      "well_id": "2d9f6cb9",
+      "rows": 800,
+      "baseline_rmse": 9.907444599895259,
+      "pf_rmse": 6.456389257840016,
+      "best_alpha_prediction_rmse": 5.563953348033727,
+      "mean_pf_std": 3.3065216541290283
+    },
+    {
+      "well_id": "2ddad940",
+      "rows": 800,
+      "baseline_rmse": 7.643850502201349,
+      "pf_rmse": 7.420206622317622,
+      "best_alpha_prediction_rmse": 7.3909232868032,
+      "mean_pf_std": 0.9333427548408508
+    },
+    {
+      "well_id": "2e29e833",
+      "rows": 800,
+      "baseline_rmse": 4.305655350814784,
+      "pf_rmse": 6.110960480202976,
+      "best_alpha_prediction_rmse": 4.8726336064910365,
+      "mean_pf_std": 5.533102035522461
+    },
+    {
+      "well_id": "2e43c2ea",
+      "rows": 800,
+      "baseline_rmse": 7.484988368394177,
+      "pf_rmse": 7.8519993449902445,
+      "best_alpha_prediction_rmse": 7.256746827461073,
+      "mean_pf_std": 4.060152053833008
+    },
+    {
+      "well_id": "2e63d9de",
+      "rows": 800,
+      "baseline_rmse": 13.772946239821025,
+      "pf_rmse": 11.02263172068483,
+      "best_alpha_prediction_rmse": 12.462135660729015,
+      "mean_pf_std": 5.06056022644043
+    },
+    {
+      "well_id": "2ee0235b",
+      "rows": 800,
+      "baseline_rmse": 6.799861818448423,
+      "pf_rmse": 11.034963815953779,
+      "best_alpha_prediction_rmse": 8.338205788416932,
+      "mean_pf_std": 10.357043266296387
+    },
+    {
+      "well_id": "2f19d536",
+      "rows": 800,
+      "baseline_rmse": 6.53381329125701,
+      "pf_rmse": 11.882168482363861,
+      "best_alpha_prediction_rmse": 8.553640037215656,
+      "mean_pf_std": 8.212772369384766
+    },
+    {
+      "well_id": "2f8e53c3",
+      "rows": 800,
+      "baseline_rmse": 3.295680733930015,
+      "pf_rmse": 2.2979830729932806,
+      "best_alpha_prediction_rmse": 2.538172861009744,
+      "mean_pf_std": 2.0379655361175537
+    },
+    {
+      "well_id": "2fa01aa6",
+      "rows": 800,
+      "baseline_rmse": 18.781077921008706,
+      "pf_rmse": 49.651593144399286,
+      "best_alpha_prediction_rmse": 30.933231953235534,
+      "mean_pf_std": 4.9303083419799805
+    },
+    {
+      "well_id": "2fd68f7b",
+      "rows": 800,
+      "baseline_rmse": 60.725975336960246,
+      "pf_rmse": 41.20292377432907,
+      "best_alpha_prediction_rmse": 52.87616617573144,
+      "mean_pf_std": 5.604368686676025
+    },
+    {
+      "well_id": "2fe023be",
+      "rows": 800,
+      "baseline_rmse": 12.908791355118685,
+      "pf_rmse": 25.99466223036037,
+      "best_alpha_prediction_rmse": 17.789189506159467,
+      "mean_pf_std": 1.3365700244903564
+    },
+    {
+      "well_id": "30d75030",
+      "rows": 800,
+      "baseline_rmse": 17.619673688096317,
+      "pf_rmse": 15.792362305718154,
+      "best_alpha_prediction_rmse": 16.83250713989116,
+      "mean_pf_std": 5.713005542755127
+    },
+    {
+      "well_id": "310c71a5",
+      "rows": 800,
+      "baseline_rmse": 8.84494320219233,
+      "pf_rmse": 9.902218413866693,
+      "best_alpha_prediction_rmse": 9.218090353376978,
+      "mean_pf_std": 1.6590774059295654
+    },
+    {
+      "well_id": "32fe84c9",
+      "rows": 800,
+      "baseline_rmse": 22.24946686159025,
+      "pf_rmse": 5.501313157621317,
+      "best_alpha_prediction_rmse": 14.523479090191717,
+      "mean_pf_std": 4.951535224914551
+    },
+    {
+      "well_id": "33c40295",
+      "rows": 800,
+      "baseline_rmse": 8.69934448679922,
+      "pf_rmse": 9.282257200092571,
+      "best_alpha_prediction_rmse": 8.80246947357116,
+      "mean_pf_std": 8.040223121643066
+    },
+    {
+      "well_id": "3407f5bf",
+      "rows": 800,
+      "baseline_rmse": 21.33761070562907,
+      "pf_rmse": 16.21447402379833,
+      "best_alpha_prediction_rmse": 19.18268359732975,
+      "mean_pf_std": 6.79965877532959
+    },
+    {
+      "well_id": "3417285d",
+      "rows": 800,
+      "baseline_rmse": 34.4118669756522,
+      "pf_rmse": 31.595186009266925,
+      "best_alpha_prediction_rmse": 33.26131722191917,
+      "mean_pf_std": 6.758861541748047
+    },
+    {
+      "well_id": "347242c8",
+      "rows": 800,
+      "baseline_rmse": 2.241511738760182,
+      "pf_rmse": 8.138792573870019,
+      "best_alpha_prediction_rmse": 3.4769048476147546,
+      "mean_pf_std": 8.578333854675293
+    },
+    {
+      "well_id": "353e5502",
+      "rows": 800,
+      "baseline_rmse": 5.636233993102326,
+      "pf_rmse": 7.966391750790038,
+      "best_alpha_prediction_rmse": 6.189032118023429,
+      "mean_pf_std": 6.9297990798950195
+    },
+    {
+      "well_id": "357c12f9",
+      "rows": 800,
+      "baseline_rmse": 5.62209496095575,
+      "pf_rmse": 16.941138823451876,
+      "best_alpha_prediction_rmse": 6.0988012904012034,
+      "mean_pf_std": 4.880155086517334
+    },
+    {
+      "well_id": "3584a6eb",
+      "rows": 800,
+      "baseline_rmse": 9.105939284335507,
+      "pf_rmse": 3.362658611521909,
+      "best_alpha_prediction_rmse": 6.481704799829563,
+      "mean_pf_std": 1.6302684545516968
+    },
+    {
+      "well_id": "35b30c7f",
+      "rows": 800,
+      "baseline_rmse": 19.145198131647053,
+      "pf_rmse": 16.487945896817493,
+      "best_alpha_prediction_rmse": 17.40062188718255,
+      "mean_pf_std": 5.656243801116943
+    },
+    {
+      "well_id": "35b3ef6a",
+      "rows": 800,
+      "baseline_rmse": 26.045636767510018,
+      "pf_rmse": 6.725611833217755,
+      "best_alpha_prediction_rmse": 18.149418525902323,
+      "mean_pf_std": 4.685430526733398
+    },
+    {
+      "well_id": "367456ce",
+      "rows": 800,
+      "baseline_rmse": 12.626814226082587,
+      "pf_rmse": 13.434299956920565,
+      "best_alpha_prediction_rmse": 7.7530928690638445,
+      "mean_pf_std": 9.124771118164062
+    },
+    {
+      "well_id": "368131f9",
+      "rows": 800,
+      "baseline_rmse": 20.86817928090513,
+      "pf_rmse": 9.506348997111,
+      "best_alpha_prediction_rmse": 15.984475782688108,
+      "mean_pf_std": 17.476215362548828
+    },
+    {
+      "well_id": "368fe682",
+      "rows": 800,
+      "baseline_rmse": 13.873171212811613,
+      "pf_rmse": 19.549550220419047,
+      "best_alpha_prediction_rmse": 15.958232606904364,
+      "mean_pf_std": 4.105223178863525
+    },
+    {
+      "well_id": "3690a146",
+      "rows": 800,
+      "baseline_rmse": 7.130132484743925,
+      "pf_rmse": 8.449226441309923,
+      "best_alpha_prediction_rmse": 7.59922411835157,
+      "mean_pf_std": 8.838220596313477
+    },
+    {
+      "well_id": "37344c2a",
+      "rows": 800,
+      "baseline_rmse": 13.233364113104898,
+      "pf_rmse": 9.519498584316219,
+      "best_alpha_prediction_rmse": 11.579624580050801,
+      "mean_pf_std": 3.7027206420898438
+    },
+    {
+      "well_id": "373ef48b",
+      "rows": 800,
+      "baseline_rmse": 5.205450340748366,
+      "pf_rmse": 5.12405761139441,
+      "best_alpha_prediction_rmse": 5.046180380729426,
+      "mean_pf_std": 10.566882133483887
+    },
+    {
+      "well_id": "374be387",
+      "rows": 800,
+      "baseline_rmse": 6.7123944963775175,
+      "pf_rmse": 10.895301060503638,
+      "best_alpha_prediction_rmse": 6.725944919207798,
+      "mean_pf_std": 8.079293251037598
+    },
+    {
+      "well_id": "37d36812",
+      "rows": 800,
+      "baseline_rmse": 21.85811287314222,
+      "pf_rmse": 11.611680204398695,
+      "best_alpha_prediction_rmse": 17.566037086944302,
+      "mean_pf_std": 10.746728897094727
+    },
+    {
+      "well_id": "38991fd4",
+      "rows": 800,
+      "baseline_rmse": 14.85988273422727,
+      "pf_rmse": 21.436299000395273,
+      "best_alpha_prediction_rmse": 17.36654443463644,
+      "mean_pf_std": 4.178005218505859
+    },
+    {
+      "well_id": "389ae58f",
+      "rows": 800,
+      "baseline_rmse": 49.74893281267509,
+      "pf_rmse": 13.005240620524374,
+      "best_alpha_prediction_rmse": 34.74083994219231,
+      "mean_pf_std": 7.457837104797363
+    },
+    {
+      "well_id": "3932faa6",
+      "rows": 800,
+      "baseline_rmse": 13.151099616571944,
+      "pf_rmse": 17.01481869760958,
+      "best_alpha_prediction_rmse": 14.458120317327356,
+      "mean_pf_std": 6.199131011962891
+    },
+    {
+      "well_id": "398dce4b",
+      "rows": 800,
+      "baseline_rmse": 4.567235364528692,
+      "pf_rmse": 3.3882435661588617,
+      "best_alpha_prediction_rmse": 3.869192826287167,
+      "mean_pf_std": 1.4959415197372437
+    },
+    {
+      "well_id": "39b51819",
+      "rows": 800,
+      "baseline_rmse": 3.1586418165088093,
+      "pf_rmse": 4.4306412602174365,
+      "best_alpha_prediction_rmse": 1.9862102031759679,
+      "mean_pf_std": 3.1533777713775635
+    },
+    {
+      "well_id": "3a0af893",
+      "rows": 800,
+      "baseline_rmse": 18.6866876779975,
+      "pf_rmse": 22.317177436199003,
+      "best_alpha_prediction_rmse": 20.08966688752559,
+      "mean_pf_std": 2.4892377853393555
+    },
+    {
+      "well_id": "3a223519",
+      "rows": 800,
+      "baseline_rmse": 9.402235219616829,
+      "pf_rmse": 3.3923922548105,
+      "best_alpha_prediction_rmse": 6.762166445124772,
+      "mean_pf_std": 3.8581855297088623
+    },
+    {
+      "well_id": "3a7dd95d",
+      "rows": 800,
+      "baseline_rmse": 13.00510906817,
+      "pf_rmse": 11.205437258604022,
+      "best_alpha_prediction_rmse": 12.216718940776616,
+      "mean_pf_std": 7.213232040405273
+    },
+    {
+      "well_id": "3a824aa7",
+      "rows": 800,
+      "baseline_rmse": 5.687873570149317,
+      "pf_rmse": 2.1300641821951825,
+      "best_alpha_prediction_rmse": 3.843842004719221,
+      "mean_pf_std": 2.1124019622802734
+    },
+    {
+      "well_id": "3a86fe8d",
+      "rows": 800,
+      "baseline_rmse": 11.628494157670588,
+      "pf_rmse": 7.574406169181912,
+      "best_alpha_prediction_rmse": 9.908677107979392,
+      "mean_pf_std": 5.4759931564331055
+    },
+    {
+      "well_id": "3aaa2b30",
+      "rows": 800,
+      "baseline_rmse": 17.519391991447286,
+      "pf_rmse": 10.228350262891613,
+      "best_alpha_prediction_rmse": 14.202714184131716,
+      "mean_pf_std": 21.439584732055664
+    },
+    {
+      "well_id": "3ac16ad0",
+      "rows": 800,
+      "baseline_rmse": 8.876397615305544,
+      "pf_rmse": 12.144255167436157,
+      "best_alpha_prediction_rmse": 7.677319262983959,
+      "mean_pf_std": 1.1693025827407837
+    },
+    {
+      "well_id": "3b21ea64",
+      "rows": 800,
+      "baseline_rmse": 8.364931843715329,
+      "pf_rmse": 5.555891341058148,
+      "best_alpha_prediction_rmse": 6.139219805727058,
+      "mean_pf_std": 10.481391906738281
+    },
+    {
+      "well_id": "3bbe1f5d",
+      "rows": 800,
+      "baseline_rmse": 10.573512673184396,
+      "pf_rmse": 1.8053984165924915,
+      "best_alpha_prediction_rmse": 6.462779576450652,
+      "mean_pf_std": 1.6117072105407715
+    },
+    {
+      "well_id": "3bfee975",
+      "rows": 800,
+      "baseline_rmse": 7.838175991581225,
+      "pf_rmse": 10.416730893023589,
+      "best_alpha_prediction_rmse": 8.750982794812044,
+      "mean_pf_std": 3.8838284015655518
+    },
+    {
+      "well_id": "3c3dbcbc",
+      "rows": 800,
+      "baseline_rmse": 8.29150251763816,
+      "pf_rmse": 16.161307760767745,
+      "best_alpha_prediction_rmse": 10.98009903889102,
+      "mean_pf_std": 1.926383376121521
+    },
+    {
+      "well_id": "3d96d897",
+      "rows": 800,
+      "baseline_rmse": 3.6085844697058387,
+      "pf_rmse": 8.61535516998423,
+      "best_alpha_prediction_rmse": 5.283413915328708,
+      "mean_pf_std": 1.2489516735076904
+    },
+    {
+      "well_id": "3df4b19e",
+      "rows": 800,
+      "baseline_rmse": 8.667578410375379,
+      "pf_rmse": 8.478151475393844,
+      "best_alpha_prediction_rmse": 5.059786310948834,
+      "mean_pf_std": 3.583840847015381
+    },
+    {
+      "well_id": "3e011332",
+      "rows": 800,
+      "baseline_rmse": 17.414208817800812,
+      "pf_rmse": 13.35326646711465,
+      "best_alpha_prediction_rmse": 15.352093603333957,
+      "mean_pf_std": 6.068753719329834
+    },
+    {
+      "well_id": "3e678ea7",
+      "rows": 800,
+      "baseline_rmse": 10.224913043640845,
+      "pf_rmse": 7.626259966658904,
+      "best_alpha_prediction_rmse": 7.395618931713876,
+      "mean_pf_std": 9.09736442565918
+    },
+    {
+      "well_id": "3ef6372a",
+      "rows": 800,
+      "baseline_rmse": 6.226268194111137,
+      "pf_rmse": 2.3288630438956806,
+      "best_alpha_prediction_rmse": 3.6020208685667012,
+      "mean_pf_std": 1.9392660856246948
+    },
+    {
+      "well_id": "3ef98781",
+      "rows": 800,
+      "baseline_rmse": 12.427950675795662,
+      "pf_rmse": 6.784119464104552,
+      "best_alpha_prediction_rmse": 7.155486939049784,
+      "mean_pf_std": 16.611059188842773
+    },
+    {
+      "well_id": "3f603129",
+      "rows": 800,
+      "baseline_rmse": 29.698524881296205,
+      "pf_rmse": 24.09834152456353,
+      "best_alpha_prediction_rmse": 27.324499644714265,
+      "mean_pf_std": 2.2078211307525635
+    },
+    {
+      "well_id": "404c4384",
+      "rows": 800,
+      "baseline_rmse": 3.6017156502140066,
+      "pf_rmse": 3.742753617364321,
+      "best_alpha_prediction_rmse": 3.5922104403714776,
+      "mean_pf_std": 2.796588182449341
+    },
+    {
+      "well_id": "4121c517",
+      "rows": 800,
+      "baseline_rmse": 11.221233622022138,
+      "pf_rmse": 20.036812302346675,
+      "best_alpha_prediction_rmse": 14.34771031372592,
+      "mean_pf_std": 7.372794151306152
+    },
+    {
+      "well_id": "41fb0192",
+      "rows": 800,
+      "baseline_rmse": 3.5579473717306653,
+      "pf_rmse": 12.365485595330524,
+      "best_alpha_prediction_rmse": 6.964928916252373,
+      "mean_pf_std": 3.1198716163635254
+    },
+    {
+      "well_id": "42669188",
+      "rows": 800,
+      "baseline_rmse": 23.03422106616563,
+      "pf_rmse": 8.993357662533755,
+      "best_alpha_prediction_rmse": 13.146321399369524,
+      "mean_pf_std": 6.284780979156494
+    },
+    {
+      "well_id": "42c538a1",
+      "rows": 800,
+      "baseline_rmse": 26.17998542780427,
+      "pf_rmse": 8.52725053462828,
+      "best_alpha_prediction_rmse": 18.901572388413044,
+      "mean_pf_std": 7.3595123291015625
+    },
+    {
+      "well_id": "43b06c70",
+      "rows": 800,
+      "baseline_rmse": 8.764972083526008,
+      "pf_rmse": 10.024972681068459,
+      "best_alpha_prediction_rmse": 6.924900441650193,
+      "mean_pf_std": 10.13847827911377
+    },
+    {
+      "well_id": "43c7f85a",
+      "rows": 800,
+      "baseline_rmse": 11.176080904100942,
+      "pf_rmse": 3.9483308110281436,
+      "best_alpha_prediction_rmse": 7.072603567496509,
+      "mean_pf_std": 3.587069034576416
+    },
+    {
+      "well_id": "43e16325",
+      "rows": 800,
+      "baseline_rmse": 45.79220954349093,
+      "pf_rmse": 36.26535650505704,
+      "best_alpha_prediction_rmse": 41.894059692640546,
+      "mean_pf_std": 9.436609268188477
+    },
+    {
+      "well_id": "44441e54",
+      "rows": 800,
+      "baseline_rmse": 3.669001124284343,
+      "pf_rmse": 9.107280868550259,
+      "best_alpha_prediction_rmse": 5.157684914217275,
+      "mean_pf_std": 10.88119888305664
+    },
+    {
+      "well_id": "445af6c2",
+      "rows": 800,
+      "baseline_rmse": 29.949827685230012,
+      "pf_rmse": 7.147964894753308,
+      "best_alpha_prediction_rmse": 20.668728448871093,
+      "mean_pf_std": 3.935476779937744
+    },
+    {
+      "well_id": "4463446c",
+      "rows": 800,
+      "baseline_rmse": 18.85699391472526,
+      "pf_rmse": 30.389379323122377,
+      "best_alpha_prediction_rmse": 22.801017501401624,
+      "mean_pf_std": 19.84952163696289
+    },
+    {
+      "well_id": "44a94013",
+      "rows": 800,
+      "baseline_rmse": 23.291238422420328,
+      "pf_rmse": 11.149298552329418,
+      "best_alpha_prediction_rmse": 14.20466214343266,
+      "mean_pf_std": 3.4643118381500244
+    },
+    {
+      "well_id": "45fb3e21",
+      "rows": 800,
+      "baseline_rmse": 25.159751874273308,
+      "pf_rmse": 27.686822052456915,
+      "best_alpha_prediction_rmse": 26.157527605183944,
+      "mean_pf_std": 1.6258256435394287
+    },
+    {
+      "well_id": "460f859e",
+      "rows": 800,
+      "baseline_rmse": 20.01187681103398,
+      "pf_rmse": 24.152786877175025,
+      "best_alpha_prediction_rmse": 20.33971116606058,
+      "mean_pf_std": 13.29861068725586
+    },
+    {
+      "well_id": "4630ab92",
+      "rows": 800,
+      "baseline_rmse": 10.876234360982105,
+      "pf_rmse": 6.841552740001799,
+      "best_alpha_prediction_rmse": 7.989782082102421,
+      "mean_pf_std": 8.06922721862793
+    },
+    {
+      "well_id": "463c38f2",
+      "rows": 800,
+      "baseline_rmse": 6.313078280442955,
+      "pf_rmse": 7.148898989696681,
+      "best_alpha_prediction_rmse": 6.482919798313509,
+      "mean_pf_std": 6.582620143890381
+    },
+    {
+      "well_id": "4654e7de",
+      "rows": 800,
+      "baseline_rmse": 5.260918943017485,
+      "pf_rmse": 19.820730684264728,
+      "best_alpha_prediction_rmse": 8.747125209803228,
+      "mean_pf_std": 2.1364798545837402
+    },
+    {
+      "well_id": "466fc788",
+      "rows": 800,
+      "baseline_rmse": 16.96549021911873,
+      "pf_rmse": 8.48524919994639,
+      "best_alpha_prediction_rmse": 13.096945880444546,
+      "mean_pf_std": 5.0313191413879395
+    },
+    {
+      "well_id": "46a301e9",
+      "rows": 800,
+      "baseline_rmse": 10.712157450765295,
+      "pf_rmse": 2.544518994655722,
+      "best_alpha_prediction_rmse": 6.63569261769811,
+      "mean_pf_std": 3.032360315322876
+    },
+    {
+      "well_id": "46a7190b",
+      "rows": 800,
+      "baseline_rmse": 13.308177063369966,
+      "pf_rmse": 7.256200388380032,
+      "best_alpha_prediction_rmse": 8.19283150729357,
+      "mean_pf_std": 3.1263539791107178
+    },
+    {
+      "well_id": "46d24a09",
+      "rows": 800,
+      "baseline_rmse": 21.028196216628064,
+      "pf_rmse": 9.084507846202197,
+      "best_alpha_prediction_rmse": 16.01548384330054,
+      "mean_pf_std": 15.726858139038086
+    },
+    {
+      "well_id": "46d41ff6",
+      "rows": 800,
+      "baseline_rmse": 7.152754993706955,
+      "pf_rmse": 5.768607859661923,
+      "best_alpha_prediction_rmse": 5.716253189622729,
+      "mean_pf_std": 3.5293779373168945
+    },
+    {
+      "well_id": "46dfcfca",
+      "rows": 800,
+      "baseline_rmse": 23.315111918024915,
+      "pf_rmse": 9.32407104237463,
+      "best_alpha_prediction_rmse": 17.29381123966439,
+      "mean_pf_std": 9.757753372192383
+    },
+    {
+      "well_id": "47222616",
+      "rows": 800,
+      "baseline_rmse": 12.725791370284236,
+      "pf_rmse": 6.460232136188416,
+      "best_alpha_prediction_rmse": 9.891161131986042,
+      "mean_pf_std": 4.247214317321777
+    },
+    {
+      "well_id": "47ee27ab",
+      "rows": 800,
+      "baseline_rmse": 7.816456246279342,
+      "pf_rmse": 12.782520120328286,
+      "best_alpha_prediction_rmse": 7.562592231861686,
+      "mean_pf_std": 2.5528724193573
+    },
+    {
+      "well_id": "481de5fc",
+      "rows": 800,
+      "baseline_rmse": 13.66290681004601,
+      "pf_rmse": 7.3353931800221766,
+      "best_alpha_prediction_rmse": 10.074353933806442,
+      "mean_pf_std": 6.3612236976623535
+    },
+    {
+      "well_id": "48c1f673",
+      "rows": 800,
+      "baseline_rmse": 18.47288607324246,
+      "pf_rmse": 13.029800952070216,
+      "best_alpha_prediction_rmse": 16.16954888493133,
+      "mean_pf_std": 1.7171517610549927
+    },
+    {
+      "well_id": "4936af16",
+      "rows": 800,
+      "baseline_rmse": 5.122544558127271,
+      "pf_rmse": 6.146035066662777,
+      "best_alpha_prediction_rmse": 4.370475601418825,
+      "mean_pf_std": 5.244462966918945
+    },
+    {
+      "well_id": "493b5b31",
+      "rows": 800,
+      "baseline_rmse": 20.804392595074802,
+      "pf_rmse": 22.164037839165417,
+      "best_alpha_prediction_rmse": 21.244634167817082,
+      "mean_pf_std": 12.913185119628906
+    },
+    {
+      "well_id": "49dbc14c",
+      "rows": 800,
+      "baseline_rmse": 5.471498035273474,
+      "pf_rmse": 9.587985805923655,
+      "best_alpha_prediction_rmse": 6.942875506506742,
+      "mean_pf_std": 5.081061840057373
+    },
+    {
+      "well_id": "4a035ec2",
+      "rows": 800,
+      "baseline_rmse": 18.38006769234018,
+      "pf_rmse": 2.3285135851233836,
+      "best_alpha_prediction_rmse": 10.611969424881023,
+      "mean_pf_std": 2.5276997089385986
+    },
+    {
+      "well_id": "4a335117",
+      "rows": 800,
+      "baseline_rmse": 25.02460398787626,
+      "pf_rmse": 21.5131272725385,
+      "best_alpha_prediction_rmse": 23.18961033155233,
+      "mean_pf_std": 7.2219719886779785
+    },
+    {
+      "well_id": "4a8ecc0b",
+      "rows": 800,
+      "baseline_rmse": 11.20625747071729,
+      "pf_rmse": 17.477532860113776,
+      "best_alpha_prediction_rmse": 13.612397911614627,
+      "mean_pf_std": 5.239553451538086
+    },
+    {
+      "well_id": "4b462989",
+      "rows": 800,
+      "baseline_rmse": 6.602483547878172,
+      "pf_rmse": 11.04221065841794,
+      "best_alpha_prediction_rmse": 5.94383091937257,
+      "mean_pf_std": 4.788519382476807
+    },
+    {
+      "well_id": "4b831d20",
+      "rows": 800,
+      "baseline_rmse": 16.40797900793994,
+      "pf_rmse": 22.787229295560156,
+      "best_alpha_prediction_rmse": 18.61219601231849,
+      "mean_pf_std": 13.149382591247559
+    },
+    {
+      "well_id": "4c2208f5",
+      "rows": 800,
+      "baseline_rmse": 37.36929208421053,
+      "pf_rmse": 37.85360264271394,
+      "best_alpha_prediction_rmse": 37.47194845291135,
+      "mean_pf_std": 5.577994346618652
+    },
+    {
+      "well_id": "4c3168cf",
+      "rows": 800,
+      "baseline_rmse": 4.398922410659919,
+      "pf_rmse": 19.00367836880772,
+      "best_alpha_prediction_rmse": 9.650630251902882,
+      "mean_pf_std": 1.8294105529785156
+    },
+    {
+      "well_id": "4c3df468",
+      "rows": 800,
+      "baseline_rmse": 20.722272112390222,
+      "pf_rmse": 13.000379281845596,
+      "best_alpha_prediction_rmse": 9.741881459263542,
+      "mean_pf_std": 11.837074279785156
+    },
+    {
+      "well_id": "4caa7289",
+      "rows": 800,
+      "baseline_rmse": 9.681326478070915,
+      "pf_rmse": 13.422811342769746,
+      "best_alpha_prediction_rmse": 10.769401001530625,
+      "mean_pf_std": 7.853755474090576
+    },
+    {
+      "well_id": "4cd1ac61",
+      "rows": 800,
+      "baseline_rmse": 14.741567114795735,
+      "pf_rmse": 13.460318485942127,
+      "best_alpha_prediction_rmse": 14.01022368584221,
+      "mean_pf_std": 5.968687057495117
+    },
+    {
+      "well_id": "4cecf7b3",
+      "rows": 800,
+      "baseline_rmse": 8.80022338494876,
+      "pf_rmse": 29.698242049335843,
+      "best_alpha_prediction_rmse": 12.54917711727774,
+      "mean_pf_std": 7.142684459686279
+    },
+    {
+      "well_id": "4ddde4c1",
+      "rows": 800,
+      "baseline_rmse": 4.5859563342880225,
+      "pf_rmse": 9.030815276094222,
+      "best_alpha_prediction_rmse": 3.9738794955241796,
+      "mean_pf_std": 1.3761608600616455
+    },
+    {
+      "well_id": "4e050c92",
+      "rows": 800,
+      "baseline_rmse": 6.761475939097798,
+      "pf_rmse": 8.22070501877528,
+      "best_alpha_prediction_rmse": 7.157324774333531,
+      "mean_pf_std": 6.814925670623779
+    },
+    {
+      "well_id": "4ed93db6",
+      "rows": 800,
+      "baseline_rmse": 9.133357323569914,
+      "pf_rmse": 11.743911003085614,
+      "best_alpha_prediction_rmse": 10.121502595615212,
+      "mean_pf_std": 21.08883285522461
+    },
+    {
+      "well_id": "4f3eb9e9",
+      "rows": 800,
+      "baseline_rmse": 33.07678692262966,
+      "pf_rmse": 15.48320489784327,
+      "best_alpha_prediction_rmse": 25.985237390538984,
+      "mean_pf_std": 5.205787181854248
+    },
+    {
+      "well_id": "4f4ac5ce",
+      "rows": 800,
+      "baseline_rmse": 8.252136215853398,
+      "pf_rmse": 9.445184810138356,
+      "best_alpha_prediction_rmse": 7.598110010025859,
+      "mean_pf_std": 3.812258005142212
+    },
+    {
+      "well_id": "4f4afcc6",
+      "rows": 800,
+      "baseline_rmse": 8.321596443892266,
+      "pf_rmse": 20.223958728614825,
+      "best_alpha_prediction_rmse": 11.875563731747505,
+      "mean_pf_std": 9.917086601257324
+    },
+    {
+      "well_id": "4f69febf",
+      "rows": 800,
+      "baseline_rmse": 14.940667873291533,
+      "pf_rmse": 4.797091910312251,
+      "best_alpha_prediction_rmse": 10.591501794006307,
+      "mean_pf_std": 1.5201374292373657
+    },
+    {
+      "well_id": "4fbe9c06",
+      "rows": 800,
+      "baseline_rmse": 12.694342824660362,
+      "pf_rmse": 8.233775331071293,
+      "best_alpha_prediction_rmse": 10.555546257218074,
+      "mean_pf_std": 4.5909295082092285
+    },
+    {
+      "well_id": "504c8b08",
+      "rows": 800,
+      "baseline_rmse": 20.654995355239876,
+      "pf_rmse": 7.492399507191583,
+      "best_alpha_prediction_rmse": 14.97914014429378,
+      "mean_pf_std": 6.562453746795654
+    },
+    {
+      "well_id": "511e1db0",
+      "rows": 800,
+      "baseline_rmse": 2.6461960669987685,
+      "pf_rmse": 4.3525473914841495,
+      "best_alpha_prediction_rmse": 2.241134812265869,
+      "mean_pf_std": 6.137674331665039
+    },
+    {
+      "well_id": "512943b2",
+      "rows": 800,
+      "baseline_rmse": 4.036101057952187,
+      "pf_rmse": 4.371292377961826,
+      "best_alpha_prediction_rmse": 3.82981055079587,
+      "mean_pf_std": 4.477960109710693
+    },
+    {
+      "well_id": "5138a660",
+      "rows": 800,
+      "baseline_rmse": 5.478510906258794,
+      "pf_rmse": 6.866689991209999,
+      "best_alpha_prediction_rmse": 2.653267446200346,
+      "mean_pf_std": 11.12162971496582
+    },
+    {
+      "well_id": "516088b7",
+      "rows": 800,
+      "baseline_rmse": 6.368400888370599,
+      "pf_rmse": 9.293523970192041,
+      "best_alpha_prediction_rmse": 7.27178117126147,
+      "mean_pf_std": 4.044910907745361
+    },
+    {
+      "well_id": "521a7819",
+      "rows": 800,
+      "baseline_rmse": 25.351227704492594,
+      "pf_rmse": 21.174353556361524,
+      "best_alpha_prediction_rmse": 23.61484529803105,
+      "mean_pf_std": 10.487556457519531
+    },
+    {
+      "well_id": "5254b6db",
+      "rows": 800,
+      "baseline_rmse": 7.292848406144807,
+      "pf_rmse": 6.832306541306882,
+      "best_alpha_prediction_rmse": 7.044362888016452,
+      "mean_pf_std": 1.6462218761444092
+    },
+    {
+      "well_id": "529e88ca",
+      "rows": 800,
+      "baseline_rmse": 15.260673858811726,
+      "pf_rmse": 12.900010643317346,
+      "best_alpha_prediction_rmse": 14.265024605556393,
+      "mean_pf_std": 8.920345306396484
+    },
+    {
+      "well_id": "52f1e77a",
+      "rows": 800,
+      "baseline_rmse": 14.176807966711099,
+      "pf_rmse": 12.952508893454615,
+      "best_alpha_prediction_rmse": 8.99837520040744,
+      "mean_pf_std": 21.338232040405273
+    },
+    {
+      "well_id": "5305524b",
+      "rows": 800,
+      "baseline_rmse": 16.633546528776662,
+      "pf_rmse": 7.7028359206476535,
+      "best_alpha_prediction_rmse": 10.199227652775905,
+      "mean_pf_std": 20.8414249420166
+    },
+    {
+      "well_id": "53134831",
+      "rows": 800,
+      "baseline_rmse": 17.34023552319993,
+      "pf_rmse": 14.047864337855536,
+      "best_alpha_prediction_rmse": 15.975199345799213,
+      "mean_pf_std": 1.1432925462722778
+    },
+    {
+      "well_id": "5397ceb1",
+      "rows": 800,
+      "baseline_rmse": 9.251711098494265,
+      "pf_rmse": 8.173748668937339,
+      "best_alpha_prediction_rmse": 8.64539836398021,
+      "mean_pf_std": 1.9368829727172852
+    },
+    {
+      "well_id": "53f23031",
+      "rows": 800,
+      "baseline_rmse": 10.665675523613585,
+      "pf_rmse": 3.9137198848899786,
+      "best_alpha_prediction_rmse": 7.125882021804271,
+      "mean_pf_std": 3.384439706802368
+    },
+    {
+      "well_id": "543198e8",
+      "rows": 800,
+      "baseline_rmse": 20.53470739078106,
+      "pf_rmse": 37.10595563801633,
+      "best_alpha_prediction_rmse": 26.207000796129616,
+      "mean_pf_std": 37.2166862487793
+    },
+    {
+      "well_id": "54753541",
+      "rows": 800,
+      "baseline_rmse": 16.254137592471675,
+      "pf_rmse": 22.94617314062461,
+      "best_alpha_prediction_rmse": 18.24922370164945,
+      "mean_pf_std": 5.346832752227783
+    },
+    {
+      "well_id": "54a7e3c2",
+      "rows": 800,
+      "baseline_rmse": 11.032265140259627,
+      "pf_rmse": 13.430850342532244,
+      "best_alpha_prediction_rmse": 11.967364703865698,
+      "mean_pf_std": 1.2704005241394043
+    },
+    {
+      "well_id": "5542c301",
+      "rows": 800,
+      "baseline_rmse": 5.498018745421002,
+      "pf_rmse": 5.692385357478251,
+      "best_alpha_prediction_rmse": 5.264578608514016,
+      "mean_pf_std": 12.39346694946289
+    },
+    {
+      "well_id": "5567d551",
+      "rows": 800,
+      "baseline_rmse": 10.289182359400897,
+      "pf_rmse": 6.78162445584084,
+      "best_alpha_prediction_rmse": 6.873846702712505,
+      "mean_pf_std": 6.409945011138916
+    },
+    {
+      "well_id": "55efee7f",
+      "rows": 800,
+      "baseline_rmse": 25.82171140968423,
+      "pf_rmse": 22.98396851730483,
+      "best_alpha_prediction_rmse": 24.585012919376478,
+      "mean_pf_std": 10.265188217163086
+    },
+    {
+      "well_id": "5663b2b7",
+      "rows": 800,
+      "baseline_rmse": 16.275603429673815,
+      "pf_rmse": 18.434331814705168,
+      "best_alpha_prediction_rmse": 16.026807258524283,
+      "mean_pf_std": 17.980281829833984
+    },
+    {
+      "well_id": "5693dde2",
+      "rows": 800,
+      "baseline_rmse": 6.954614655032494,
+      "pf_rmse": 14.387904324522875,
+      "best_alpha_prediction_rmse": 3.859542399761553,
+      "mean_pf_std": 12.880973815917969
+    },
+    {
+      "well_id": "56b00794",
+      "rows": 800,
+      "baseline_rmse": 29.93299509320831,
+      "pf_rmse": 11.319565339719968,
+      "best_alpha_prediction_rmse": 22.29917618030157,
+      "mean_pf_std": 7.071071147918701
+    },
+    {
+      "well_id": "57796579",
+      "rows": 800,
+      "baseline_rmse": 12.81568594535677,
+      "pf_rmse": 3.6224244641153223,
+      "best_alpha_prediction_rmse": 8.910235022829974,
+      "mean_pf_std": 2.192788600921631
+    },
+    {
+      "well_id": "577eec7c",
+      "rows": 800,
+      "baseline_rmse": 18.866115806520195,
+      "pf_rmse": 11.803591126710977,
+      "best_alpha_prediction_rmse": 15.60791348699605,
+      "mean_pf_std": 4.137970447540283
+    },
+    {
+      "well_id": "57f05c51",
+      "rows": 800,
+      "baseline_rmse": 36.306648848729694,
+      "pf_rmse": 42.4832098595595,
+      "best_alpha_prediction_rmse": 38.74040528944824,
+      "mean_pf_std": 8.901259422302246
+    },
+    {
+      "well_id": "58850d2c",
+      "rows": 800,
+      "baseline_rmse": 14.883674731060182,
+      "pf_rmse": 18.07297282385111,
+      "best_alpha_prediction_rmse": 15.804615779742136,
+      "mean_pf_std": 2.654660940170288
+    },
+    {
+      "well_id": "58fa8486",
+      "rows": 800,
+      "baseline_rmse": 11.861304808071932,
+      "pf_rmse": 15.667439828788376,
+      "best_alpha_prediction_rmse": 13.194773444569915,
+      "mean_pf_std": 15.193868637084961
+    },
+    {
+      "well_id": "591cc951",
+      "rows": 800,
+      "baseline_rmse": 15.017860437659385,
+      "pf_rmse": 10.764051386450598,
+      "best_alpha_prediction_rmse": 13.162828149596553,
+      "mean_pf_std": 8.112205505371094
+    },
+    {
+      "well_id": "593876b6",
+      "rows": 800,
+      "baseline_rmse": 12.275262583749235,
+      "pf_rmse": 11.97722652102734,
+      "best_alpha_prediction_rmse": 11.886836676621705,
+      "mean_pf_std": 2.5740036964416504
+    },
+    {
+      "well_id": "59f8b2e8",
+      "rows": 800,
+      "baseline_rmse": 6.236900031266057,
+      "pf_rmse": 9.6591740173376,
+      "best_alpha_prediction_rmse": 7.12498958887935,
+      "mean_pf_std": 1.263380527496338
+    },
+    {
+      "well_id": "5a1a8fd8",
+      "rows": 800,
+      "baseline_rmse": 13.16004673718892,
+      "pf_rmse": 6.712886407048695,
+      "best_alpha_prediction_rmse": 8.319556588736084,
+      "mean_pf_std": 4.664209365844727
+    },
+    {
+      "well_id": "5a5269a9",
+      "rows": 800,
+      "baseline_rmse": 5.858970174015188,
+      "pf_rmse": 5.926242740048911,
+      "best_alpha_prediction_rmse": 5.23497552770534,
+      "mean_pf_std": 5.389939785003662
+    },
+    {
+      "well_id": "5a5d1982",
+      "rows": 800,
+      "baseline_rmse": 7.109778811608567,
+      "pf_rmse": 8.368017910681704,
+      "best_alpha_prediction_rmse": 6.4976125393843045,
+      "mean_pf_std": 3.3513855934143066
+    },
+    {
+      "well_id": "5a63b5d1",
+      "rows": 800,
+      "baseline_rmse": 19.44053840561126,
+      "pf_rmse": 8.032917543155076,
+      "best_alpha_prediction_rmse": 14.617559587756803,
+      "mean_pf_std": 4.285598278045654
+    },
+    {
+      "well_id": "5aa03df7",
+      "rows": 800,
+      "baseline_rmse": 6.615954768587879,
+      "pf_rmse": 13.637929188051451,
+      "best_alpha_prediction_rmse": 6.0382641551442955,
+      "mean_pf_std": 4.741161346435547
+    },
+    {
+      "well_id": "5aa403d0",
+      "rows": 800,
+      "baseline_rmse": 25.679934299468815,
+      "pf_rmse": 6.40361419421469,
+      "best_alpha_prediction_rmse": 17.88839629402741,
+      "mean_pf_std": 6.015782356262207
+    },
+    {
+      "well_id": "5aef5c6c",
+      "rows": 800,
+      "baseline_rmse": 10.940422695216252,
+      "pf_rmse": 10.547875509075508,
+      "best_alpha_prediction_rmse": 10.031439409532563,
+      "mean_pf_std": 13.7078857421875
+    },
+    {
+      "well_id": "5b7b6324",
+      "rows": 800,
+      "baseline_rmse": 17.685295088717144,
+      "pf_rmse": 7.954424017529646,
+      "best_alpha_prediction_rmse": 13.67129781676506,
+      "mean_pf_std": 10.680171966552734
+    },
+    {
+      "well_id": "5bd25f59",
+      "rows": 800,
+      "baseline_rmse": 4.339759008285642,
+      "pf_rmse": 9.304664855028959,
+      "best_alpha_prediction_rmse": 6.215587255892621,
+      "mean_pf_std": 2.2055323123931885
+    },
+    {
+      "well_id": "5beded95",
+      "rows": 800,
+      "baseline_rmse": 16.640096777063654,
+      "pf_rmse": 19.97805205095365,
+      "best_alpha_prediction_rmse": 17.938585602272195,
+      "mean_pf_std": 2.271141290664673
+    },
+    {
+      "well_id": "5cb483ac",
+      "rows": 800,
+      "baseline_rmse": 6.112983068846455,
+      "pf_rmse": 5.204834739821959,
+      "best_alpha_prediction_rmse": 5.083436900364434,
+      "mean_pf_std": 1.86187744140625
+    },
+    {
+      "well_id": "5cdd8dbc",
+      "rows": 800,
+      "baseline_rmse": 17.238694117449462,
+      "pf_rmse": 29.985662139018974,
+      "best_alpha_prediction_rmse": 22.074455836134494,
+      "mean_pf_std": 2.315880060195923
+    },
+    {
+      "well_id": "5d11dfb5",
+      "rows": 800,
+      "baseline_rmse": 9.7693613980137,
+      "pf_rmse": 9.934695277633812,
+      "best_alpha_prediction_rmse": 9.635443742823643,
+      "mean_pf_std": 2.1174569129943848
+    },
+    {
+      "well_id": "5d7198fd",
+      "rows": 800,
+      "baseline_rmse": 13.37066260979573,
+      "pf_rmse": 7.410710827511363,
+      "best_alpha_prediction_rmse": 10.696981408915851,
+      "mean_pf_std": 2.544696807861328
+    },
+    {
+      "well_id": "5def1ce5",
+      "rows": 800,
+      "baseline_rmse": 8.047798775131273,
+      "pf_rmse": 10.74985901374111,
+      "best_alpha_prediction_rmse": 8.627998287496782,
+      "mean_pf_std": 5.793731212615967
+    },
+    {
+      "well_id": "5eae34a8",
+      "rows": 800,
+      "baseline_rmse": 7.394974416791333,
+      "pf_rmse": 1.8962455110781649,
+      "best_alpha_prediction_rmse": 4.524221863700385,
+      "mean_pf_std": 1.5792880058288574
+    },
+    {
+      "well_id": "5f4d2a52",
+      "rows": 800,
+      "baseline_rmse": 56.895302689457786,
+      "pf_rmse": 64.60537580703539,
+      "best_alpha_prediction_rmse": 59.96272090808463,
+      "mean_pf_std": 1.1753994226455688
+    },
+    {
+      "well_id": "5f6756c5",
+      "rows": 800,
+      "baseline_rmse": 8.56913251152127,
+      "pf_rmse": 6.666704543800269,
+      "best_alpha_prediction_rmse": 7.426652083183036,
+      "mean_pf_std": 2.6599130630493164
+    },
+    {
+      "well_id": "5f75f796",
+      "rows": 800,
+      "baseline_rmse": 9.248775770339027,
+      "pf_rmse": 13.129247119977476,
+      "best_alpha_prediction_rmse": 10.169877345291763,
+      "mean_pf_std": 9.523946762084961
+    },
+    {
+      "well_id": "5fb1c15f",
+      "rows": 800,
+      "baseline_rmse": 18.28552620927137,
+      "pf_rmse": 19.106333787993016,
+      "best_alpha_prediction_rmse": 18.57882092345276,
+      "mean_pf_std": 6.723853588104248
+    },
+    {
+      "well_id": "5fffa282",
+      "rows": 800,
+      "baseline_rmse": 5.316187684798782,
+      "pf_rmse": 2.773032885713441,
+      "best_alpha_prediction_rmse": 3.1673618522311955,
+      "mean_pf_std": 2.303413152694702
+    },
+    {
+      "well_id": "60e37807",
+      "rows": 800,
+      "baseline_rmse": 20.871365830365853,
+      "pf_rmse": 25.908031091607388,
+      "best_alpha_prediction_rmse": 22.838292763850767,
+      "mean_pf_std": 8.605664253234863
+    },
+    {
+      "well_id": "61f27424",
+      "rows": 800,
+      "baseline_rmse": 2.8152112487343204,
+      "pf_rmse": 5.854984498267255,
+      "best_alpha_prediction_rmse": 3.465030939748492,
+      "mean_pf_std": 3.6615383625030518
+    },
+    {
+      "well_id": "62569ae3",
+      "rows": 800,
+      "baseline_rmse": 8.165266988899138,
+      "pf_rmse": 6.543482025266915,
+      "best_alpha_prediction_rmse": 7.402795728540347,
+      "mean_pf_std": 3.8428571224212646
+    },
+    {
+      "well_id": "62a6f539",
+      "rows": 800,
+      "baseline_rmse": 7.861589136427911,
+      "pf_rmse": 8.187631981572295,
+      "best_alpha_prediction_rmse": 7.828100799417107,
+      "mean_pf_std": 9.231060028076172
+    },
+    {
+      "well_id": "633774dc",
+      "rows": 800,
+      "baseline_rmse": 14.223165778054302,
+      "pf_rmse": 20.124749843401514,
+      "best_alpha_prediction_rmse": 16.490775459533857,
+      "mean_pf_std": 11.941675186157227
+    },
+    {
+      "well_id": "63559d57",
+      "rows": 800,
+      "baseline_rmse": 5.901523574467589,
+      "pf_rmse": 6.818146776007978,
+      "best_alpha_prediction_rmse": 4.3375581137894725,
+      "mean_pf_std": 8.440596580505371
+    },
+    {
+      "well_id": "647f2a41",
+      "rows": 800,
+      "baseline_rmse": 6.544142352134394,
+      "pf_rmse": 3.6031467760280718,
+      "best_alpha_prediction_rmse": 4.853615095684272,
+      "mean_pf_std": 1.8988313674926758
+    },
+    {
+      "well_id": "65156b96",
+      "rows": 800,
+      "baseline_rmse": 6.098594684433501,
+      "pf_rmse": 10.834005669385942,
+      "best_alpha_prediction_rmse": 7.6778076142486595,
+      "mean_pf_std": 5.758418083190918
+    },
+    {
+      "well_id": "653612bc",
+      "rows": 800,
+      "baseline_rmse": 2.831419674828023,
+      "pf_rmse": 6.440616890218959,
+      "best_alpha_prediction_rmse": 4.176634844740591,
+      "mean_pf_std": 2.402255058288574
+    },
+    {
+      "well_id": "656a067b",
+      "rows": 800,
+      "baseline_rmse": 14.660323841068776,
+      "pf_rmse": 9.934895299005495,
+      "best_alpha_prediction_rmse": 12.09946843772472,
+      "mean_pf_std": 5.753607273101807
+    },
+    {
+      "well_id": "65a5466a",
+      "rows": 800,
+      "baseline_rmse": 11.98813456610327,
+      "pf_rmse": 13.930036448479298,
+      "best_alpha_prediction_rmse": 11.12284951688278,
+      "mean_pf_std": 3.844658613204956
+    },
+    {
+      "well_id": "660d9546",
+      "rows": 800,
+      "baseline_rmse": 9.430398274993612,
+      "pf_rmse": 6.806881788897338,
+      "best_alpha_prediction_rmse": 6.310730421169786,
+      "mean_pf_std": 3.112039566040039
+    },
+    {
+      "well_id": "6767c111",
+      "rows": 800,
+      "baseline_rmse": 17.47835347293863,
+      "pf_rmse": 20.218610434433042,
+      "best_alpha_prediction_rmse": 18.503072633397412,
+      "mean_pf_std": 11.166766166687012
+    },
+    {
+      "well_id": "67847288",
+      "rows": 800,
+      "baseline_rmse": 11.459404663856082,
+      "pf_rmse": 20.602466480142304,
+      "best_alpha_prediction_rmse": 14.853509746671023,
+      "mean_pf_std": 13.001140594482422
+    },
+    {
+      "well_id": "67a8da4a",
+      "rows": 800,
+      "baseline_rmse": 14.485351661247178,
+      "pf_rmse": 5.556402045088867,
+      "best_alpha_prediction_rmse": 10.746473654617931,
+      "mean_pf_std": 16.832962036132812
+    },
+    {
+      "well_id": "684a6fc1",
+      "rows": 800,
+      "baseline_rmse": 24.017656125233948,
+      "pf_rmse": 11.558668392934491,
+      "best_alpha_prediction_rmse": 18.550098261539475,
+      "mean_pf_std": 8.568531036376953
+    },
+    {
+      "well_id": "698930d1",
+      "rows": 800,
+      "baseline_rmse": 10.400196224110791,
+      "pf_rmse": 6.7607920505528885,
+      "best_alpha_prediction_rmse": 8.808597212036764,
+      "mean_pf_std": 5.7289719581604
+    },
+    {
+      "well_id": "699ea575",
+      "rows": 800,
+      "baseline_rmse": 10.38958735345212,
+      "pf_rmse": 2.645783183482564,
+      "best_alpha_prediction_rmse": 6.5136890685145055,
+      "mean_pf_std": 2.0001718997955322
+    },
+    {
+      "well_id": "69c1bdad",
+      "rows": 800,
+      "baseline_rmse": 9.793060163963071,
+      "pf_rmse": 7.266240654433367,
+      "best_alpha_prediction_rmse": 8.306631844859442,
+      "mean_pf_std": 3.4440884590148926
+    },
+    {
+      "well_id": "69e41fa6",
+      "rows": 800,
+      "baseline_rmse": 5.862812006622266,
+      "pf_rmse": 5.685658196876834,
+      "best_alpha_prediction_rmse": 4.5852668671886185,
+      "mean_pf_std": 1.8912668228149414
+    },
+    {
+      "well_id": "6a0ff78e",
+      "rows": 800,
+      "baseline_rmse": 11.350848299796796,
+      "pf_rmse": 15.124647298241527,
+      "best_alpha_prediction_rmse": 12.373123633724168,
+      "mean_pf_std": 13.431248664855957
+    },
+    {
+      "well_id": "6a8fa194",
+      "rows": 800,
+      "baseline_rmse": 8.344521765806192,
+      "pf_rmse": 13.70047573867465,
+      "best_alpha_prediction_rmse": 10.139531297227856,
+      "mean_pf_std": 10.217008590698242
+    },
+    {
+      "well_id": "6ae68655",
+      "rows": 800,
+      "baseline_rmse": 5.260779089165353,
+      "pf_rmse": 7.182095716514372,
+      "best_alpha_prediction_rmse": 5.7506853615708415,
+      "mean_pf_std": 3.030897855758667
+    },
+    {
+      "well_id": "6d1d74e1",
+      "rows": 800,
+      "baseline_rmse": 11.891946334599783,
+      "pf_rmse": 14.735649893584359,
+      "best_alpha_prediction_rmse": 12.926210919657759,
+      "mean_pf_std": 2.184051275253296
+    },
+    {
+      "well_id": "6d590e26",
+      "rows": 800,
+      "baseline_rmse": 8.62670359262445,
+      "pf_rmse": 10.937922658153324,
+      "best_alpha_prediction_rmse": 7.823297110569515,
+      "mean_pf_std": 2.9069719314575195
+    },
+    {
+      "well_id": "6d6d93af",
+      "rows": 800,
+      "baseline_rmse": 32.17998174719867,
+      "pf_rmse": 34.93472097392158,
+      "best_alpha_prediction_rmse": 33.246402399294055,
+      "mean_pf_std": 20.399019241333008
+    },
+    {
+      "well_id": "6dbe4b60",
+      "rows": 800,
+      "baseline_rmse": 8.696647385630802,
+      "pf_rmse": 9.843737949935068,
+      "best_alpha_prediction_rmse": 9.104711024028628,
+      "mean_pf_std": 10.298674583435059
+    },
+    {
+      "well_id": "6e6d122c",
+      "rows": 800,
+      "baseline_rmse": 9.113208250939689,
+      "pf_rmse": 17.81079724585273,
+      "best_alpha_prediction_rmse": 7.243324503780005,
+      "mean_pf_std": 6.707139492034912
+    },
+    {
+      "well_id": "6e9ccd38",
+      "rows": 800,
+      "baseline_rmse": 12.237843105506636,
+      "pf_rmse": 12.838146929243372,
+      "best_alpha_prediction_rmse": 12.332827966800576,
+      "mean_pf_std": 12.2221040725708
+    },
+    {
+      "well_id": "6ea22614",
+      "rows": 800,
+      "baseline_rmse": 6.472713746953422,
+      "pf_rmse": 14.730705846131075,
+      "best_alpha_prediction_rmse": 8.350565933335542,
+      "mean_pf_std": 1.2733879089355469
+    },
+    {
+      "well_id": "6ede926a",
+      "rows": 800,
+      "baseline_rmse": 7.687537211292563,
+      "pf_rmse": 20.176277980912882,
+      "best_alpha_prediction_rmse": 7.176949703662344,
+      "mean_pf_std": 9.295241355895996
+    },
+    {
+      "well_id": "708caea9",
+      "rows": 800,
+      "baseline_rmse": 34.904725675758954,
+      "pf_rmse": 12.021841115143522,
+      "best_alpha_prediction_rmse": 25.26302412350094,
+      "mean_pf_std": 10.489340782165527
+    },
+    {
+      "well_id": "70925e23",
+      "rows": 800,
+      "baseline_rmse": 14.779921574554237,
+      "pf_rmse": 30.04623888677672,
+      "best_alpha_prediction_rmse": 20.559695299712352,
+      "mean_pf_std": 13.86459732055664
+    },
+    {
+      "well_id": "70e1788b",
+      "rows": 800,
+      "baseline_rmse": 7.158622624150727,
+      "pf_rmse": 6.466766486984588,
+      "best_alpha_prediction_rmse": 5.102430456736432,
+      "mean_pf_std": 6.362249851226807
+    },
+    {
+      "well_id": "71642c7d",
+      "rows": 800,
+      "baseline_rmse": 11.89509744075217,
+      "pf_rmse": 5.762843035306933,
+      "best_alpha_prediction_rmse": 8.934564420792414,
+      "mean_pf_std": 3.7606136798858643
+    },
+    {
+      "well_id": "71ccf778",
+      "rows": 800,
+      "baseline_rmse": 5.386549881416966,
+      "pf_rmse": 6.130811677434994,
+      "best_alpha_prediction_rmse": 3.748357432490896,
+      "mean_pf_std": 5.089257717132568
+    },
+    {
+      "well_id": "7224331b",
+      "rows": 800,
+      "baseline_rmse": 4.340512455344405,
+      "pf_rmse": 3.5194838275789477,
+      "best_alpha_prediction_rmse": 2.872956021229875,
+      "mean_pf_std": 4.2989959716796875
+    },
+    {
+      "well_id": "722cf0d8",
+      "rows": 800,
+      "baseline_rmse": 11.128130340492968,
+      "pf_rmse": 12.648324606540974,
+      "best_alpha_prediction_rmse": 11.463221331729478,
+      "mean_pf_std": 4.723575592041016
+    },
+    {
+      "well_id": "7256229b",
+      "rows": 800,
+      "baseline_rmse": 6.641918397571902,
+      "pf_rmse": 12.64914795047483,
+      "best_alpha_prediction_rmse": 6.944055525804719,
+      "mean_pf_std": 12.99277114868164
+    },
+    {
+      "well_id": "726f3dc2",
+      "rows": 800,
+      "baseline_rmse": 6.9274278776471,
+      "pf_rmse": 6.018293240624764,
+      "best_alpha_prediction_rmse": 5.939952540186484,
+      "mean_pf_std": 4.302753448486328
+    },
+    {
+      "well_id": "7271dd80",
+      "rows": 800,
+      "baseline_rmse": 8.31343599993549,
+      "pf_rmse": 2.9432016648614665,
+      "best_alpha_prediction_rmse": 4.794379869906089,
+      "mean_pf_std": 2.461552143096924
+    },
+    {
+      "well_id": "727a3a10",
+      "rows": 800,
+      "baseline_rmse": 12.359610425696491,
+      "pf_rmse": 14.820477660276854,
+      "best_alpha_prediction_rmse": 8.719364222388904,
+      "mean_pf_std": 18.791770935058594
+    },
+    {
+      "well_id": "729665c0",
+      "rows": 800,
+      "baseline_rmse": 8.664438621457352,
+      "pf_rmse": 7.529060621806362,
+      "best_alpha_prediction_rmse": 6.774925474586233,
+      "mean_pf_std": 2.223907232284546
+    },
+    {
+      "well_id": "729e9750",
+      "rows": 800,
+      "baseline_rmse": 8.82916931964697,
+      "pf_rmse": 9.532433262534585,
+      "best_alpha_prediction_rmse": 7.495180368945726,
+      "mean_pf_std": 6.508424758911133
+    },
+    {
+      "well_id": "729f4217",
+      "rows": 800,
+      "baseline_rmse": 16.242904893367974,
+      "pf_rmse": 4.424919311832391,
+      "best_alpha_prediction_rmse": 9.986829993950938,
+      "mean_pf_std": 1.0476809740066528
+    },
+    {
+      "well_id": "72dd8501",
+      "rows": 800,
+      "baseline_rmse": 6.070353284612022,
+      "pf_rmse": 3.3527064377186795,
+      "best_alpha_prediction_rmse": 4.6763072065299465,
+      "mean_pf_std": 2.242854118347168
+    },
+    {
+      "well_id": "73348914",
+      "rows": 800,
+      "baseline_rmse": 10.686398393518624,
+      "pf_rmse": 10.104290673752391,
+      "best_alpha_prediction_rmse": 4.39497960613965,
+      "mean_pf_std": 2.7946999073028564
+    },
+    {
+      "well_id": "739a914f",
+      "rows": 800,
+      "baseline_rmse": 13.53662957035488,
+      "pf_rmse": 13.332058408744642,
+      "best_alpha_prediction_rmse": 13.235173488409657,
+      "mean_pf_std": 2.6677231788635254
+    },
+    {
+      "well_id": "73b1447d",
+      "rows": 800,
+      "baseline_rmse": 13.422636956835088,
+      "pf_rmse": 13.193257788063027,
+      "best_alpha_prediction_rmse": 13.224340047547367,
+      "mean_pf_std": 13.091728210449219
+    },
+    {
+      "well_id": "74b6186b",
+      "rows": 800,
+      "baseline_rmse": 9.005316429754304,
+      "pf_rmse": 2.9504215974476216,
+      "best_alpha_prediction_rmse": 4.736724837294592,
+      "mean_pf_std": 2.9804320335388184
+    },
+    {
+      "well_id": "75c20ec7",
+      "rows": 800,
+      "baseline_rmse": 11.048688168737158,
+      "pf_rmse": 10.738190969796495,
+      "best_alpha_prediction_rmse": 10.69138939659496,
+      "mean_pf_std": 12.387094497680664
+    },
+    {
+      "well_id": "75cd5f11",
+      "rows": 800,
+      "baseline_rmse": 5.262278665179035,
+      "pf_rmse": 3.870866787247096,
+      "best_alpha_prediction_rmse": 4.467417708680659,
+      "mean_pf_std": 7.944565296173096
+    },
+    {
+      "well_id": "75d20a82",
+      "rows": 800,
+      "baseline_rmse": 17.224028706287168,
+      "pf_rmse": 7.005370079940274,
+      "best_alpha_prediction_rmse": 12.696093914526195,
+      "mean_pf_std": 10.325788497924805
+    },
+    {
+      "well_id": "76201745",
+      "rows": 800,
+      "baseline_rmse": 7.878990354099844,
+      "pf_rmse": 4.489807185374378,
+      "best_alpha_prediction_rmse": 6.005383161040489,
+      "mean_pf_std": 3.6318140029907227
+    },
+    {
+      "well_id": "764072a5",
+      "rows": 800,
+      "baseline_rmse": 6.355342122970416,
+      "pf_rmse": 6.458585822754109,
+      "best_alpha_prediction_rmse": 3.857310596123803,
+      "mean_pf_std": 4.346821308135986
+    },
+    {
+      "well_id": "77b0d905",
+      "rows": 800,
+      "baseline_rmse": 13.046084120341064,
+      "pf_rmse": 9.228986494879834,
+      "best_alpha_prediction_rmse": 4.895893479720801,
+      "mean_pf_std": 3.7510619163513184
+    },
+    {
+      "well_id": "77e4821c",
+      "rows": 800,
+      "baseline_rmse": 19.213737793568853,
+      "pf_rmse": 14.923983859119538,
+      "best_alpha_prediction_rmse": 17.192731442209823,
+      "mean_pf_std": 10.737771034240723
+    },
+    {
+      "well_id": "7850c72e",
+      "rows": 800,
+      "baseline_rmse": 12.345458810834206,
+      "pf_rmse": 3.151107063798952,
+      "best_alpha_prediction_rmse": 7.246287857483639,
+      "mean_pf_std": 2.688401222229004
+    },
+    {
+      "well_id": "78a4a386",
+      "rows": 800,
+      "baseline_rmse": 5.863632449258654,
+      "pf_rmse": 11.09358476492397,
+      "best_alpha_prediction_rmse": 6.162380348680176,
+      "mean_pf_std": 14.20756721496582
+    },
+    {
+      "well_id": "79507629",
+      "rows": 800,
+      "baseline_rmse": 12.573356468143459,
+      "pf_rmse": 19.223980356639952,
+      "best_alpha_prediction_rmse": 15.118382325942413,
+      "mean_pf_std": 8.129616737365723
+    },
+    {
+      "well_id": "796dbd4c",
+      "rows": 800,
+      "baseline_rmse": 4.864789435319765,
+      "pf_rmse": 21.64456668980578,
+      "best_alpha_prediction_rmse": 10.480794541959812,
+      "mean_pf_std": 7.021674633026123
+    },
+    {
+      "well_id": "7987f2f2",
+      "rows": 800,
+      "baseline_rmse": 12.027772398702558,
+      "pf_rmse": 11.834108076610683,
+      "best_alpha_prediction_rmse": 9.369787784130077,
+      "mean_pf_std": 2.3001980781555176
+    },
+    {
+      "well_id": "7993a768",
+      "rows": 800,
+      "baseline_rmse": 8.943996380253838,
+      "pf_rmse": 8.678986668552163,
+      "best_alpha_prediction_rmse": 4.724320861115443,
+      "mean_pf_std": 2.406736135482788
+    },
+    {
+      "well_id": "7a5660b0",
+      "rows": 800,
+      "baseline_rmse": 13.464452049749413,
+      "pf_rmse": 10.706103932981145,
+      "best_alpha_prediction_rmse": 12.32658786482028,
+      "mean_pf_std": 2.093748092651367
+    },
+    {
+      "well_id": "7acda2df",
+      "rows": 800,
+      "baseline_rmse": 13.844662730634196,
+      "pf_rmse": 10.613779793787867,
+      "best_alpha_prediction_rmse": 12.3684441828719,
+      "mean_pf_std": 12.147483825683594
+    },
+    {
+      "well_id": "7b2c7b3c",
+      "rows": 800,
+      "baseline_rmse": 6.1802764400151,
+      "pf_rmse": 4.049781756373525,
+      "best_alpha_prediction_rmse": 4.126968639543293,
+      "mean_pf_std": 2.2098536491394043
+    },
+    {
+      "well_id": "7b38844c",
+      "rows": 800,
+      "baseline_rmse": 7.384144483283099,
+      "pf_rmse": 6.490927026799658,
+      "best_alpha_prediction_rmse": 6.54846474139234,
+      "mean_pf_std": 10.737154960632324
+    },
+    {
+      "well_id": "7bb17b96",
+      "rows": 800,
+      "baseline_rmse": 17.00203958720787,
+      "pf_rmse": 20.521412163354558,
+      "best_alpha_prediction_rmse": 18.36794528982272,
+      "mean_pf_std": 8.818131446838379
+    },
+    {
+      "well_id": "7c607683",
+      "rows": 800,
+      "baseline_rmse": 16.85587629359493,
+      "pf_rmse": 10.402799144834109,
+      "best_alpha_prediction_rmse": 14.179405359508863,
+      "mean_pf_std": 7.265066146850586
+    },
+    {
+      "well_id": "7cbbd047",
+      "rows": 800,
+      "baseline_rmse": 12.535014539281384,
+      "pf_rmse": 11.109320514212598,
+      "best_alpha_prediction_rmse": 11.299691885676967,
+      "mean_pf_std": 2.579946994781494
+    },
+    {
+      "well_id": "7cd4bb31",
+      "rows": 800,
+      "baseline_rmse": 5.911131437804222,
+      "pf_rmse": 6.780712293687417,
+      "best_alpha_prediction_rmse": 5.473869769631949,
+      "mean_pf_std": 2.846062421798706
+    },
+    {
+      "well_id": "7d50373e",
+      "rows": 800,
+      "baseline_rmse": 14.285512053300684,
+      "pf_rmse": 3.9565082707912365,
+      "best_alpha_prediction_rmse": 9.746017288896919,
+      "mean_pf_std": 1.9401123523712158
+    },
+    {
+      "well_id": "7d57c75d",
+      "rows": 800,
+      "baseline_rmse": 14.19824269936237,
+      "pf_rmse": 11.014142540130505,
+      "best_alpha_prediction_rmse": 12.743392575941938,
+      "mean_pf_std": 4.425725936889648
+    },
+    {
+      "well_id": "7e208414",
+      "rows": 800,
+      "baseline_rmse": 6.382341899726017,
+      "pf_rmse": 3.7682415799019613,
+      "best_alpha_prediction_rmse": 3.921949350839102,
+      "mean_pf_std": 2.0289056301116943
+    },
+    {
+      "well_id": "7e721392",
+      "rows": 800,
+      "baseline_rmse": 40.325118364674346,
+      "pf_rmse": 21.788736753319267,
+      "best_alpha_prediction_rmse": 32.74053910573405,
+      "mean_pf_std": 3.819736957550049
+    },
+    {
+      "well_id": "7ff89f8f",
+      "rows": 800,
+      "baseline_rmse": 14.151799253982196,
+      "pf_rmse": 18.44264400558581,
+      "best_alpha_prediction_rmse": 15.068540202131516,
+      "mean_pf_std": 4.210864543914795
+    },
+    {
+      "well_id": "8050c789",
+      "rows": 800,
+      "baseline_rmse": 7.790540658388061,
+      "pf_rmse": 8.42717631092756,
+      "best_alpha_prediction_rmse": 7.70480040460535,
+      "mean_pf_std": 1.8688327074050903
+    },
+    {
+      "well_id": "807f0298",
+      "rows": 800,
+      "baseline_rmse": 8.856114286186788,
+      "pf_rmse": 6.355811604070426,
+      "best_alpha_prediction_rmse": 4.972809859829938,
+      "mean_pf_std": 1.3284024000167847
+    },
+    {
+      "well_id": "811f52b3",
+      "rows": 800,
+      "baseline_rmse": 4.595571740817343,
+      "pf_rmse": 9.378982144497146,
+      "best_alpha_prediction_rmse": 5.378610084622722,
+      "mean_pf_std": 6.848815441131592
+    },
+    {
+      "well_id": "81bf5923",
+      "rows": 800,
+      "baseline_rmse": 31.31614830642545,
+      "pf_rmse": 19.15809481900276,
+      "best_alpha_prediction_rmse": 25.92680712430325,
+      "mean_pf_std": 9.259495735168457
+    },
+    {
+      "well_id": "81fc01c6",
+      "rows": 800,
+      "baseline_rmse": 15.028090210503157,
+      "pf_rmse": 13.449197165619278,
+      "best_alpha_prediction_rmse": 12.790877429346155,
+      "mean_pf_std": 6.405855178833008
+    },
+    {
+      "well_id": "8255c867",
+      "rows": 800,
+      "baseline_rmse": 25.38388998705743,
+      "pf_rmse": 58.53690108935837,
+      "best_alpha_prediction_rmse": 38.33155714728981,
+      "mean_pf_std": 19.40033721923828
+    },
+    {
+      "well_id": "82aab6d2",
+      "rows": 800,
+      "baseline_rmse": 16.353436290273002,
+      "pf_rmse": 6.58831910587069,
+      "best_alpha_prediction_rmse": 11.099494195096641,
+      "mean_pf_std": 6.994624614715576
+    },
+    {
+      "well_id": "82fcf37c",
+      "rows": 800,
+      "baseline_rmse": 6.563030911858423,
+      "pf_rmse": 25.547506809398975,
+      "best_alpha_prediction_rmse": 7.932321497986453,
+      "mean_pf_std": 3.551759719848633
+    },
+    {
+      "well_id": "833af382",
+      "rows": 800,
+      "baseline_rmse": 11.92767135697518,
+      "pf_rmse": 6.9623168014328565,
+      "best_alpha_prediction_rmse": 8.296734825052848,
+      "mean_pf_std": 13.302170753479004
+    },
+    {
+      "well_id": "8382f4b6",
+      "rows": 800,
+      "baseline_rmse": 35.96214327768881,
+      "pf_rmse": 2.750960649577136,
+      "best_alpha_prediction_rmse": 21.343511052741697,
+      "mean_pf_std": 2.265512228012085
+    },
+    {
+      "well_id": "84633df4",
+      "rows": 800,
+      "baseline_rmse": 4.7353777568427695,
+      "pf_rmse": 5.28208668940104,
+      "best_alpha_prediction_rmse": 4.77995688481494,
+      "mean_pf_std": 1.872502326965332
+    },
+    {
+      "well_id": "8478df29",
+      "rows": 800,
+      "baseline_rmse": 14.035669172681935,
+      "pf_rmse": 9.659530672404493,
+      "best_alpha_prediction_rmse": 7.568081109817216,
+      "mean_pf_std": 4.353228569030762
+    },
+    {
+      "well_id": "84815d5a",
+      "rows": 800,
+      "baseline_rmse": 18.794149595020848,
+      "pf_rmse": 11.751760166935984,
+      "best_alpha_prediction_rmse": 15.458295269610522,
+      "mean_pf_std": 6.431224346160889
+    },
+    {
+      "well_id": "84c3b497",
+      "rows": 800,
+      "baseline_rmse": 18.965078084468654,
+      "pf_rmse": 16.95899406706786,
+      "best_alpha_prediction_rmse": 17.67343181208125,
+      "mean_pf_std": 18.824438095092773
+    },
+    {
+      "well_id": "85380836",
+      "rows": 800,
+      "baseline_rmse": 14.168160347237158,
+      "pf_rmse": 9.278184506564457,
+      "best_alpha_prediction_rmse": 12.150170508337053,
+      "mean_pf_std": 9.621247291564941
+    },
+    {
+      "well_id": "8612b37f",
+      "rows": 800,
+      "baseline_rmse": 19.60687492309774,
+      "pf_rmse": 12.680163626899436,
+      "best_alpha_prediction_rmse": 15.5163706515664,
+      "mean_pf_std": 7.161581516265869
+    },
+    {
+      "well_id": "861e71df",
+      "rows": 800,
+      "baseline_rmse": 11.536702236774142,
+      "pf_rmse": 7.612698994289119,
+      "best_alpha_prediction_rmse": 9.80117914365153,
+      "mean_pf_std": 5.49803352355957
+    },
+    {
+      "well_id": "86454a6f",
+      "rows": 800,
+      "baseline_rmse": 70.24898466614982,
+      "pf_rmse": 75.08621937674545,
+      "best_alpha_prediction_rmse": 72.08823392096988,
+      "mean_pf_std": 8.616724014282227
+    },
+    {
+      "well_id": "8648abae",
+      "rows": 800,
+      "baseline_rmse": 6.856172857359697,
+      "pf_rmse": 7.678178046651292,
+      "best_alpha_prediction_rmse": 4.068255920881975,
+      "mean_pf_std": 4.905102252960205
+    },
+    {
+      "well_id": "865033f8",
+      "rows": 800,
+      "baseline_rmse": 5.93812773523777,
+      "pf_rmse": 3.6603405168345597,
+      "best_alpha_prediction_rmse": 4.538513323877048,
+      "mean_pf_std": 2.8419342041015625
+    },
+    {
+      "well_id": "87695469",
+      "rows": 800,
+      "baseline_rmse": 7.0505105134306705,
+      "pf_rmse": 21.105480384855273,
+      "best_alpha_prediction_rmse": 12.350899171515229,
+      "mean_pf_std": 10.569772720336914
+    },
+    {
+      "well_id": "877ed19c",
+      "rows": 800,
+      "baseline_rmse": 3.960161013141031,
+      "pf_rmse": 4.718953925512783,
+      "best_alpha_prediction_rmse": 4.05267157845922,
+      "mean_pf_std": 14.424542427062988
+    },
+    {
+      "well_id": "87aa3730",
+      "rows": 800,
+      "baseline_rmse": 9.112795715366511,
+      "pf_rmse": 13.04115239118029,
+      "best_alpha_prediction_rmse": 10.542759858221867,
+      "mean_pf_std": 5.8889946937561035
+    },
+    {
+      "well_id": "884ecb5f",
+      "rows": 800,
+      "baseline_rmse": 19.91936211014325,
+      "pf_rmse": 12.451119383146219,
+      "best_alpha_prediction_rmse": 10.659693660000324,
+      "mean_pf_std": 5.545443534851074
+    },
+    {
+      "well_id": "8902c3f6",
+      "rows": 800,
+      "baseline_rmse": 8.827503986121707,
+      "pf_rmse": 16.208914367053175,
+      "best_alpha_prediction_rmse": 11.56148315579402,
+      "mean_pf_std": 4.065215110778809
+    },
+    {
+      "well_id": "896d15b9",
+      "rows": 800,
+      "baseline_rmse": 29.772975031897207,
+      "pf_rmse": 24.270530997982195,
+      "best_alpha_prediction_rmse": 27.543858907197972,
+      "mean_pf_std": 1.2782948017120361
+    },
+    {
+      "well_id": "8995c945",
+      "rows": 800,
+      "baseline_rmse": 17.054786732761755,
+      "pf_rmse": 21.46686399231073,
+      "best_alpha_prediction_rmse": 18.689884851282027,
+      "mean_pf_std": 2.323920249938965
+    },
+    {
+      "well_id": "89969c7a",
+      "rows": 800,
+      "baseline_rmse": 8.232286104115015,
+      "pf_rmse": 8.911927360916197,
+      "best_alpha_prediction_rmse": 8.211756794763884,
+      "mean_pf_std": 12.208948135375977
+    },
+    {
+      "well_id": "89f1085d",
+      "rows": 800,
+      "baseline_rmse": 27.61834224749985,
+      "pf_rmse": 52.33583601752211,
+      "best_alpha_prediction_rmse": 9.97849423157364,
+      "mean_pf_std": 49.409915924072266
+    },
+    {
+      "well_id": "89f36adf",
+      "rows": 800,
+      "baseline_rmse": 4.477579047320061,
+      "pf_rmse": 5.192202677368372,
+      "best_alpha_prediction_rmse": 3.348545954701919,
+      "mean_pf_std": 4.265885829925537
+    },
+    {
+      "well_id": "89fdb2f2",
+      "rows": 800,
+      "baseline_rmse": 1.6861136898206364,
+      "pf_rmse": 3.0749331503354753,
+      "best_alpha_prediction_rmse": 1.7810108060728103,
+      "mean_pf_std": 2.093245267868042
+    },
+    {
+      "well_id": "8a3da6d1",
+      "rows": 800,
+      "baseline_rmse": 9.41114111040729,
+      "pf_rmse": 14.6613885434305,
+      "best_alpha_prediction_rmse": 11.431702640153027,
+      "mean_pf_std": 7.328189849853516
+    },
+    {
+      "well_id": "8a89da23",
+      "rows": 800,
+      "baseline_rmse": 24.253803536764888,
+      "pf_rmse": 2.6013222948292865,
+      "best_alpha_prediction_rmse": 14.988255556601233,
+      "mean_pf_std": 1.7150367498397827
+    },
+    {
+      "well_id": "8a9c8932",
+      "rows": 800,
+      "baseline_rmse": 2.3971447077718806,
+      "pf_rmse": 16.707549873211676,
+      "best_alpha_prediction_rmse": 7.785076860628413,
+      "mean_pf_std": 3.1045403480529785
+    },
+    {
+      "well_id": "8ac2f237",
+      "rows": 800,
+      "baseline_rmse": 16.469315958017425,
+      "pf_rmse": 13.401896669437592,
+      "best_alpha_prediction_rmse": 15.095080095508989,
+      "mean_pf_std": 12.047233581542969
+    },
+    {
+      "well_id": "8b12bab6",
+      "rows": 800,
+      "baseline_rmse": 15.815645604116769,
+      "pf_rmse": 19.862841085885456,
+      "best_alpha_prediction_rmse": 17.03060824103639,
+      "mean_pf_std": 9.799901962280273
+    },
+    {
+      "well_id": "8b5be31b",
+      "rows": 800,
+      "baseline_rmse": 14.42398888570744,
+      "pf_rmse": 6.323265448292726,
+      "best_alpha_prediction_rmse": 9.364578118649941,
+      "mean_pf_std": 5.357613563537598
+    },
+    {
+      "well_id": "8b95d6d1",
+      "rows": 800,
+      "baseline_rmse": 12.819952179123097,
+      "pf_rmse": 3.7035745049991564,
+      "best_alpha_prediction_rmse": 8.670127130193762,
+      "mean_pf_std": 1.7184597253799438
+    },
+    {
+      "well_id": "8b9d8326",
+      "rows": 800,
+      "baseline_rmse": 6.587410141702183,
+      "pf_rmse": 5.698850363253567,
+      "best_alpha_prediction_rmse": 5.633010225626203,
+      "mean_pf_std": 2.62483286857605
+    },
+    {
+      "well_id": "8bb9c1e6",
+      "rows": 800,
+      "baseline_rmse": 5.875518402660196,
+      "pf_rmse": 14.365183595202108,
+      "best_alpha_prediction_rmse": 9.166638301119484,
+      "mean_pf_std": 10.583422660827637
+    },
+    {
+      "well_id": "8bda1a11",
+      "rows": 800,
+      "baseline_rmse": 12.860798517199715,
+      "pf_rmse": 13.440301395302631,
+      "best_alpha_prediction_rmse": 11.24319974283724,
+      "mean_pf_std": 12.37299919128418
+    },
+    {
+      "well_id": "8bfa881d",
+      "rows": 800,
+      "baseline_rmse": 24.923733413155134,
+      "pf_rmse": 18.031018019053406,
+      "best_alpha_prediction_rmse": 21.931822752378928,
+      "mean_pf_std": 3.554112195968628
+    },
+    {
+      "well_id": "8c167025",
+      "rows": 800,
+      "baseline_rmse": 12.835723762218914,
+      "pf_rmse": 14.668410735156712,
+      "best_alpha_prediction_rmse": 13.19983511058598,
+      "mean_pf_std": 17.524860382080078
+    },
+    {
+      "well_id": "8c8348e8",
+      "rows": 800,
+      "baseline_rmse": 6.539334484487127,
+      "pf_rmse": 14.19782566045287,
+      "best_alpha_prediction_rmse": 3.5732925920168097,
+      "mean_pf_std": 5.344491004943848
+    },
+    {
+      "well_id": "8cc21f01",
+      "rows": 800,
+      "baseline_rmse": 5.6901526451401345,
+      "pf_rmse": 8.034114741662911,
+      "best_alpha_prediction_rmse": 6.268882967863862,
+      "mean_pf_std": 1.6486942768096924
+    },
+    {
+      "well_id": "8cc800b3",
+      "rows": 800,
+      "baseline_rmse": 13.891608955590357,
+      "pf_rmse": 18.857320560779254,
+      "best_alpha_prediction_rmse": 15.813497286647246,
+      "mean_pf_std": 14.323853492736816
+    },
+    {
+      "well_id": "8d5d46d7",
+      "rows": 800,
+      "baseline_rmse": 14.44158263920535,
+      "pf_rmse": 4.1037872740249615,
+      "best_alpha_prediction_rmse": 8.3022515692631,
+      "mean_pf_std": 2.4295854568481445
+    },
+    {
+      "well_id": "8d92cb49",
+      "rows": 800,
+      "baseline_rmse": 7.274193194093116,
+      "pf_rmse": 5.122530958479606,
+      "best_alpha_prediction_rmse": 5.748020390991858,
+      "mean_pf_std": 6.709029674530029
+    },
+    {
+      "well_id": "8f201368",
+      "rows": 800,
+      "baseline_rmse": 31.171119333445755,
+      "pf_rmse": 9.608632080783055,
+      "best_alpha_prediction_rmse": 21.119106306206643,
+      "mean_pf_std": 6.894690990447998
+    },
+    {
+      "well_id": "90386ee4",
+      "rows": 800,
+      "baseline_rmse": 10.152686836497896,
+      "pf_rmse": 29.158883702117823,
+      "best_alpha_prediction_rmse": 17.274254263045023,
+      "mean_pf_std": 6.4753098487854
+    },
+    {
+      "well_id": "91abc4c7",
+      "rows": 800,
+      "baseline_rmse": 7.024475380766651,
+      "pf_rmse": 25.858814699065345,
+      "best_alpha_prediction_rmse": 11.128808197695738,
+      "mean_pf_std": 18.73151397705078
+    },
+    {
+      "well_id": "91b301ce",
+      "rows": 800,
+      "baseline_rmse": 35.35959236897412,
+      "pf_rmse": 48.38393794394971,
+      "best_alpha_prediction_rmse": 39.86447059384593,
+      "mean_pf_std": 8.4386625289917
+    },
+    {
+      "well_id": "91db7070",
+      "rows": 800,
+      "baseline_rmse": 40.80696952421229,
+      "pf_rmse": 40.934782370338546,
+      "best_alpha_prediction_rmse": 40.84559237612391,
+      "mean_pf_std": 4.120334625244141
+    },
+    {
+      "well_id": "925a7cd1",
+      "rows": 800,
+      "baseline_rmse": 4.613384210641423,
+      "pf_rmse": 4.748175362690054,
+      "best_alpha_prediction_rmse": 3.517717180838433,
+      "mean_pf_std": 7.695467948913574
+    },
+    {
+      "well_id": "9283ae69",
+      "rows": 800,
+      "baseline_rmse": 6.1686915448089845,
+      "pf_rmse": 9.695390134160142,
+      "best_alpha_prediction_rmse": 6.977375414666618,
+      "mean_pf_std": 12.970175743103027
+    },
+    {
+      "well_id": "9298ad5b",
+      "rows": 800,
+      "baseline_rmse": 13.086926806932047,
+      "pf_rmse": 7.675240968343521,
+      "best_alpha_prediction_rmse": 8.844400050122362,
+      "mean_pf_std": 7.548166275024414
+    },
+    {
+      "well_id": "9314ff13",
+      "rows": 800,
+      "baseline_rmse": 5.190226259519172,
+      "pf_rmse": 3.5464529618917076,
+      "best_alpha_prediction_rmse": 4.08322171569749,
+      "mean_pf_std": 3.381502628326416
+    },
+    {
+      "well_id": "93209a3d",
+      "rows": 800,
+      "baseline_rmse": 13.650030947766629,
+      "pf_rmse": 6.546024243539508,
+      "best_alpha_prediction_rmse": 9.858175507906557,
+      "mean_pf_std": 3.235868453979492
+    },
+    {
+      "well_id": "939d9c34",
+      "rows": 800,
+      "baseline_rmse": 15.737394860649351,
+      "pf_rmse": 15.033398658387764,
+      "best_alpha_prediction_rmse": 13.19330921951627,
+      "mean_pf_std": 8.193164825439453
+    },
+    {
+      "well_id": "93f5d2e6",
+      "rows": 800,
+      "baseline_rmse": 20.123882344741094,
+      "pf_rmse": 21.529978398913165,
+      "best_alpha_prediction_rmse": 20.542879343650004,
+      "mean_pf_std": 5.139519691467285
+    },
+    {
+      "well_id": "940a48d9",
+      "rows": 800,
+      "baseline_rmse": 10.062064325971894,
+      "pf_rmse": 6.637879026587054,
+      "best_alpha_prediction_rmse": 8.363150118501707,
+      "mean_pf_std": 5.109570026397705
+    },
+    {
+      "well_id": "940e709a",
+      "rows": 800,
+      "baseline_rmse": 4.648975075218264,
+      "pf_rmse": 4.679617949143268,
+      "best_alpha_prediction_rmse": 3.1485965880164946,
+      "mean_pf_std": 3.3860607147216797
+    },
+    {
+      "well_id": "9426ec1e",
+      "rows": 800,
+      "baseline_rmse": 12.078373824733376,
+      "pf_rmse": 3.497754456575936,
+      "best_alpha_prediction_rmse": 7.752975742857222,
+      "mean_pf_std": 2.3429393768310547
+    },
+    {
+      "well_id": "94467f50",
+      "rows": 800,
+      "baseline_rmse": 7.823417891177708,
+      "pf_rmse": 9.167693483273286,
+      "best_alpha_prediction_rmse": 7.905640260183919,
+      "mean_pf_std": 8.97725772857666
+    },
+    {
+      "well_id": "944f36b9",
+      "rows": 800,
+      "baseline_rmse": 6.511915530395783,
+      "pf_rmse": 17.96222986565353,
+      "best_alpha_prediction_rmse": 4.544992366871218,
+      "mean_pf_std": 6.778337478637695
+    },
+    {
+      "well_id": "94d813a4",
+      "rows": 800,
+      "baseline_rmse": 36.732452567518955,
+      "pf_rmse": 34.31103476271773,
+      "best_alpha_prediction_rmse": 35.69630169640686,
+      "mean_pf_std": 6.900966644287109
+    },
+    {
+      "well_id": "95b559e7",
+      "rows": 800,
+      "baseline_rmse": 20.374776271777694,
+      "pf_rmse": 4.956855877808478,
+      "best_alpha_prediction_rmse": 13.764117689760475,
+      "mean_pf_std": 3.3912322521209717
+    },
+    {
+      "well_id": "95c8427f",
+      "rows": 800,
+      "baseline_rmse": 27.204377340788387,
+      "pf_rmse": 26.017866232610817,
+      "best_alpha_prediction_rmse": 26.594602339783155,
+      "mean_pf_std": 7.382547378540039
+    },
+    {
+      "well_id": "96936c22",
+      "rows": 800,
+      "baseline_rmse": 4.081680750622142,
+      "pf_rmse": 20.409303496217888,
+      "best_alpha_prediction_rmse": 9.611239382890782,
+      "mean_pf_std": 11.217390060424805
+    },
+    {
+      "well_id": "96ae5806",
+      "rows": 800,
+      "baseline_rmse": 8.446466739117412,
+      "pf_rmse": 13.674930837376799,
+      "best_alpha_prediction_rmse": 10.093130383872015,
+      "mean_pf_std": 4.216716289520264
+    },
+    {
+      "well_id": "96b7eea1",
+      "rows": 800,
+      "baseline_rmse": 12.402373739530757,
+      "pf_rmse": 5.67356440259498,
+      "best_alpha_prediction_rmse": 9.213472307464297,
+      "mean_pf_std": 2.615354061126709
+    },
+    {
+      "well_id": "9719aa04",
+      "rows": 800,
+      "baseline_rmse": 7.07477739932535,
+      "pf_rmse": 12.93250340370389,
+      "best_alpha_prediction_rmse": 8.967886106418415,
+      "mean_pf_std": 4.241418361663818
+    },
+    {
+      "well_id": "974802e7",
+      "rows": 800,
+      "baseline_rmse": 13.818002067050053,
+      "pf_rmse": 15.171068595562819,
+      "best_alpha_prediction_rmse": 13.245119378783947,
+      "mean_pf_std": 10.798444747924805
+    },
+    {
+      "well_id": "97cd5bf9",
+      "rows": 800,
+      "baseline_rmse": 9.277009735092493,
+      "pf_rmse": 4.7050886120387325,
+      "best_alpha_prediction_rmse": 6.59545783603753,
+      "mean_pf_std": 3.5924062728881836
+    },
+    {
+      "well_id": "98177ced",
+      "rows": 800,
+      "baseline_rmse": 5.7781279407780595,
+      "pf_rmse": 7.390372909989343,
+      "best_alpha_prediction_rmse": 5.499845008869696,
+      "mean_pf_std": 13.232436180114746
+    },
+    {
+      "well_id": "9896fc0b",
+      "rows": 800,
+      "baseline_rmse": 15.837322591744817,
+      "pf_rmse": 12.923338568296325,
+      "best_alpha_prediction_rmse": 14.50507737634107,
+      "mean_pf_std": 5.917886734008789
+    },
+    {
+      "well_id": "98bc6f66",
+      "rows": 800,
+      "baseline_rmse": 17.635916055737543,
+      "pf_rmse": 5.519299597552259,
+      "best_alpha_prediction_rmse": 11.469731414897241,
+      "mean_pf_std": 7.493861198425293
+    },
+    {
+      "well_id": "992c99e8",
+      "rows": 800,
+      "baseline_rmse": 13.780122668176164,
+      "pf_rmse": 14.796185964857127,
+      "best_alpha_prediction_rmse": 14.158792174068251,
+      "mean_pf_std": 4.136993885040283
+    },
+    {
+      "well_id": "992ce078",
+      "rows": 800,
+      "baseline_rmse": 5.024571362315597,
+      "pf_rmse": 4.097859658996298,
+      "best_alpha_prediction_rmse": 4.47415442491601,
+      "mean_pf_std": 5.640726089477539
+    },
+    {
+      "well_id": "99529c45",
+      "rows": 800,
+      "baseline_rmse": 21.664567437407435,
+      "pf_rmse": 5.02066221257206,
+      "best_alpha_prediction_rmse": 13.963757258977504,
+      "mean_pf_std": 5.130266189575195
+    },
+    {
+      "well_id": "995ff498",
+      "rows": 800,
+      "baseline_rmse": 8.348926008775075,
+      "pf_rmse": 6.706859441491639,
+      "best_alpha_prediction_rmse": 7.025278803804255,
+      "mean_pf_std": 3.080094575881958
+    },
+    {
+      "well_id": "999daf80",
+      "rows": 800,
+      "baseline_rmse": 5.119260249293842,
+      "pf_rmse": 2.562058651320831,
+      "best_alpha_prediction_rmse": 3.557223219931706,
+      "mean_pf_std": 5.617982387542725
+    },
+    {
+      "well_id": "9a6b0392",
+      "rows": 800,
+      "baseline_rmse": 6.979406797858789,
+      "pf_rmse": 6.296565326717015,
+      "best_alpha_prediction_rmse": 5.105227320967783,
+      "mean_pf_std": 4.382919788360596
+    },
+    {
+      "well_id": "9a8ae0d6",
+      "rows": 800,
+      "baseline_rmse": 5.941792974347279,
+      "pf_rmse": 5.158103305251027,
+      "best_alpha_prediction_rmse": 5.213379986842283,
+      "mean_pf_std": 2.1622095108032227
+    },
+    {
+      "well_id": "9a95e33f",
+      "rows": 800,
+      "baseline_rmse": 32.27352209435836,
+      "pf_rmse": 23.030080703689773,
+      "best_alpha_prediction_rmse": 28.516078037539078,
+      "mean_pf_std": 16.228435516357422
+    },
+    {
+      "well_id": "9ab94eeb",
+      "rows": 800,
+      "baseline_rmse": 8.210160009098084,
+      "pf_rmse": 8.751192478344155,
+      "best_alpha_prediction_rmse": 8.0770812752672,
+      "mean_pf_std": 12.519631385803223
+    },
+    {
+      "well_id": "9ad5410a",
+      "rows": 800,
+      "baseline_rmse": 8.784600930037573,
+      "pf_rmse": 8.300886318805857,
+      "best_alpha_prediction_rmse": 8.291620743619845,
+      "mean_pf_std": 3.1082470417022705
+    },
+    {
+      "well_id": "9ae248be",
+      "rows": 800,
+      "baseline_rmse": 8.104491378242374,
+      "pf_rmse": 5.489243689431689,
+      "best_alpha_prediction_rmse": 6.098080870154441,
+      "mean_pf_std": 4.531659126281738
+    },
+    {
+      "well_id": "9af1ffd0",
+      "rows": 800,
+      "baseline_rmse": 18.133219908499683,
+      "pf_rmse": 21.468602275849527,
+      "best_alpha_prediction_rmse": 19.453428866702748,
+      "mean_pf_std": 4.4726057052612305
+    },
+    {
+      "well_id": "9b5b61c1",
+      "rows": 800,
+      "baseline_rmse": 5.4303666312691,
+      "pf_rmse": 9.805107238069013,
+      "best_alpha_prediction_rmse": 6.441683520704277,
+      "mean_pf_std": 7.0012688636779785
+    },
+    {
+      "well_id": "9b9e3b49",
+      "rows": 800,
+      "baseline_rmse": 7.921499897430979,
+      "pf_rmse": 6.069809947649572,
+      "best_alpha_prediction_rmse": 5.554229960597751,
+      "mean_pf_std": 6.899837493896484
+    },
+    {
+      "well_id": "9bd2bba3",
+      "rows": 800,
+      "baseline_rmse": 15.664877285666469,
+      "pf_rmse": 8.608153162856741,
+      "best_alpha_prediction_rmse": 7.3113535430050005,
+      "mean_pf_std": 5.619624137878418
+    },
+    {
+      "well_id": "9c211c53",
+      "rows": 800,
+      "baseline_rmse": 6.468031317565229,
+      "pf_rmse": 6.3392195690249205,
+      "best_alpha_prediction_rmse": 5.406609984347039,
+      "mean_pf_std": 11.277068138122559
+    },
+    {
+      "well_id": "9c350a6a",
+      "rows": 800,
+      "baseline_rmse": 17.389869554570023,
+      "pf_rmse": 10.409165407852901,
+      "best_alpha_prediction_rmse": 13.552590005971075,
+      "mean_pf_std": 8.167649269104004
+    },
+    {
+      "well_id": "9c8375f7",
+      "rows": 800,
+      "baseline_rmse": 5.915447362626045,
+      "pf_rmse": 3.307406892753173,
+      "best_alpha_prediction_rmse": 4.087621825033415,
+      "mean_pf_std": 1.8443646430969238
+    },
+    {
+      "well_id": "9d072e4c",
+      "rows": 800,
+      "baseline_rmse": 9.989321035485007,
+      "pf_rmse": 10.488954808112275,
+      "best_alpha_prediction_rmse": 10.031335605368772,
+      "mean_pf_std": 9.462910652160645
+    },
+    {
+      "well_id": "9d3ec64c",
+      "rows": 800,
+      "baseline_rmse": 9.184308255115857,
+      "pf_rmse": 11.71676578418349,
+      "best_alpha_prediction_rmse": 10.182141964572665,
+      "mean_pf_std": 4.129636287689209
+    },
+    {
+      "well_id": "9d4272e3",
+      "rows": 800,
+      "baseline_rmse": 17.76795733195102,
+      "pf_rmse": 13.924995072704386,
+      "best_alpha_prediction_rmse": 15.909610398506718,
+      "mean_pf_std": 4.610152721405029
+    },
+    {
+      "well_id": "9d5e14d4",
+      "rows": 800,
+      "baseline_rmse": 28.540712640016288,
+      "pf_rmse": 14.822231731763882,
+      "best_alpha_prediction_rmse": 22.535177762707878,
+      "mean_pf_std": 6.605584621429443
+    },
+    {
+      "well_id": "9da441ba",
+      "rows": 800,
+      "baseline_rmse": 15.612663497942673,
+      "pf_rmse": 4.064194379281829,
+      "best_alpha_prediction_rmse": 10.664454393520252,
+      "mean_pf_std": 9.744363784790039
+    },
+    {
+      "well_id": "9dede370",
+      "rows": 800,
+      "baseline_rmse": 18.673518398390353,
+      "pf_rmse": 26.615631195613762,
+      "best_alpha_prediction_rmse": 21.741876851866717,
+      "mean_pf_std": 4.214787006378174
+    },
+    {
+      "well_id": "9def2eb2",
+      "rows": 800,
+      "baseline_rmse": 7.255178150810961,
+      "pf_rmse": 12.982218319865762,
+      "best_alpha_prediction_rmse": 8.97433894183516,
+      "mean_pf_std": 8.772619247436523
+    },
+    {
+      "well_id": "9df1b1f9",
+      "rows": 800,
+      "baseline_rmse": 12.587475536223467,
+      "pf_rmse": 1.3300475108523695,
+      "best_alpha_prediction_rmse": 7.500305908431458,
+      "mean_pf_std": 1.4023913145065308
+    },
+    {
+      "well_id": "9dfff011",
+      "rows": 800,
+      "baseline_rmse": 4.844704312442443,
+      "pf_rmse": 6.556191892926948,
+      "best_alpha_prediction_rmse": 5.215743201891,
+      "mean_pf_std": 4.949737071990967
+    },
+    {
+      "well_id": "9e3e364d",
+      "rows": 800,
+      "baseline_rmse": 4.11486664425461,
+      "pf_rmse": 7.828404175994519,
+      "best_alpha_prediction_rmse": 3.9054538384013804,
+      "mean_pf_std": 8.808162689208984
+    },
+    {
+      "well_id": "9efc812e",
+      "rows": 800,
+      "baseline_rmse": 7.749088156034458,
+      "pf_rmse": 8.844653231946246,
+      "best_alpha_prediction_rmse": 8.003248220267665,
+      "mean_pf_std": 2.3835461139678955
+    },
+    {
+      "well_id": "9f0c7bae",
+      "rows": 800,
+      "baseline_rmse": 7.899192078940874,
+      "pf_rmse": 9.426250896886343,
+      "best_alpha_prediction_rmse": 8.267640061439915,
+      "mean_pf_std": 4.607887268066406
+    },
+    {
+      "well_id": "9ffce529",
+      "rows": 800,
+      "baseline_rmse": 11.089884253228277,
+      "pf_rmse": 9.32561916264192,
+      "best_alpha_prediction_rmse": 9.645437241146512,
+      "mean_pf_std": 3.396261692047119
+    },
+    {
+      "well_id": "a0383629",
+      "rows": 800,
+      "baseline_rmse": 8.411364693080975,
+      "pf_rmse": 8.231719004873337,
+      "best_alpha_prediction_rmse": 8.069520048497193,
+      "mean_pf_std": 5.947978496551514
+    },
+    {
+      "well_id": "a056d01e",
+      "rows": 800,
+      "baseline_rmse": 8.597823430962048,
+      "pf_rmse": 9.587402543850823,
+      "best_alpha_prediction_rmse": 8.309978216961087,
+      "mean_pf_std": 3.736030340194702
+    },
+    {
+      "well_id": "a08d9e63",
+      "rows": 800,
+      "baseline_rmse": 21.454735593221308,
+      "pf_rmse": 32.02205484705368,
+      "best_alpha_prediction_rmse": 25.36104790208532,
+      "mean_pf_std": 21.334699630737305
+    },
+    {
+      "well_id": "a0b83014",
+      "rows": 800,
+      "baseline_rmse": 17.50992228709162,
+      "pf_rmse": 2.5682778219968103,
+      "best_alpha_prediction_rmse": 10.75078699150705,
+      "mean_pf_std": 3.024906635284424
+    },
+    {
+      "well_id": "a0e92ed6",
+      "rows": 800,
+      "baseline_rmse": 8.126972199103365,
+      "pf_rmse": 16.620911242582075,
+      "best_alpha_prediction_rmse": 11.057027549404722,
+      "mean_pf_std": 11.212089538574219
+    },
+    {
+      "well_id": "a15bc102",
+      "rows": 800,
+      "baseline_rmse": 2.578826646945993,
+      "pf_rmse": 4.08378871488864,
+      "best_alpha_prediction_rmse": 2.9385730701278145,
+      "mean_pf_std": 3.4979753494262695
+    },
+    {
+      "well_id": "a247e7cf",
+      "rows": 800,
+      "baseline_rmse": 4.200134045480217,
+      "pf_rmse": 3.619019036666161,
+      "best_alpha_prediction_rmse": 2.7650304360797135,
+      "mean_pf_std": 13.75607681274414
+    },
+    {
+      "well_id": "a2e8e7f6",
+      "rows": 800,
+      "baseline_rmse": 10.699253834964388,
+      "pf_rmse": 11.809136423850632,
+      "best_alpha_prediction_rmse": 9.653259818571062,
+      "mean_pf_std": 6.4153361320495605
+    },
+    {
+      "well_id": "a3518960",
+      "rows": 800,
+      "baseline_rmse": 7.100410701150032,
+      "pf_rmse": 13.901817169761163,
+      "best_alpha_prediction_rmse": 9.572710487201729,
+      "mean_pf_std": 9.01489543914795
+    },
+    {
+      "well_id": "a3f71395",
+      "rows": 800,
+      "baseline_rmse": 15.082788431685543,
+      "pf_rmse": 18.698118145705024,
+      "best_alpha_prediction_rmse": 16.017607494129127,
+      "mean_pf_std": 6.964410781860352
+    },
+    {
+      "well_id": "a4719920",
+      "rows": 800,
+      "baseline_rmse": 7.20352796378308,
+      "pf_rmse": 15.716333144710104,
+      "best_alpha_prediction_rmse": 7.454505759290238,
+      "mean_pf_std": 1.4647823572158813
+    },
+    {
+      "well_id": "a48640d9",
+      "rows": 800,
+      "baseline_rmse": 21.615263785112724,
+      "pf_rmse": 8.805964139567623,
+      "best_alpha_prediction_rmse": 10.992934214595556,
+      "mean_pf_std": 6.754554271697998
+    },
+    {
+      "well_id": "a4cdbb0f",
+      "rows": 800,
+      "baseline_rmse": 11.144529100639415,
+      "pf_rmse": 9.430922292813989,
+      "best_alpha_prediction_rmse": 9.533716835953621,
+      "mean_pf_std": 6.088189125061035
+    },
+    {
+      "well_id": "a4f989c2",
+      "rows": 800,
+      "baseline_rmse": 10.576031858642684,
+      "pf_rmse": 10.475721521849383,
+      "best_alpha_prediction_rmse": 10.449730204480066,
+      "mean_pf_std": 12.080059051513672
+    },
+    {
+      "well_id": "a5aa7973",
+      "rows": 800,
+      "baseline_rmse": 14.161562956644678,
+      "pf_rmse": 5.684421218949626,
+      "best_alpha_prediction_rmse": 9.729313550375462,
+      "mean_pf_std": 5.437536239624023
+    },
+    {
+      "well_id": "a5e6f7dc",
+      "rows": 800,
+      "baseline_rmse": 6.354864888414327,
+      "pf_rmse": 8.130572231192296,
+      "best_alpha_prediction_rmse": 6.0118851455496785,
+      "mean_pf_std": 5.129599094390869
+    },
+    {
+      "well_id": "a612d5a0",
+      "rows": 800,
+      "baseline_rmse": 19.25028685825092,
+      "pf_rmse": 6.67523182690874,
+      "best_alpha_prediction_rmse": 12.102243170076186,
+      "mean_pf_std": 2.3033628463745117
+    },
+    {
+      "well_id": "a622ce4d",
+      "rows": 800,
+      "baseline_rmse": 14.229277037150009,
+      "pf_rmse": 3.87587932028719,
+      "best_alpha_prediction_rmse": 8.21218123543743,
+      "mean_pf_std": 4.567483901977539
+    },
+    {
+      "well_id": "a645da9a",
+      "rows": 800,
+      "baseline_rmse": 8.949449731687382,
+      "pf_rmse": 7.0202493154363435,
+      "best_alpha_prediction_rmse": 7.176637218881774,
+      "mean_pf_std": 2.381807804107666
+    },
+    {
+      "well_id": "a692b17e",
+      "rows": 800,
+      "baseline_rmse": 13.131873571580964,
+      "pf_rmse": 35.75732264856069,
+      "best_alpha_prediction_rmse": 21.500571987927387,
+      "mean_pf_std": 14.184501647949219
+    },
+    {
+      "well_id": "a6b8ac67",
+      "rows": 800,
+      "baseline_rmse": 10.875288840991885,
+      "pf_rmse": 9.149364017499954,
+      "best_alpha_prediction_rmse": 10.041689699921994,
+      "mean_pf_std": 6.526024341583252
+    },
+    {
+      "well_id": "a6ed2eff",
+      "rows": 800,
+      "baseline_rmse": 8.632773851723687,
+      "pf_rmse": 9.260248979886187,
+      "best_alpha_prediction_rmse": 7.804672962199394,
+      "mean_pf_std": 4.685266971588135
+    },
+    {
+      "well_id": "a6f967fb",
+      "rows": 800,
+      "baseline_rmse": 13.758040880699852,
+      "pf_rmse": 10.148347709472146,
+      "best_alpha_prediction_rmse": 10.163613259375884,
+      "mean_pf_std": 4.823698997497559
+    },
+    {
+      "well_id": "a76db406",
+      "rows": 800,
+      "baseline_rmse": 3.71841049710672,
+      "pf_rmse": 8.154373264148397,
+      "best_alpha_prediction_rmse": 4.509202491320311,
+      "mean_pf_std": 5.183754920959473
+    },
+    {
+      "well_id": "a7744f5b",
+      "rows": 800,
+      "baseline_rmse": 13.086948273948266,
+      "pf_rmse": 3.2249367500439803,
+      "best_alpha_prediction_rmse": 8.339403806808539,
+      "mean_pf_std": 2.1915502548217773
+    },
+    {
+      "well_id": "a783cc24",
+      "rows": 800,
+      "baseline_rmse": 26.73659197616564,
+      "pf_rmse": 14.878193535895445,
+      "best_alpha_prediction_rmse": 21.810197616828965,
+      "mean_pf_std": 6.659303665161133
+    },
+    {
+      "well_id": "a79fd2e7",
+      "rows": 800,
+      "baseline_rmse": 12.368099005101794,
+      "pf_rmse": 6.740080993777174,
+      "best_alpha_prediction_rmse": 8.165781927696466,
+      "mean_pf_std": 3.600426435470581
+    },
+    {
+      "well_id": "a7fc3e6b",
+      "rows": 800,
+      "baseline_rmse": 18.139961807429255,
+      "pf_rmse": 22.852510034190963,
+      "best_alpha_prediction_rmse": 19.97563843194958,
+      "mean_pf_std": 9.849583625793457
+    },
+    {
+      "well_id": "a85bb86f",
+      "rows": 800,
+      "baseline_rmse": 7.870440608695488,
+      "pf_rmse": 3.476421053328988,
+      "best_alpha_prediction_rmse": 5.61920859396865,
+      "mean_pf_std": 2.0068094730377197
+    },
+    {
+      "well_id": "a85e4bc3",
+      "rows": 800,
+      "baseline_rmse": 9.633496282503316,
+      "pf_rmse": 11.18496069056922,
+      "best_alpha_prediction_rmse": 8.291625603679254,
+      "mean_pf_std": 11.826891899108887
+    },
+    {
+      "well_id": "a87433c9",
+      "rows": 800,
+      "baseline_rmse": 9.575114196446911,
+      "pf_rmse": 5.79443084135093,
+      "best_alpha_prediction_rmse": 5.646712403826784,
+      "mean_pf_std": 2.3573224544525146
+    },
+    {
+      "well_id": "a8ed028a",
+      "rows": 800,
+      "baseline_rmse": 19.038064374431343,
+      "pf_rmse": 19.673418226229973,
+      "best_alpha_prediction_rmse": 19.275535407777646,
+      "mean_pf_std": 7.974945068359375
+    },
+    {
+      "well_id": "a959858c",
+      "rows": 800,
+      "baseline_rmse": 65.35631599738444,
+      "pf_rmse": 15.688169098878006,
+      "best_alpha_prediction_rmse": 43.40185530323278,
+      "mean_pf_std": 4.806867599487305
+    },
+    {
+      "well_id": "a9c9b150",
+      "rows": 800,
+      "baseline_rmse": 1.1631614247385431,
+      "pf_rmse": 5.755243032401282,
+      "best_alpha_prediction_rmse": 2.6775692082464873,
+      "mean_pf_std": 3.228965997695923
+    },
+    {
+      "well_id": "aa95015b",
+      "rows": 800,
+      "baseline_rmse": 11.721399873735711,
+      "pf_rmse": 2.3402735925554397,
+      "best_alpha_prediction_rmse": 7.323248943169549,
+      "mean_pf_std": 3.409205913543701
+    },
+    {
+      "well_id": "aaaf3c03",
+      "rows": 800,
+      "baseline_rmse": 15.072337737557506,
+      "pf_rmse": 15.116453385433642,
+      "best_alpha_prediction_rmse": 14.967785068177903,
+      "mean_pf_std": 4.678735256195068
+    },
+    {
+      "well_id": "aaeffccb",
+      "rows": 800,
+      "baseline_rmse": 4.7563806880863035,
+      "pf_rmse": 4.138482978803968,
+      "best_alpha_prediction_rmse": 4.210889167007071,
+      "mean_pf_std": 3.3392014503479004
+    },
+    {
+      "well_id": "ab112491",
+      "rows": 800,
+      "baseline_rmse": 28.19726430657784,
+      "pf_rmse": 25.474146552851145,
+      "best_alpha_prediction_rmse": 27.04508573034799,
+      "mean_pf_std": 2.439162015914917
+    },
+    {
+      "well_id": "ab18d3fc",
+      "rows": 800,
+      "baseline_rmse": 16.60006153226569,
+      "pf_rmse": 19.44563926759043,
+      "best_alpha_prediction_rmse": 17.635433005218363,
+      "mean_pf_std": 3.357043504714966
+    },
+    {
+      "well_id": "ab3ced07",
+      "rows": 800,
+      "baseline_rmse": 9.792795585275469,
+      "pf_rmse": 8.538769131811733,
+      "best_alpha_prediction_rmse": 9.123502025779857,
+      "mean_pf_std": 8.014949798583984
+    },
+    {
+      "well_id": "ab6fe95d",
+      "rows": 800,
+      "baseline_rmse": 6.678643855604067,
+      "pf_rmse": 6.232578049450564,
+      "best_alpha_prediction_rmse": 4.569258058907671,
+      "mean_pf_std": 9.814903259277344
+    },
+    {
+      "well_id": "ab94878e",
+      "rows": 800,
+      "baseline_rmse": 6.086747941224382,
+      "pf_rmse": 9.0736050574123,
+      "best_alpha_prediction_rmse": 4.612551038455935,
+      "mean_pf_std": 0.7477457523345947
+    },
+    {
+      "well_id": "abf460d2",
+      "rows": 800,
+      "baseline_rmse": 8.361678434978982,
+      "pf_rmse": 17.373429814393596,
+      "best_alpha_prediction_rmse": 11.724748579157342,
+      "mean_pf_std": 4.110955715179443
+    },
+    {
+      "well_id": "ac6f01d5",
+      "rows": 800,
+      "baseline_rmse": 15.957259523490118,
+      "pf_rmse": 9.85725342969471,
+      "best_alpha_prediction_rmse": 13.321972059633723,
+      "mean_pf_std": 10.3650484085083
+    },
+    {
+      "well_id": "ad2133a8",
+      "rows": 800,
+      "baseline_rmse": 28.07321608980615,
+      "pf_rmse": 38.488231643409904,
+      "best_alpha_prediction_rmse": 32.0756833533766,
+      "mean_pf_std": 6.502090930938721
+    },
+    {
+      "well_id": "add9c322",
+      "rows": 800,
+      "baseline_rmse": 12.291618343408533,
+      "pf_rmse": 6.564859187663628,
+      "best_alpha_prediction_rmse": 9.530406229156675,
+      "mean_pf_std": 13.199348449707031
+    },
+    {
+      "well_id": "ae069086",
+      "rows": 800,
+      "baseline_rmse": 14.577947197736664,
+      "pf_rmse": 22.886050688285515,
+      "best_alpha_prediction_rmse": 17.409434658286397,
+      "mean_pf_std": 4.02966833114624
+    },
+    {
+      "well_id": "ae0784a8",
+      "rows": 800,
+      "baseline_rmse": 10.874356026909892,
+      "pf_rmse": 6.830190743575861,
+      "best_alpha_prediction_rmse": 9.006342220939725,
+      "mean_pf_std": 4.172861099243164
+    },
+    {
+      "well_id": "ae35f33a",
+      "rows": 800,
+      "baseline_rmse": 5.099731255174575,
+      "pf_rmse": 8.082518400785096,
+      "best_alpha_prediction_rmse": 5.702315205820713,
+      "mean_pf_std": 5.1300859451293945
+    },
+    {
+      "well_id": "ae8959c3",
+      "rows": 800,
+      "baseline_rmse": 19.773878252002802,
+      "pf_rmse": 19.092388692060194,
+      "best_alpha_prediction_rmse": 19.372337629881066,
+      "mean_pf_std": 0.8203704953193665
+    },
+    {
+      "well_id": "aed44918",
+      "rows": 800,
+      "baseline_rmse": 9.484480000242153,
+      "pf_rmse": 6.05078605838246,
+      "best_alpha_prediction_rmse": 7.991945204616371,
+      "mean_pf_std": 4.580796718597412
+    },
+    {
+      "well_id": "aee6393a",
+      "rows": 800,
+      "baseline_rmse": 4.663125360206322,
+      "pf_rmse": 4.9290216979356245,
+      "best_alpha_prediction_rmse": 4.559465065445039,
+      "mean_pf_std": 4.352880477905273
+    },
+    {
+      "well_id": "af7a59ce",
+      "rows": 800,
+      "baseline_rmse": 4.1140810790496465,
+      "pf_rmse": 0.9911303837514076,
+      "best_alpha_prediction_rmse": 2.7277970581840796,
+      "mean_pf_std": 0.5531370043754578
+    },
+    {
+      "well_id": "aff4e561",
+      "rows": 800,
+      "baseline_rmse": 10.855592383651745,
+      "pf_rmse": 4.870434587169194,
+      "best_alpha_prediction_rmse": 7.505286935398264,
+      "mean_pf_std": 2.2233035564422607
+    },
+    {
+      "well_id": "b04b58a3",
+      "rows": 800,
+      "baseline_rmse": 13.052740684431276,
+      "pf_rmse": 9.229236713802642,
+      "best_alpha_prediction_rmse": 8.175307805363213,
+      "mean_pf_std": 7.104569911956787
+    },
+    {
+      "well_id": "b0d42b0d",
+      "rows": 800,
+      "baseline_rmse": 19.787285570537463,
+      "pf_rmse": 12.102179079536715,
+      "best_alpha_prediction_rmse": 16.510758529005635,
+      "mean_pf_std": 17.709501266479492
+    },
+    {
+      "well_id": "b0f53bf4",
+      "rows": 800,
+      "baseline_rmse": 9.227195219838416,
+      "pf_rmse": 10.715902803701127,
+      "best_alpha_prediction_rmse": 9.763379909625685,
+      "mean_pf_std": 3.9092142581939697
+    },
+    {
+      "well_id": "b19b0395",
+      "rows": 800,
+      "baseline_rmse": 10.04538510336911,
+      "pf_rmse": 15.534703892174358,
+      "best_alpha_prediction_rmse": 12.144484655800984,
+      "mean_pf_std": 3.333359956741333
+    },
+    {
+      "well_id": "b1efb8a4",
+      "rows": 800,
+      "baseline_rmse": 8.502279356148252,
+      "pf_rmse": 13.43956901513964,
+      "best_alpha_prediction_rmse": 10.20360920488217,
+      "mean_pf_std": 12.20776653289795
+    },
+    {
+      "well_id": "b32902c0",
+      "rows": 800,
+      "baseline_rmse": 5.174215290747135,
+      "pf_rmse": 10.658302211454101,
+      "best_alpha_prediction_rmse": 6.914146348021953,
+      "mean_pf_std": 7.79747200012207
+    },
+    {
+      "well_id": "b32e4903",
+      "rows": 800,
+      "baseline_rmse": 5.8688915691123995,
+      "pf_rmse": 11.691210205808183,
+      "best_alpha_prediction_rmse": 7.533969264041131,
+      "mean_pf_std": 5.853946685791016
+    },
+    {
+      "well_id": "b3388334",
+      "rows": 800,
+      "baseline_rmse": 14.234909241895565,
+      "pf_rmse": 13.61645738082148,
+      "best_alpha_prediction_rmse": 13.275971970977347,
+      "mean_pf_std": 1.8810076713562012
+    },
+    {
+      "well_id": "b37fd114",
+      "rows": 800,
+      "baseline_rmse": 24.96800489626667,
+      "pf_rmse": 11.460122113394732,
+      "best_alpha_prediction_rmse": 18.32457884826802,
+      "mean_pf_std": 25.077198028564453
+    },
+    {
+      "well_id": "b38e3116",
+      "rows": 800,
+      "baseline_rmse": 6.400992598807682,
+      "pf_rmse": 5.932430201308081,
+      "best_alpha_prediction_rmse": 6.007755061280726,
+      "mean_pf_std": 7.2494425773620605
+    },
+    {
+      "well_id": "b4d8dd4f",
+      "rows": 800,
+      "baseline_rmse": 17.10303773091188,
+      "pf_rmse": 16.3967365670922,
+      "best_alpha_prediction_rmse": 16.44193809613319,
+      "mean_pf_std": 5.279922962188721
+    },
+    {
+      "well_id": "b4f37e6e",
+      "rows": 800,
+      "baseline_rmse": 14.959395492466243,
+      "pf_rmse": 12.558162425201363,
+      "best_alpha_prediction_rmse": 13.98226981987623,
+      "mean_pf_std": 6.161346435546875
+    },
+    {
+      "well_id": "b56bc0aa",
+      "rows": 800,
+      "baseline_rmse": 8.783353353076295,
+      "pf_rmse": 7.913600357571188,
+      "best_alpha_prediction_rmse": 4.667186581389507,
+      "mean_pf_std": 9.47692584991455
+    },
+    {
+      "well_id": "b585b4fa",
+      "rows": 800,
+      "baseline_rmse": 9.984098106489707,
+      "pf_rmse": 7.072990808936295,
+      "best_alpha_prediction_rmse": 8.282738149957982,
+      "mean_pf_std": 4.788658618927002
+    },
+    {
+      "well_id": "b5aa9634",
+      "rows": 800,
+      "baseline_rmse": 11.499123569864233,
+      "pf_rmse": 17.770095557987947,
+      "best_alpha_prediction_rmse": 13.67678743380613,
+      "mean_pf_std": 7.200980186462402
+    },
+    {
+      "well_id": "b7974e66",
+      "rows": 800,
+      "baseline_rmse": 6.970973497295738,
+      "pf_rmse": 7.356502768707931,
+      "best_alpha_prediction_rmse": 6.377364682403788,
+      "mean_pf_std": 5.385166168212891
+    },
+    {
+      "well_id": "b7cdcecb",
+      "rows": 800,
+      "baseline_rmse": 9.280553923393004,
+      "pf_rmse": 9.259776852584956,
+      "best_alpha_prediction_rmse": 4.12944081547202,
+      "mean_pf_std": 1.5262047052383423
+    },
+    {
+      "well_id": "b7fea9ef",
+      "rows": 800,
+      "baseline_rmse": 11.14257939168544,
+      "pf_rmse": 4.718067799235751,
+      "best_alpha_prediction_rmse": 8.278604348639632,
+      "mean_pf_std": 2.2434182167053223
+    },
+    {
+      "well_id": "b85f7b06",
+      "rows": 800,
+      "baseline_rmse": 3.5730952618141196,
+      "pf_rmse": 14.2380290365622,
+      "best_alpha_prediction_rmse": 4.270231692243095,
+      "mean_pf_std": 8.102962493896484
+    },
+    {
+      "well_id": "b881d27e",
+      "rows": 800,
+      "baseline_rmse": 18.78153784637929,
+      "pf_rmse": 10.122682790367971,
+      "best_alpha_prediction_rmse": 15.214448689623763,
+      "mean_pf_std": 12.61035442352295
+    },
+    {
+      "well_id": "b8c49c1a",
+      "rows": 800,
+      "baseline_rmse": 8.252950525418466,
+      "pf_rmse": 13.718670877439665,
+      "best_alpha_prediction_rmse": 9.808104079666942,
+      "mean_pf_std": 3.9319145679473877
+    },
+    {
+      "well_id": "b95e7121",
+      "rows": 800,
+      "baseline_rmse": 3.4180857581400668,
+      "pf_rmse": 5.299807409242756,
+      "best_alpha_prediction_rmse": 2.6951281778674674,
+      "mean_pf_std": 6.531850814819336
+    },
+    {
+      "well_id": "b977be4a",
+      "rows": 800,
+      "baseline_rmse": 18.570316573095937,
+      "pf_rmse": 12.880894311926207,
+      "best_alpha_prediction_rmse": 14.961812372295226,
+      "mean_pf_std": 18.12152862548828
+    },
+    {
+      "well_id": "ba48188d",
+      "rows": 800,
+      "baseline_rmse": 50.964769054220724,
+      "pf_rmse": 39.51277379040102,
+      "best_alpha_prediction_rmse": 46.23593359211186,
+      "mean_pf_std": 8.164233207702637
+    },
+    {
+      "well_id": "bb2cdd83",
+      "rows": 800,
+      "baseline_rmse": 3.019741007106572,
+      "pf_rmse": 2.7024984098434013,
+      "best_alpha_prediction_rmse": 2.149421079668765,
+      "mean_pf_std": 4.773836612701416
+    },
+    {
+      "well_id": "bb337fa0",
+      "rows": 800,
+      "baseline_rmse": 24.083457042646554,
+      "pf_rmse": 6.375951494135404,
+      "best_alpha_prediction_rmse": 14.3719261668855,
+      "mean_pf_std": 4.93071174621582
+    },
+    {
+      "well_id": "bb682ebd",
+      "rows": 800,
+      "baseline_rmse": 19.87098617331377,
+      "pf_rmse": 20.12647189585104,
+      "best_alpha_prediction_rmse": 19.852626166011824,
+      "mean_pf_std": 5.653050422668457
+    },
+    {
+      "well_id": "bc4381e2",
+      "rows": 800,
+      "baseline_rmse": 12.596874463532755,
+      "pf_rmse": 17.38708294217581,
+      "best_alpha_prediction_rmse": 14.370702347820776,
+      "mean_pf_std": 2.9085206985473633
+    },
+    {
+      "well_id": "bcebcc5f",
+      "rows": 800,
+      "baseline_rmse": 24.243977888848416,
+      "pf_rmse": 11.85317156146541,
+      "best_alpha_prediction_rmse": 19.121864499870572,
+      "mean_pf_std": 4.391289710998535
+    },
+    {
+      "well_id": "bd2c2f34",
+      "rows": 800,
+      "baseline_rmse": 5.661470634914697,
+      "pf_rmse": 5.699947149040483,
+      "best_alpha_prediction_rmse": 5.265097825627153,
+      "mean_pf_std": 3.966294050216675
+    },
+    {
+      "well_id": "bd4ae5da",
+      "rows": 800,
+      "baseline_rmse": 14.049152647934802,
+      "pf_rmse": 10.061088730657625,
+      "best_alpha_prediction_rmse": 12.350939768117598,
+      "mean_pf_std": 7.863591194152832
+    },
+    {
+      "well_id": "bd6f0e19",
+      "rows": 800,
+      "baseline_rmse": 10.113645781813615,
+      "pf_rmse": 6.620376896532362,
+      "best_alpha_prediction_rmse": 8.098628105457005,
+      "mean_pf_std": 4.698469638824463
+    },
+    {
+      "well_id": "bd8f847e",
+      "rows": 800,
+      "baseline_rmse": 7.387658788479168,
+      "pf_rmse": 14.762751799418204,
+      "best_alpha_prediction_rmse": 10.284429722699114,
+      "mean_pf_std": 10.05210018157959
+    },
+    {
+      "well_id": "be063506",
+      "rows": 800,
+      "baseline_rmse": 9.681094688877495,
+      "pf_rmse": 8.966215780970659,
+      "best_alpha_prediction_rmse": 4.610617871491722,
+      "mean_pf_std": 13.960657119750977
+    },
+    {
+      "well_id": "be35c8f2",
+      "rows": 800,
+      "baseline_rmse": 4.679486670565426,
+      "pf_rmse": 6.258960995541273,
+      "best_alpha_prediction_rmse": 4.733064606458966,
+      "mean_pf_std": 6.228452682495117
+    },
+    {
+      "well_id": "be83e781",
+      "rows": 800,
+      "baseline_rmse": 3.1602567933631605,
+      "pf_rmse": 3.5140429986487765,
+      "best_alpha_prediction_rmse": 3.254102340365341,
+      "mean_pf_std": 1.6341534852981567
+    },
+    {
+      "well_id": "beda8696",
+      "rows": 800,
+      "baseline_rmse": 9.836432267341605,
+      "pf_rmse": 12.595584433474588,
+      "best_alpha_prediction_rmse": 10.0927632088471,
+      "mean_pf_std": 17.663684844970703
+    },
+    {
+      "well_id": "bf39bc20",
+      "rows": 800,
+      "baseline_rmse": 8.40506972755135,
+      "pf_rmse": 9.792032930669636,
+      "best_alpha_prediction_rmse": 8.738997362820761,
+      "mean_pf_std": 6.863019943237305
+    },
+    {
+      "well_id": "bf70b410",
+      "rows": 800,
+      "baseline_rmse": 18.94007247214257,
+      "pf_rmse": 13.428958268222539,
+      "best_alpha_prediction_rmse": 16.56586058394438,
+      "mean_pf_std": 14.118953704833984
+    },
+    {
+      "well_id": "bffe3082",
+      "rows": 800,
+      "baseline_rmse": 16.606238677074654,
+      "pf_rmse": 15.878430199817828,
+      "best_alpha_prediction_rmse": 16.271170332158917,
+      "mean_pf_std": 6.427802562713623
+    },
+    {
+      "well_id": "c03b9305",
+      "rows": 800,
+      "baseline_rmse": 7.127499263416703,
+      "pf_rmse": 11.344966071105281,
+      "best_alpha_prediction_rmse": 8.649605762554742,
+      "mean_pf_std": 6.405457019805908
+    },
+    {
+      "well_id": "c03d4aed",
+      "rows": 800,
+      "baseline_rmse": 12.575483618931681,
+      "pf_rmse": 10.928857415166771,
+      "best_alpha_prediction_rmse": 11.028061035814266,
+      "mean_pf_std": 6.906929969787598
+    },
+    {
+      "well_id": "c03fba65",
+      "rows": 800,
+      "baseline_rmse": 22.74196182995134,
+      "pf_rmse": 9.436812243410783,
+      "best_alpha_prediction_rmse": 16.22888675996354,
+      "mean_pf_std": 8.332449913024902
+    },
+    {
+      "well_id": "c07fd0cd",
+      "rows": 800,
+      "baseline_rmse": 4.052243113387937,
+      "pf_rmse": 4.201378105302185,
+      "best_alpha_prediction_rmse": 3.48812495521237,
+      "mean_pf_std": 3.2192461490631104
+    },
+    {
+      "well_id": "c1708b88",
+      "rows": 800,
+      "baseline_rmse": 18.294631521295386,
+      "pf_rmse": 18.26399321323874,
+      "best_alpha_prediction_rmse": 17.590222678801545,
+      "mean_pf_std": 11.163751602172852
+    },
+    {
+      "well_id": "c1d046f4",
+      "rows": 800,
+      "baseline_rmse": 7.699104355377876,
+      "pf_rmse": 7.148096634723294,
+      "best_alpha_prediction_rmse": 7.297706470473524,
+      "mean_pf_std": 10.190953254699707
+    },
+    {
+      "well_id": "c2717d4f",
+      "rows": 800,
+      "baseline_rmse": 8.45114391665451,
+      "pf_rmse": 4.253166495647782,
+      "best_alpha_prediction_rmse": 6.5204599910765655,
+      "mean_pf_std": 1.799094557762146
+    },
+    {
+      "well_id": "c2c4db09",
+      "rows": 800,
+      "baseline_rmse": 9.021593034215181,
+      "pf_rmse": 7.467337268403758,
+      "best_alpha_prediction_rmse": 7.477139766196425,
+      "mean_pf_std": 5.992136001586914
+    },
+    {
+      "well_id": "c2c6fc71",
+      "rows": 800,
+      "baseline_rmse": 11.763029477986976,
+      "pf_rmse": 20.754076793293027,
+      "best_alpha_prediction_rmse": 14.951677958859634,
+      "mean_pf_std": 20.887434005737305
+    },
+    {
+      "well_id": "c36625df",
+      "rows": 800,
+      "baseline_rmse": 8.011646553611085,
+      "pf_rmse": 9.34729394958398,
+      "best_alpha_prediction_rmse": 8.378950816361158,
+      "mean_pf_std": 7.825794219970703
+    },
+    {
+      "well_id": "c3957531",
+      "rows": 800,
+      "baseline_rmse": 12.512139360437175,
+      "pf_rmse": 11.106986351454085,
+      "best_alpha_prediction_rmse": 10.797951216520442,
+      "mean_pf_std": 8.419055938720703
+    },
+    {
+      "well_id": "c42fe306",
+      "rows": 800,
+      "baseline_rmse": 11.287854983343857,
+      "pf_rmse": 10.72820044745181,
+      "best_alpha_prediction_rmse": 9.77128736722408,
+      "mean_pf_std": 8.075304985046387
+    },
+    {
+      "well_id": "c43812e2",
+      "rows": 800,
+      "baseline_rmse": 7.019040719713642,
+      "pf_rmse": 12.597750168785854,
+      "best_alpha_prediction_rmse": 6.334362476309867,
+      "mean_pf_std": 10.26806354522705
+    },
+    {
+      "well_id": "c472c0b5",
+      "rows": 800,
+      "baseline_rmse": 8.281083677575893,
+      "pf_rmse": 5.634932669097551,
+      "best_alpha_prediction_rmse": 5.5989401910337335,
+      "mean_pf_std": 2.761725664138794
+    },
+    {
+      "well_id": "c47e0767",
+      "rows": 800,
+      "baseline_rmse": 21.47751019671527,
+      "pf_rmse": 17.207596009052942,
+      "best_alpha_prediction_rmse": 19.747586779997743,
+      "mean_pf_std": 9.333650588989258
+    },
+    {
+      "well_id": "c50b42f6",
+      "rows": 800,
+      "baseline_rmse": 8.605803325373127,
+      "pf_rmse": 7.948046631469178,
+      "best_alpha_prediction_rmse": 8.132124496654505,
+      "mean_pf_std": 4.0706281661987305
+    },
+    {
+      "well_id": "c593337f",
+      "rows": 800,
+      "baseline_rmse": 23.825251735290962,
+      "pf_rmse": 8.628340907674598,
+      "best_alpha_prediction_rmse": 17.524226183774946,
+      "mean_pf_std": 3.8403480052948
+    },
+    {
+      "well_id": "c59b6c4a",
+      "rows": 800,
+      "baseline_rmse": 20.96274744636221,
+      "pf_rmse": 26.2587960511944,
+      "best_alpha_prediction_rmse": 23.04603283035006,
+      "mean_pf_std": 6.000266075134277
+    },
+    {
+      "well_id": "c66be2b8",
+      "rows": 800,
+      "baseline_rmse": 22.22454787785383,
+      "pf_rmse": 10.889008476002363,
+      "best_alpha_prediction_rmse": 17.075289781301347,
+      "mean_pf_std": 1.8857766389846802
+    },
+    {
+      "well_id": "c6797dd7",
+      "rows": 800,
+      "baseline_rmse": 5.82834378275662,
+      "pf_rmse": 7.950991349604559,
+      "best_alpha_prediction_rmse": 5.93745431725263,
+      "mean_pf_std": 2.569024085998535
+    },
+    {
+      "well_id": "c6b782a4",
+      "rows": 800,
+      "baseline_rmse": 12.801554339220445,
+      "pf_rmse": 10.437915275563107,
+      "best_alpha_prediction_rmse": 11.527486980240772,
+      "mean_pf_std": 1.4061893224716187
+    },
+    {
+      "well_id": "c6c96179",
+      "rows": 800,
+      "baseline_rmse": 8.76977240297608,
+      "pf_rmse": 8.63963338864271,
+      "best_alpha_prediction_rmse": 7.491499685793057,
+      "mean_pf_std": 2.479644298553467
+    },
+    {
+      "well_id": "c70c0e01",
+      "rows": 800,
+      "baseline_rmse": 8.967306221770528,
+      "pf_rmse": 31.73743236213106,
+      "best_alpha_prediction_rmse": 17.002169045664065,
+      "mean_pf_std": 5.2251296043396
+    },
+    {
+      "well_id": "c84c65be",
+      "rows": 800,
+      "baseline_rmse": 9.733606076372668,
+      "pf_rmse": 7.297033647919534,
+      "best_alpha_prediction_rmse": 7.692247655846229,
+      "mean_pf_std": 5.424787521362305
+    },
+    {
+      "well_id": "c8d9680c",
+      "rows": 800,
+      "baseline_rmse": 42.75346957850257,
+      "pf_rmse": 31.254412840231428,
+      "best_alpha_prediction_rmse": 38.00180041947673,
+      "mean_pf_std": 11.7744779586792
+    },
+    {
+      "well_id": "c908edd0",
+      "rows": 800,
+      "baseline_rmse": 8.771218494314448,
+      "pf_rmse": 19.612879941567464,
+      "best_alpha_prediction_rmse": 12.290396933962342,
+      "mean_pf_std": 2.3693654537200928
+    },
+    {
+      "well_id": "c9578d27",
+      "rows": 800,
+      "baseline_rmse": 10.303240776571096,
+      "pf_rmse": 9.925332403523534,
+      "best_alpha_prediction_rmse": 9.248717686190115,
+      "mean_pf_std": 16.07586097717285
+    },
+    {
+      "well_id": "c96c018a",
+      "rows": 800,
+      "baseline_rmse": 12.853945026723167,
+      "pf_rmse": 7.379265226044466,
+      "best_alpha_prediction_rmse": 9.565545721743558,
+      "mean_pf_std": 17.13393783569336
+    },
+    {
+      "well_id": "c99f9fae",
+      "rows": 800,
+      "baseline_rmse": 5.434430811962759,
+      "pf_rmse": 5.085781244795557,
+      "best_alpha_prediction_rmse": 5.184157660081496,
+      "mean_pf_std": 2.5883567333221436
+    },
+    {
+      "well_id": "c9e6734f",
+      "rows": 800,
+      "baseline_rmse": 10.30690544004359,
+      "pf_rmse": 1.5299136011892012,
+      "best_alpha_prediction_rmse": 6.128395155418868,
+      "mean_pf_std": 1.2795521020889282
+    },
+    {
+      "well_id": "c9e980e8",
+      "rows": 800,
+      "baseline_rmse": 9.741430086234985,
+      "pf_rmse": 3.681529662770465,
+      "best_alpha_prediction_rmse": 6.883948216936391,
+      "mean_pf_std": 1.8158456087112427
+    },
+    {
+      "well_id": "c9fedcf3",
+      "rows": 800,
+      "baseline_rmse": 7.470918593119039,
+      "pf_rmse": 4.245259832465549,
+      "best_alpha_prediction_rmse": 5.676213321517206,
+      "mean_pf_std": 3.917907953262329
+    },
+    {
+      "well_id": "cad13e8f",
+      "rows": 800,
+      "baseline_rmse": 17.02063628364116,
+      "pf_rmse": 5.980397889441481,
+      "best_alpha_prediction_rmse": 11.531927959216747,
+      "mean_pf_std": 5.8540873527526855
+    },
+    {
+      "well_id": "cb34231f",
+      "rows": 800,
+      "baseline_rmse": 5.415482596223367,
+      "pf_rmse": 7.937309254154091,
+      "best_alpha_prediction_rmse": 4.79903151023355,
+      "mean_pf_std": 4.745278835296631
+    },
+    {
+      "well_id": "cb879f40",
+      "rows": 800,
+      "baseline_rmse": 8.796124650947116,
+      "pf_rmse": 8.81212747885747,
+      "best_alpha_prediction_rmse": 8.563384564154331,
+      "mean_pf_std": 15.33483600616455
+    },
+    {
+      "well_id": "cbb406b5",
+      "rows": 800,
+      "baseline_rmse": 11.36050107829806,
+      "pf_rmse": 10.910089401459475,
+      "best_alpha_prediction_rmse": 10.907886994806006,
+      "mean_pf_std": 13.929770469665527
+    },
+    {
+      "well_id": "cbe51de1",
+      "rows": 800,
+      "baseline_rmse": 15.013693803491348,
+      "pf_rmse": 8.38399226155221,
+      "best_alpha_prediction_rmse": 12.148190590143932,
+      "mean_pf_std": 1.1926608085632324
+    },
+    {
+      "well_id": "cbe62450",
+      "rows": 800,
+      "baseline_rmse": 18.600585246168688,
+      "pf_rmse": 17.926297346287164,
+      "best_alpha_prediction_rmse": 18.17207852004305,
+      "mean_pf_std": 4.471773624420166
+    },
+    {
+      "well_id": "cc08aa63",
+      "rows": 800,
+      "baseline_rmse": 12.98401789701526,
+      "pf_rmse": 5.993350117722745,
+      "best_alpha_prediction_rmse": 9.923723251891577,
+      "mean_pf_std": 2.2544336318969727
+    },
+    {
+      "well_id": "cc8a1d57",
+      "rows": 800,
+      "baseline_rmse": 27.540595518252935,
+      "pf_rmse": 17.99874912316167,
+      "best_alpha_prediction_rmse": 23.690454689079207,
+      "mean_pf_std": 9.23486614227295
+    },
+    {
+      "well_id": "ccedb12b",
+      "rows": 800,
+      "baseline_rmse": 10.6199437557358,
+      "pf_rmse": 13.719128510707355,
+      "best_alpha_prediction_rmse": 11.472272862581242,
+      "mean_pf_std": 8.567570686340332
+    },
+    {
+      "well_id": "cd7f1687",
+      "rows": 800,
+      "baseline_rmse": 10.568018268578484,
+      "pf_rmse": 23.160417724573165,
+      "best_alpha_prediction_rmse": 15.50974304007714,
+      "mean_pf_std": 6.7125935554504395
+    },
+    {
+      "well_id": "cda7eb37",
+      "rows": 800,
+      "baseline_rmse": 10.037929455320958,
+      "pf_rmse": 12.22860910303993,
+      "best_alpha_prediction_rmse": 10.48729296740843,
+      "mean_pf_std": 17.37969207763672
+    },
+    {
+      "well_id": "cdc31d65",
+      "rows": 800,
+      "baseline_rmse": 7.481964214028199,
+      "pf_rmse": 12.292054508091717,
+      "best_alpha_prediction_rmse": 8.966230141229145,
+      "mean_pf_std": 6.595609188079834
+    },
+    {
+      "well_id": "cdc60a53",
+      "rows": 800,
+      "baseline_rmse": 8.315327842304159,
+      "pf_rmse": 19.357565727664205,
+      "best_alpha_prediction_rmse": 10.71429336754692,
+      "mean_pf_std": 7.424511909484863
+    },
+    {
+      "well_id": "ce55ba43",
+      "rows": 800,
+      "baseline_rmse": 14.300765722505682,
+      "pf_rmse": 13.229974286259274,
+      "best_alpha_prediction_rmse": 7.931104542591902,
+      "mean_pf_std": 2.3578710556030273
+    },
+    {
+      "well_id": "ce8399b7",
+      "rows": 800,
+      "baseline_rmse": 3.363898686791157,
+      "pf_rmse": 1.9914607163556532,
+      "best_alpha_prediction_rmse": 2.66592278271074,
+      "mean_pf_std": 1.8041129112243652
+    },
+    {
+      "well_id": "cf50c9d1",
+      "rows": 800,
+      "baseline_rmse": 31.567682404241268,
+      "pf_rmse": 26.375516819902412,
+      "best_alpha_prediction_rmse": 29.46532411802451,
+      "mean_pf_std": 4.550384044647217
+    },
+    {
+      "well_id": "d00e7eb9",
+      "rows": 800,
+      "baseline_rmse": 7.904770244921492,
+      "pf_rmse": 9.449243759708093,
+      "best_alpha_prediction_rmse": 8.41397526253748,
+      "mean_pf_std": 13.94290542602539
+    },
+    {
+      "well_id": "d011f41b",
+      "rows": 800,
+      "baseline_rmse": 10.858533873179967,
+      "pf_rmse": 4.437667882331784,
+      "best_alpha_prediction_rmse": 7.287017098515645,
+      "mean_pf_std": 5.095327854156494
+    },
+    {
+      "well_id": "d07aed8f",
+      "rows": 800,
+      "baseline_rmse": 5.400544428573456,
+      "pf_rmse": 4.606483112273148,
+      "best_alpha_prediction_rmse": 3.3822403196948003,
+      "mean_pf_std": 11.36907958984375
+    },
+    {
+      "well_id": "d085e611",
+      "rows": 800,
+      "baseline_rmse": 10.082042476601412,
+      "pf_rmse": 13.421877683975044,
+      "best_alpha_prediction_rmse": 11.006086863840082,
+      "mean_pf_std": 4.103527069091797
+    },
+    {
+      "well_id": "d0a0e7b5",
+      "rows": 800,
+      "baseline_rmse": 11.676440012906529,
+      "pf_rmse": 24.13665409974194,
+      "best_alpha_prediction_rmse": 16.57114335303736,
+      "mean_pf_std": 2.1930503845214844
+    },
+    {
+      "well_id": "d0a43760",
+      "rows": 800,
+      "baseline_rmse": 4.247353411243042,
+      "pf_rmse": 5.704618963584757,
+      "best_alpha_prediction_rmse": 4.7500254615461595,
+      "mean_pf_std": 2.5314722061157227
+    },
+    {
+      "well_id": "d0cb63ae",
+      "rows": 800,
+      "baseline_rmse": 19.92649180739076,
+      "pf_rmse": 8.880097331699808,
+      "best_alpha_prediction_rmse": 13.865693188528924,
+      "mean_pf_std": 6.995666027069092
+    },
+    {
+      "well_id": "d114d9c2",
+      "rows": 800,
+      "baseline_rmse": 7.696361112565029,
+      "pf_rmse": 6.617223107650392,
+      "best_alpha_prediction_rmse": 6.740549425772283,
+      "mean_pf_std": 9.565580368041992
+    },
+    {
+      "well_id": "d1457cc5",
+      "rows": 800,
+      "baseline_rmse": 8.11386055617176,
+      "pf_rmse": 8.346655820226555,
+      "best_alpha_prediction_rmse": 8.091503018859639,
+      "mean_pf_std": 4.227686405181885
+    },
+    {
+      "well_id": "d1ecf309",
+      "rows": 800,
+      "baseline_rmse": 9.379899079947174,
+      "pf_rmse": 9.574612230102671,
+      "best_alpha_prediction_rmse": 9.396563507926519,
+      "mean_pf_std": 10.957660675048828
+    },
+    {
+      "well_id": "d1ee630d",
+      "rows": 800,
+      "baseline_rmse": 12.214911026076656,
+      "pf_rmse": 8.856986261683097,
+      "best_alpha_prediction_rmse": 10.682685703444477,
+      "mean_pf_std": 7.873881816864014
+    },
+    {
+      "well_id": "d217e0c5",
+      "rows": 800,
+      "baseline_rmse": 5.205716869462,
+      "pf_rmse": 7.4351285297169865,
+      "best_alpha_prediction_rmse": 5.834351480422572,
+      "mean_pf_std": 1.67864191532135
+    },
+    {
+      "well_id": "d24ff243",
+      "rows": 800,
+      "baseline_rmse": 3.58146195707842,
+      "pf_rmse": 16.419194184080098,
+      "best_alpha_prediction_rmse": 7.369193265937701,
+      "mean_pf_std": 3.7617757320404053
+    },
+    {
+      "well_id": "d273674e",
+      "rows": 800,
+      "baseline_rmse": 3.4084136155989126,
+      "pf_rmse": 3.479259851222646,
+      "best_alpha_prediction_rmse": 2.978226948636099,
+      "mean_pf_std": 10.67977523803711
+    },
+    {
+      "well_id": "d2f3b1ab",
+      "rows": 800,
+      "baseline_rmse": 17.352508907215555,
+      "pf_rmse": 18.507870446256504,
+      "best_alpha_prediction_rmse": 16.80038966387685,
+      "mean_pf_std": 10.45359992980957
+    },
+    {
+      "well_id": "d3df146b",
+      "rows": 800,
+      "baseline_rmse": 11.708680487142223,
+      "pf_rmse": 11.261670894994756,
+      "best_alpha_prediction_rmse": 11.508484033797146,
+      "mean_pf_std": 1.5477010011672974
+    },
+    {
+      "well_id": "d40f61d5",
+      "rows": 800,
+      "baseline_rmse": 4.550482927668089,
+      "pf_rmse": 4.584424476798918,
+      "best_alpha_prediction_rmse": 4.119359821969196,
+      "mean_pf_std": 1.6820716857910156
+    },
+    {
+      "well_id": "d41beaf2",
+      "rows": 800,
+      "baseline_rmse": 16.330700516971568,
+      "pf_rmse": 9.016499596202374,
+      "best_alpha_prediction_rmse": 13.22546288184567,
+      "mean_pf_std": 6.844150543212891
+    },
+    {
+      "well_id": "d463e527",
+      "rows": 800,
+      "baseline_rmse": 8.586684167942323,
+      "pf_rmse": 21.314512543457965,
+      "best_alpha_prediction_rmse": 13.184023042107192,
+      "mean_pf_std": 4.889176368713379
+    },
+    {
+      "well_id": "d4f60a28",
+      "rows": 800,
+      "baseline_rmse": 6.179857937282689,
+      "pf_rmse": 6.383490305285192,
+      "best_alpha_prediction_rmse": 5.728413391684858,
+      "mean_pf_std": 5.774981498718262
+    },
+    {
+      "well_id": "d50c649a",
+      "rows": 800,
+      "baseline_rmse": 6.816521721156722,
+      "pf_rmse": 10.900291450428846,
+      "best_alpha_prediction_rmse": 5.705071376459701,
+      "mean_pf_std": 6.509410858154297
+    },
+    {
+      "well_id": "d543916f",
+      "rows": 800,
+      "baseline_rmse": 10.196107982950956,
+      "pf_rmse": 7.461479215222602,
+      "best_alpha_prediction_rmse": 8.736530233889825,
+      "mean_pf_std": 5.095017433166504
+    },
+    {
+      "well_id": "d5df0ff5",
+      "rows": 800,
+      "baseline_rmse": 16.3513288985947,
+      "pf_rmse": 20.739100146917465,
+      "best_alpha_prediction_rmse": 18.0731655166041,
+      "mean_pf_std": 2.630601167678833
+    },
+    {
+      "well_id": "d60430e6",
+      "rows": 800,
+      "baseline_rmse": 7.845911753900341,
+      "pf_rmse": 229.13916961635488,
+      "best_alpha_prediction_rmse": 90.29126667696306,
+      "mean_pf_std": 128.7529296875
+    },
+    {
+      "well_id": "d63196fe",
+      "rows": 800,
+      "baseline_rmse": 19.52824130586246,
+      "pf_rmse": 4.718012223563263,
+      "best_alpha_prediction_rmse": 11.093534222425259,
+      "mean_pf_std": 3.3578875064849854
+    },
+    {
+      "well_id": "d6c320d9",
+      "rows": 800,
+      "baseline_rmse": 11.207449977582504,
+      "pf_rmse": 27.982658713388474,
+      "best_alpha_prediction_rmse": 17.79277542760574,
+      "mean_pf_std": 9.176403999328613
+    },
+    {
+      "well_id": "d6dd7330",
+      "rows": 800,
+      "baseline_rmse": 11.816302721241257,
+      "pf_rmse": 5.835470643733604,
+      "best_alpha_prediction_rmse": 8.70011332500394,
+      "mean_pf_std": 2.861483573913574
+    },
+    {
+      "well_id": "d7ba4f9d",
+      "rows": 800,
+      "baseline_rmse": 5.099992512249382,
+      "pf_rmse": 14.6698702103614,
+      "best_alpha_prediction_rmse": 5.304458746504886,
+      "mean_pf_std": 7.010670185089111
+    },
+    {
+      "well_id": "d7eb0be8",
+      "rows": 800,
+      "baseline_rmse": 32.808804372835844,
+      "pf_rmse": 11.175662529987283,
+      "best_alpha_prediction_rmse": 23.689528313650623,
+      "mean_pf_std": 3.844569683074951
+    },
+    {
+      "well_id": "d84b621b",
+      "rows": 800,
+      "baseline_rmse": 21.812743929868166,
+      "pf_rmse": 25.296136571077586,
+      "best_alpha_prediction_rmse": 23.156641278478116,
+      "mean_pf_std": 8.704076766967773
+    },
+    {
+      "well_id": "d90aa14c",
+      "rows": 800,
+      "baseline_rmse": 12.003749424658542,
+      "pf_rmse": 8.32617707277513,
+      "best_alpha_prediction_rmse": 7.748936390787642,
+      "mean_pf_std": 3.858203172683716
+    },
+    {
+      "well_id": "d924e971",
+      "rows": 800,
+      "baseline_rmse": 32.78937036220686,
+      "pf_rmse": 30.01937763230567,
+      "best_alpha_prediction_rmse": 31.663604650263053,
+      "mean_pf_std": 2.2076570987701416
+    },
+    {
+      "well_id": "d9ae59b2",
+      "rows": 800,
+      "baseline_rmse": 5.045231349997705,
+      "pf_rmse": 19.568894706125057,
+      "best_alpha_prediction_rmse": 10.658479333235588,
+      "mean_pf_std": 4.456717014312744
+    },
+    {
+      "well_id": "d9d6d94d",
+      "rows": 800,
+      "baseline_rmse": 9.380806721705767,
+      "pf_rmse": 6.042739284325061,
+      "best_alpha_prediction_rmse": 7.299471721228834,
+      "mean_pf_std": 5.528624057769775
+    },
+    {
+      "well_id": "d9eca87b",
+      "rows": 800,
+      "baseline_rmse": 26.49954371777027,
+      "pf_rmse": 17.230849521918593,
+      "best_alpha_prediction_rmse": 21.577283215667748,
+      "mean_pf_std": 6.937910079956055
+    },
+    {
+      "well_id": "da2d4d7c",
+      "rows": 800,
+      "baseline_rmse": 3.5759548025669745,
+      "pf_rmse": 5.2340571942265735,
+      "best_alpha_prediction_rmse": 4.057976415471367,
+      "mean_pf_std": 7.871204376220703
+    },
+    {
+      "well_id": "da3bfe4e",
+      "rows": 800,
+      "baseline_rmse": 30.20081183925394,
+      "pf_rmse": 8.666378550274507,
+      "best_alpha_prediction_rmse": 16.795148344852894,
+      "mean_pf_std": 9.419889450073242
+    },
+    {
+      "well_id": "da3cf798",
+      "rows": 800,
+      "baseline_rmse": 16.89930558114607,
+      "pf_rmse": 10.095319654564436,
+      "best_alpha_prediction_rmse": 8.823563301591529,
+      "mean_pf_std": 7.657998085021973
+    },
+    {
+      "well_id": "da940160",
+      "rows": 800,
+      "baseline_rmse": 11.222048164216428,
+      "pf_rmse": 18.51818411929715,
+      "best_alpha_prediction_rmse": 14.061968072686867,
+      "mean_pf_std": 8.24544906616211
+    },
+    {
+      "well_id": "dafc88c3",
+      "rows": 800,
+      "baseline_rmse": 6.877812797320531,
+      "pf_rmse": 6.128018401598375,
+      "best_alpha_prediction_rmse": 6.381773997903263,
+      "mean_pf_std": 5.6208295822143555
+    },
+    {
+      "well_id": "dbee6c86",
+      "rows": 800,
+      "baseline_rmse": 4.393649493871791,
+      "pf_rmse": 5.913146424019324,
+      "best_alpha_prediction_rmse": 3.457248282098264,
+      "mean_pf_std": 4.950770378112793
+    },
+    {
+      "well_id": "dc5fbe29",
+      "rows": 800,
+      "baseline_rmse": 7.918821116492149,
+      "pf_rmse": 10.867971486012227,
+      "best_alpha_prediction_rmse": 8.576333104539065,
+      "mean_pf_std": 16.042922973632812
+    },
+    {
+      "well_id": "dc7da28f",
+      "rows": 800,
+      "baseline_rmse": 10.22707129998588,
+      "pf_rmse": 14.746326600360046,
+      "best_alpha_prediction_rmse": 11.875128472399576,
+      "mean_pf_std": 4.941945552825928
+    },
+    {
+      "well_id": "dc7f9757",
+      "rows": 800,
+      "baseline_rmse": 9.812109043168103,
+      "pf_rmse": 5.779522184496942,
+      "best_alpha_prediction_rmse": 4.840025646375669,
+      "mean_pf_std": 11.89053726196289
+    },
+    {
+      "well_id": "dd168de0",
+      "rows": 800,
+      "baseline_rmse": 2.9952922019396273,
+      "pf_rmse": 2.5976805293643883,
+      "best_alpha_prediction_rmse": 2.689685948364967,
+      "mean_pf_std": 1.3101996183395386
+    },
+    {
+      "well_id": "dd64382d",
+      "rows": 800,
+      "baseline_rmse": 4.271207206400084,
+      "pf_rmse": 3.127618408599048,
+      "best_alpha_prediction_rmse": 3.70195359671238,
+      "mean_pf_std": 2.479377031326294
+    },
+    {
+      "well_id": "dd6bc5b2",
+      "rows": 800,
+      "baseline_rmse": 11.779007598266153,
+      "pf_rmse": 26.050439639008644,
+      "best_alpha_prediction_rmse": 17.320454163798,
+      "mean_pf_std": 1.3538391590118408
+    },
+    {
+      "well_id": "dd7d638e",
+      "rows": 800,
+      "baseline_rmse": 6.022211709579806,
+      "pf_rmse": 6.665722991578016,
+      "best_alpha_prediction_rmse": 6.2127708712259,
+      "mean_pf_std": 2.4115281105041504
+    },
+    {
+      "well_id": "ddc790ff",
+      "rows": 800,
+      "baseline_rmse": 5.725910495282981,
+      "pf_rmse": 3.9032053652577656,
+      "best_alpha_prediction_rmse": 3.839667096649978,
+      "mean_pf_std": 3.505767822265625
+    },
+    {
+      "well_id": "df71d1ff",
+      "rows": 800,
+      "baseline_rmse": 12.735911883332022,
+      "pf_rmse": 23.176702110434444,
+      "best_alpha_prediction_rmse": 16.54351609393573,
+      "mean_pf_std": 13.574318885803223
+    },
+    {
+      "well_id": "df73b8f3",
+      "rows": 800,
+      "baseline_rmse": 15.621698371175626,
+      "pf_rmse": 11.020142727155601,
+      "best_alpha_prediction_rmse": 13.448802483192377,
+      "mean_pf_std": 4.118924617767334
+    },
+    {
+      "well_id": "df8290be",
+      "rows": 800,
+      "baseline_rmse": 13.008056037510359,
+      "pf_rmse": 9.098831622224525,
+      "best_alpha_prediction_rmse": 11.184871978008953,
+      "mean_pf_std": 14.383737564086914
+    },
+    {
+      "well_id": "e0079ed1",
+      "rows": 800,
+      "baseline_rmse": 8.065830126217516,
+      "pf_rmse": 14.669618465310446,
+      "best_alpha_prediction_rmse": 5.579394208110856,
+      "mean_pf_std": 5.254108905792236
+    },
+    {
+      "well_id": "e03b45fd",
+      "rows": 800,
+      "baseline_rmse": 15.772385563858352,
+      "pf_rmse": 16.87056129044532,
+      "best_alpha_prediction_rmse": 15.961688613727933,
+      "mean_pf_std": 8.355853080749512
+    },
+    {
+      "well_id": "e0f36d98",
+      "rows": 800,
+      "baseline_rmse": 14.249475806148812,
+      "pf_rmse": 15.989680215942787,
+      "best_alpha_prediction_rmse": 12.90708194104045,
+      "mean_pf_std": 10.3666353225708
+    },
+    {
+      "well_id": "e149204f",
+      "rows": 800,
+      "baseline_rmse": 4.543736458026525,
+      "pf_rmse": 15.621575155410184,
+      "best_alpha_prediction_rmse": 7.503518416291615,
+      "mean_pf_std": 5.761662006378174
+    },
+    {
+      "well_id": "e14d641e",
+      "rows": 800,
+      "baseline_rmse": 6.819675752922638,
+      "pf_rmse": 2.0873648685889403,
+      "best_alpha_prediction_rmse": 4.382691711800646,
+      "mean_pf_std": 4.93402099609375
+    },
+    {
+      "well_id": "e161bd0c",
+      "rows": 800,
+      "baseline_rmse": 4.3400079204997635,
+      "pf_rmse": 5.1827975373415125,
+      "best_alpha_prediction_rmse": 4.445080450017046,
+      "mean_pf_std": 3.843447208404541
+    },
+    {
+      "well_id": "e201fd6d",
+      "rows": 800,
+      "baseline_rmse": 16.36321871225298,
+      "pf_rmse": 10.829130567105846,
+      "best_alpha_prediction_rmse": 11.318043234108803,
+      "mean_pf_std": 27.570507049560547
+    },
+    {
+      "well_id": "e25f1537",
+      "rows": 800,
+      "baseline_rmse": 13.007350200944176,
+      "pf_rmse": 7.7430422113019794,
+      "best_alpha_prediction_rmse": 10.750371330163558,
+      "mean_pf_std": 6.781243801116943
+    },
+    {
+      "well_id": "e2fc7745",
+      "rows": 800,
+      "baseline_rmse": 13.33519605686389,
+      "pf_rmse": 19.709578691084896,
+      "best_alpha_prediction_rmse": 15.682182917555528,
+      "mean_pf_std": 7.957944869995117
+    },
+    {
+      "well_id": "e32da4ec",
+      "rows": 800,
+      "baseline_rmse": 10.864834467215575,
+      "pf_rmse": 11.596180731038308,
+      "best_alpha_prediction_rmse": 10.81305642325894,
+      "mean_pf_std": 4.187490463256836
+    },
+    {
+      "well_id": "e3b34f5b",
+      "rows": 800,
+      "baseline_rmse": 10.344201316438468,
+      "pf_rmse": 6.482453158111087,
+      "best_alpha_prediction_rmse": 7.742736945890425,
+      "mean_pf_std": 4.042959213256836
+    },
+    {
+      "well_id": "e45a2a62",
+      "rows": 800,
+      "baseline_rmse": 19.86173600796259,
+      "pf_rmse": 11.313944166459073,
+      "best_alpha_prediction_rmse": 15.28819500440414,
+      "mean_pf_std": 8.154927253723145
+    },
+    {
+      "well_id": "e46f4ef4",
+      "rows": 800,
+      "baseline_rmse": 4.9310641346467445,
+      "pf_rmse": 7.7256306429790165,
+      "best_alpha_prediction_rmse": 4.944555712665878,
+      "mean_pf_std": 11.376264572143555
+    },
+    {
+      "well_id": "e4726608",
+      "rows": 800,
+      "baseline_rmse": 6.271890484535187,
+      "pf_rmse": 4.932044618320693,
+      "best_alpha_prediction_rmse": 4.690564717990691,
+      "mean_pf_std": 4.561253070831299
+    },
+    {
+      "well_id": "e5864244",
+      "rows": 800,
+      "baseline_rmse": 26.819223998374067,
+      "pf_rmse": 8.130579444140745,
+      "best_alpha_prediction_rmse": 18.700004862090946,
+      "mean_pf_std": 8.521306991577148
+    },
+    {
+      "well_id": "e5c92e59",
+      "rows": 800,
+      "baseline_rmse": 7.709411788521771,
+      "pf_rmse": 6.006124370749731,
+      "best_alpha_prediction_rmse": 6.902955649550963,
+      "mean_pf_std": 4.697083950042725
+    },
+    {
+      "well_id": "e5ff9fd2",
+      "rows": 800,
+      "baseline_rmse": 8.88768871107684,
+      "pf_rmse": 5.1399291650451,
+      "best_alpha_prediction_rmse": 7.268321256142014,
+      "mean_pf_std": 2.113799810409546
+    },
+    {
+      "well_id": "e6c55748",
+      "rows": 800,
+      "baseline_rmse": 9.393965869109893,
+      "pf_rmse": 3.7397457359372934,
+      "best_alpha_prediction_rmse": 6.778167118132612,
+      "mean_pf_std": 4.184040546417236
+    },
+    {
+      "well_id": "e730c32b",
+      "rows": 800,
+      "baseline_rmse": 11.652627681127179,
+      "pf_rmse": 17.616097957731203,
+      "best_alpha_prediction_rmse": 13.92117752475582,
+      "mean_pf_std": 2.190845489501953
+    },
+    {
+      "well_id": "e737965a",
+      "rows": 800,
+      "baseline_rmse": 9.897619012924187,
+      "pf_rmse": 25.979351252960146,
+      "best_alpha_prediction_rmse": 14.85401534036606,
+      "mean_pf_std": 30.600318908691406
+    },
+    {
+      "well_id": "e748dd88",
+      "rows": 800,
+      "baseline_rmse": 4.99604777549217,
+      "pf_rmse": 4.175187287902004,
+      "best_alpha_prediction_rmse": 3.912630441992781,
+      "mean_pf_std": 4.1161956787109375
+    },
+    {
+      "well_id": "e7818f7a",
+      "rows": 800,
+      "baseline_rmse": 6.310308778103173,
+      "pf_rmse": 15.558351425116983,
+      "best_alpha_prediction_rmse": 9.648778884783152,
+      "mean_pf_std": 17.485448837280273
+    },
+    {
+      "well_id": "e7c36e81",
+      "rows": 800,
+      "baseline_rmse": 7.348000382756639,
+      "pf_rmse": 3.4133598545539554,
+      "best_alpha_prediction_rmse": 5.569024313972868,
+      "mean_pf_std": 1.389406442642212
+    },
+    {
+      "well_id": "e7d0c1de",
+      "rows": 800,
+      "baseline_rmse": 6.864446163020162,
+      "pf_rmse": 7.618973729245767,
+      "best_alpha_prediction_rmse": 7.021307604317158,
+      "mean_pf_std": 2.9183106422424316
+    },
+    {
+      "well_id": "e85074c5",
+      "rows": 800,
+      "baseline_rmse": 11.34228169836271,
+      "pf_rmse": 4.550647674106299,
+      "best_alpha_prediction_rmse": 7.070330809036808,
+      "mean_pf_std": 3.2029504776000977
+    },
+    {
+      "well_id": "e97032ad",
+      "rows": 800,
+      "baseline_rmse": 11.954681912330678,
+      "pf_rmse": 13.020314872747567,
+      "best_alpha_prediction_rmse": 4.800783781667418,
+      "mean_pf_std": 9.704415321350098
+    },
+    {
+      "well_id": "e9949a23",
+      "rows": 800,
+      "baseline_rmse": 11.587203868923659,
+      "pf_rmse": 12.684416124469998,
+      "best_alpha_prediction_rmse": 11.467929407153779,
+      "mean_pf_std": 9.264369010925293
+    },
+    {
+      "well_id": "ea0b99b7",
+      "rows": 800,
+      "baseline_rmse": 12.156640273940372,
+      "pf_rmse": 8.50845485489271,
+      "best_alpha_prediction_rmse": 8.075153511414802,
+      "mean_pf_std": 7.356650352478027
+    },
+    {
+      "well_id": "ea3a0e38",
+      "rows": 800,
+      "baseline_rmse": 9.234914062946084,
+      "pf_rmse": 10.31053612067154,
+      "best_alpha_prediction_rmse": 7.855274657594381,
+      "mean_pf_std": 3.4735729694366455
+    },
+    {
+      "well_id": "ea41324e",
+      "rows": 800,
+      "baseline_rmse": 5.292437139447349,
+      "pf_rmse": 6.4979932426646725,
+      "best_alpha_prediction_rmse": 5.50358273795616,
+      "mean_pf_std": 4.197537422180176
+    },
+    {
+      "well_id": "eabc711b",
+      "rows": 800,
+      "baseline_rmse": 11.696930906225022,
+      "pf_rmse": 15.676166208078511,
+      "best_alpha_prediction_rmse": 13.184562542171149,
+      "mean_pf_std": 7.537999153137207
+    },
+    {
+      "well_id": "eac10e86",
+      "rows": 800,
+      "baseline_rmse": 5.614513514098252,
+      "pf_rmse": 18.64302829483643,
+      "best_alpha_prediction_rmse": 10.630216966492075,
+      "mean_pf_std": 5.016145706176758
+    },
+    {
+      "well_id": "eafb863e",
+      "rows": 800,
+      "baseline_rmse": 13.47509970742413,
+      "pf_rmse": 6.8455806052875685,
+      "best_alpha_prediction_rmse": 9.403693100218387,
+      "mean_pf_std": 3.729335308074951
+    },
+    {
+      "well_id": "eb06a4e7",
+      "rows": 800,
+      "baseline_rmse": 9.668385697726368,
+      "pf_rmse": 17.484967533882777,
+      "best_alpha_prediction_rmse": 11.967116489394998,
+      "mean_pf_std": 5.173073768615723
+    },
+    {
+      "well_id": "eb640a35",
+      "rows": 800,
+      "baseline_rmse": 9.962044437513805,
+      "pf_rmse": 10.23432257926955,
+      "best_alpha_prediction_rmse": 9.979108097379607,
+      "mean_pf_std": 8.476405143737793
+    },
+    {
+      "well_id": "eb934281",
+      "rows": 800,
+      "baseline_rmse": 3.1379931086607415,
+      "pf_rmse": 5.793481630727847,
+      "best_alpha_prediction_rmse": 3.7410052978011863,
+      "mean_pf_std": 7.133162021636963
+    },
+    {
+      "well_id": "eba6605e",
+      "rows": 800,
+      "baseline_rmse": 15.634346940311294,
+      "pf_rmse": 7.59570068783049,
+      "best_alpha_prediction_rmse": 11.739224477104967,
+      "mean_pf_std": 7.723365306854248
+    },
+    {
+      "well_id": "ebe69318",
+      "rows": 800,
+      "baseline_rmse": 4.825197120325764,
+      "pf_rmse": 5.297710694231675,
+      "best_alpha_prediction_rmse": 4.781798839270189,
+      "mean_pf_std": 2.074061632156372
+    },
+    {
+      "well_id": "ec0d597b",
+      "rows": 800,
+      "baseline_rmse": 16.436465902833607,
+      "pf_rmse": 10.746017698320486,
+      "best_alpha_prediction_rmse": 14.050247803211754,
+      "mean_pf_std": 8.740527153015137
+    },
+    {
+      "well_id": "ec13af42",
+      "rows": 800,
+      "baseline_rmse": 10.901463714795462,
+      "pf_rmse": 5.002121052480527,
+      "best_alpha_prediction_rmse": 8.07826568595815,
+      "mean_pf_std": 4.548773288726807
+    },
+    {
+      "well_id": "ecdab904",
+      "rows": 800,
+      "baseline_rmse": 16.916800421475283,
+      "pf_rmse": 12.764950012737367,
+      "best_alpha_prediction_rmse": 15.062114582510088,
+      "mean_pf_std": 2.7452521324157715
+    },
+    {
+      "well_id": "ecdaf714",
+      "rows": 800,
+      "baseline_rmse": 15.351996824518173,
+      "pf_rmse": 19.994638619177948,
+      "best_alpha_prediction_rmse": 17.06864381096994,
+      "mean_pf_std": 4.1827006340026855
+    },
+    {
+      "well_id": "ed6436d6",
+      "rows": 800,
+      "baseline_rmse": 1.6170906746373643,
+      "pf_rmse": 1.3816253571961155,
+      "best_alpha_prediction_rmse": 0.9514748601849873,
+      "mean_pf_std": 0.7198707461357117
+    },
+    {
+      "well_id": "ed6e6e54",
+      "rows": 800,
+      "baseline_rmse": 11.945538644196779,
+      "pf_rmse": 13.80964095851023,
+      "best_alpha_prediction_rmse": 11.598048862632941,
+      "mean_pf_std": 5.173025131225586
+    },
+    {
+      "well_id": "edf885a3",
+      "rows": 800,
+      "baseline_rmse": 12.28283474508277,
+      "pf_rmse": 16.135935666424942,
+      "best_alpha_prediction_rmse": 13.72799981996198,
+      "mean_pf_std": 7.596639633178711
+    },
+    {
+      "well_id": "ee0300f7",
+      "rows": 800,
+      "baseline_rmse": 25.67941226693163,
+      "pf_rmse": 16.490604934112632,
+      "best_alpha_prediction_rmse": 21.987456682437962,
+      "mean_pf_std": 15.348731994628906
+    },
+    {
+      "well_id": "ee288beb",
+      "rows": 800,
+      "baseline_rmse": 27.52751274407111,
+      "pf_rmse": 20.818883259926633,
+      "best_alpha_prediction_rmse": 24.77989805832266,
+      "mean_pf_std": 9.170772552490234
+    },
+    {
+      "well_id": "ee4aecac",
+      "rows": 800,
+      "baseline_rmse": 10.783054356256747,
+      "pf_rmse": 16.970908703058978,
+      "best_alpha_prediction_rmse": 6.104238092595935,
+      "mean_pf_std": 8.78064250946045
+    },
+    {
+      "well_id": "eeda36f5",
+      "rows": 800,
+      "baseline_rmse": 5.468168614809987,
+      "pf_rmse": 10.134820195899003,
+      "best_alpha_prediction_rmse": 3.479136319815098,
+      "mean_pf_std": 4.087812900543213
+    },
+    {
+      "well_id": "eeed308d",
+      "rows": 800,
+      "baseline_rmse": 9.68795673762045,
+      "pf_rmse": 1.1716490233700183,
+      "best_alpha_prediction_rmse": 5.881614421572201,
+      "mean_pf_std": 1.3733346462249756
+    },
+    {
+      "well_id": "ef04658e",
+      "rows": 800,
+      "baseline_rmse": 15.445752919492076,
+      "pf_rmse": 23.045304014753505,
+      "best_alpha_prediction_rmse": 18.445179419630385,
+      "mean_pf_std": 7.666998386383057
+    },
+    {
+      "well_id": "ef8e3ed0",
+      "rows": 800,
+      "baseline_rmse": 14.631839054780853,
+      "pf_rmse": 8.883651103913438,
+      "best_alpha_prediction_rmse": 11.850523346467224,
+      "mean_pf_std": 2.5468108654022217
+    },
+    {
+      "well_id": "efde6ac3",
+      "rows": 800,
+      "baseline_rmse": 10.205224599440278,
+      "pf_rmse": 10.524571761971778,
+      "best_alpha_prediction_rmse": 10.094744841040027,
+      "mean_pf_std": 7.243416786193848
+    },
+    {
+      "well_id": "efe96181",
+      "rows": 800,
+      "baseline_rmse": 27.53189234551514,
+      "pf_rmse": 31.74193762231551,
+      "best_alpha_prediction_rmse": 29.20244822337666,
+      "mean_pf_std": 0.7902621626853943
+    },
+    {
+      "well_id": "f0188a48",
+      "rows": 800,
+      "baseline_rmse": 6.014072372361217,
+      "pf_rmse": 17.169308373403595,
+      "best_alpha_prediction_rmse": 8.67717106976594,
+      "mean_pf_std": 19.81427764892578
+    },
+    {
+      "well_id": "f021b650",
+      "rows": 800,
+      "baseline_rmse": 6.681225626709801,
+      "pf_rmse": 19.303065460658647,
+      "best_alpha_prediction_rmse": 11.170972511860686,
+      "mean_pf_std": 7.933599472045898
+    },
+    {
+      "well_id": "f03f10fe",
+      "rows": 800,
+      "baseline_rmse": 9.375093226203294,
+      "pf_rmse": 5.30643557209222,
+      "best_alpha_prediction_rmse": 7.5408314102221015,
+      "mean_pf_std": 3.314549446105957
+    },
+    {
+      "well_id": "f053a1b9",
+      "rows": 800,
+      "baseline_rmse": 10.028124569179646,
+      "pf_rmse": 19.663784444730485,
+      "best_alpha_prediction_rmse": 13.600208937074232,
+      "mean_pf_std": 7.6090407371521
+    },
+    {
+      "well_id": "f074d277",
+      "rows": 800,
+      "baseline_rmse": 12.18510445174734,
+      "pf_rmse": 3.8573755347272765,
+      "best_alpha_prediction_rmse": 7.1151189122538385,
+      "mean_pf_std": 3.2225987911224365
+    },
+    {
+      "well_id": "f07d7037",
+      "rows": 800,
+      "baseline_rmse": 7.500351858412844,
+      "pf_rmse": 4.50150107187694,
+      "best_alpha_prediction_rmse": 6.062562454945132,
+      "mean_pf_std": 2.5272176265716553
+    },
+    {
+      "well_id": "f08774c3",
+      "rows": 800,
+      "baseline_rmse": 11.450862904165769,
+      "pf_rmse": 6.821843421551879,
+      "best_alpha_prediction_rmse": 9.493615542474478,
+      "mean_pf_std": 2.3649892807006836
+    },
+    {
+      "well_id": "f140c2fa",
+      "rows": 800,
+      "baseline_rmse": 13.318780518501208,
+      "pf_rmse": 7.977037829528524,
+      "best_alpha_prediction_rmse": 9.549599761840087,
+      "mean_pf_std": 4.197119235992432
+    },
+    {
+      "well_id": "f16e25e3",
+      "rows": 800,
+      "baseline_rmse": 2.9630658109466506,
+      "pf_rmse": 12.234191095500682,
+      "best_alpha_prediction_rmse": 5.691081867128325,
+      "mean_pf_std": 4.860672473907471
+    },
+    {
+      "well_id": "f2d4c8c9",
+      "rows": 800,
+      "baseline_rmse": 4.227493953278239,
+      "pf_rmse": 8.242696685774577,
+      "best_alpha_prediction_rmse": 5.616969193732797,
+      "mean_pf_std": 5.903721809387207
+    },
+    {
+      "well_id": "f321a31c",
+      "rows": 800,
+      "baseline_rmse": 12.557819760013986,
+      "pf_rmse": 14.527867041608738,
+      "best_alpha_prediction_rmse": 13.223776224394618,
+      "mean_pf_std": 11.862017631530762
+    },
+    {
+      "well_id": "f40cd091",
+      "rows": 800,
+      "baseline_rmse": 7.725100735589198,
+      "pf_rmse": 9.34510741833509,
+      "best_alpha_prediction_rmse": 7.585898945098468,
+      "mean_pf_std": 10.065520286560059
+    },
+    {
+      "well_id": "f439a621",
+      "rows": 800,
+      "baseline_rmse": 6.657761072613178,
+      "pf_rmse": 6.3748378748761425,
+      "best_alpha_prediction_rmse": 6.204431868711674,
+      "mean_pf_std": 5.327757358551025
+    },
+    {
+      "well_id": "f49fdea3",
+      "rows": 800,
+      "baseline_rmse": 12.403398793274992,
+      "pf_rmse": 5.607910883661626,
+      "best_alpha_prediction_rmse": 6.454706570107655,
+      "mean_pf_std": 4.0313496589660645
+    },
+    {
+      "well_id": "f4d12d23",
+      "rows": 800,
+      "baseline_rmse": 16.05787594141862,
+      "pf_rmse": 17.20106187235818,
+      "best_alpha_prediction_rmse": 16.426225974684872,
+      "mean_pf_std": 7.090152740478516
+    },
+    {
+      "well_id": "f56d3ace",
+      "rows": 800,
+      "baseline_rmse": 6.902174231718319,
+      "pf_rmse": 3.67498146929765,
+      "best_alpha_prediction_rmse": 5.131543249269194,
+      "mean_pf_std": 5.115662097930908
+    },
+    {
+      "well_id": "f5859199",
+      "rows": 800,
+      "baseline_rmse": 15.913585465726523,
+      "pf_rmse": 43.11672960877356,
+      "best_alpha_prediction_rmse": 26.482147101684735,
+      "mean_pf_std": 18.24469566345215
+    },
+    {
+      "well_id": "f5d8aab6",
+      "rows": 800,
+      "baseline_rmse": 15.693568774340978,
+      "pf_rmse": 11.284041495226989,
+      "best_alpha_prediction_rmse": 13.75710065693112,
+      "mean_pf_std": 8.577096939086914
+    },
+    {
+      "well_id": "f631da6e",
+      "rows": 800,
+      "baseline_rmse": 8.77830825814393,
+      "pf_rmse": 7.350378546598919,
+      "best_alpha_prediction_rmse": 8.09292075633246,
+      "mean_pf_std": 8.808158874511719
+    },
+    {
+      "well_id": "f6824bb0",
+      "rows": 800,
+      "baseline_rmse": 20.834816539869408,
+      "pf_rmse": 1.9820328144369712,
+      "best_alpha_prediction_rmse": 12.648684941986025,
+      "mean_pf_std": 1.8569482564926147
+    },
+    {
+      "well_id": "f6bc699b",
+      "rows": 800,
+      "baseline_rmse": 10.620593297928353,
+      "pf_rmse": 13.762855228439648,
+      "best_alpha_prediction_rmse": 11.79318714974104,
+      "mean_pf_std": 5.578968524932861
+    },
+    {
+      "well_id": "f6d009f4",
+      "rows": 800,
+      "baseline_rmse": 47.054172176863155,
+      "pf_rmse": 25.177936698133202,
+      "best_alpha_prediction_rmse": 29.40509854378469,
+      "mean_pf_std": 5.379840850830078
+    },
+    {
+      "well_id": "f72b268f",
+      "rows": 800,
+      "baseline_rmse": 12.938590780104303,
+      "pf_rmse": 15.129208165072217,
+      "best_alpha_prediction_rmse": 13.668358499717058,
+      "mean_pf_std": 7.806088924407959
+    },
+    {
+      "well_id": "f8662c22",
+      "rows": 800,
+      "baseline_rmse": 15.620867841609424,
+      "pf_rmse": 11.924130625987146,
+      "best_alpha_prediction_rmse": 13.583129545840583,
+      "mean_pf_std": 7.070288181304932
+    },
+    {
+      "well_id": "f88ddb26",
+      "rows": 800,
+      "baseline_rmse": 51.38462766601425,
+      "pf_rmse": 34.75466899664257,
+      "best_alpha_prediction_rmse": 44.622287227101715,
+      "mean_pf_std": 17.82790184020996
+    },
+    {
+      "well_id": "f8afa78a",
+      "rows": 800,
+      "baseline_rmse": 14.725008268247652,
+      "pf_rmse": 9.448009826654156,
+      "best_alpha_prediction_rmse": 12.431479896377615,
+      "mean_pf_std": 16.825708389282227
+    },
+    {
+      "well_id": "f8f59188",
+      "rows": 800,
+      "baseline_rmse": 6.92056580960026,
+      "pf_rmse": 4.2334353358163685,
+      "best_alpha_prediction_rmse": 5.106620011393342,
+      "mean_pf_std": 3.195373773574829
+    },
+    {
+      "well_id": "f9fc81aa",
+      "rows": 800,
+      "baseline_rmse": 8.639443153351937,
+      "pf_rmse": 17.22618477912646,
+      "best_alpha_prediction_rmse": 10.851003496783532,
+      "mean_pf_std": 14.703991889953613
+    },
+    {
+      "well_id": "fa16d114",
+      "rows": 800,
+      "baseline_rmse": 20.8064888556433,
+      "pf_rmse": 27.937175319207604,
+      "best_alpha_prediction_rmse": 23.552194661754932,
+      "mean_pf_std": 19.177202224731445
+    },
+    {
+      "well_id": "fa31da94",
+      "rows": 800,
+      "baseline_rmse": 5.1860225847943155,
+      "pf_rmse": 17.651217882348615,
+      "best_alpha_prediction_rmse": 6.754778119837409,
+      "mean_pf_std": 9.49934196472168
+    },
+    {
+      "well_id": "fa667be2",
+      "rows": 800,
+      "baseline_rmse": 8.812579673398055,
+      "pf_rmse": 23.22164901035165,
+      "best_alpha_prediction_rmse": 13.840916859708534,
+      "mean_pf_std": 17.870458602905273
+    },
+    {
+      "well_id": "fae0c593",
+      "rows": 800,
+      "baseline_rmse": 10.966119203027041,
+      "pf_rmse": 11.308408444406195,
+      "best_alpha_prediction_rmse": 10.191949843447388,
+      "mean_pf_std": 11.038956642150879
+    },
+    {
+      "well_id": "fb03ae90",
+      "rows": 800,
+      "baseline_rmse": 42.8719678067738,
+      "pf_rmse": 19.7316396328898,
+      "best_alpha_prediction_rmse": 33.4893013536665,
+      "mean_pf_std": 5.68358039855957
+    },
+    {
+      "well_id": "fb0904bd",
+      "rows": 800,
+      "baseline_rmse": 1.797917197759831,
+      "pf_rmse": 4.698411620348486,
+      "best_alpha_prediction_rmse": 2.9167575429353696,
+      "mean_pf_std": 3.9666173458099365
+    },
+    {
+      "well_id": "fb3848a1",
+      "rows": 800,
+      "baseline_rmse": 9.955698700994967,
+      "pf_rmse": 13.371444129089852,
+      "best_alpha_prediction_rmse": 11.0901137735984,
+      "mean_pf_std": 18.28179168701172
+    },
+    {
+      "well_id": "fb73b13a",
+      "rows": 800,
+      "baseline_rmse": 9.975684945155148,
+      "pf_rmse": 7.7349863673012615,
+      "best_alpha_prediction_rmse": 8.754454628464362,
+      "mean_pf_std": 6.726218223571777
+    },
+    {
+      "well_id": "fba7683c",
+      "rows": 407,
+      "baseline_rmse": 2.555309739035002,
+      "pf_rmse": 2.508120347827238,
+      "best_alpha_prediction_rmse": 2.514659349389587,
+      "mean_pf_std": 0.795733630657196
+    },
+    {
+      "well_id": "fbd68d27",
+      "rows": 800,
+      "baseline_rmse": 22.088068832515976,
+      "pf_rmse": 30.626002636534768,
+      "best_alpha_prediction_rmse": 25.31064834667911,
+      "mean_pf_std": 19.913265228271484
+    },
+    {
+      "well_id": "fc03f21f",
+      "rows": 800,
+      "baseline_rmse": 12.915685241209415,
+      "pf_rmse": 11.74950917215986,
+      "best_alpha_prediction_rmse": 12.417798452407489,
+      "mean_pf_std": 0.8556368350982666
+    },
+    {
+      "well_id": "fc0d20b2",
+      "rows": 800,
+      "baseline_rmse": 11.935748190834984,
+      "pf_rmse": 10.458900851574949,
+      "best_alpha_prediction_rmse": 9.088009202206962,
+      "mean_pf_std": 9.917084693908691
+    },
+    {
+      "well_id": "fcfcc902",
+      "rows": 800,
+      "baseline_rmse": 8.810429579481085,
+      "pf_rmse": 16.663083583543262,
+      "best_alpha_prediction_rmse": 11.88603631181098,
+      "mean_pf_std": 1.9668574333190918
+    },
+    {
+      "well_id": "fd3b4faa",
+      "rows": 800,
+      "baseline_rmse": 7.444740374922485,
+      "pf_rmse": 10.273895932807376,
+      "best_alpha_prediction_rmse": 8.232361518564451,
+      "mean_pf_std": 0.895997941493988
+    },
+    {
+      "well_id": "fd710aea",
+      "rows": 800,
+      "baseline_rmse": 7.20106256916314,
+      "pf_rmse": 7.716026859402415,
+      "best_alpha_prediction_rmse": 6.288296867320169,
+      "mean_pf_std": 4.278621196746826
+    },
+    {
+      "well_id": "fd8f77fa",
+      "rows": 800,
+      "baseline_rmse": 27.402147046354145,
+      "pf_rmse": 6.77736487667556,
+      "best_alpha_prediction_rmse": 15.389339221393938,
+      "mean_pf_std": 6.505748271942139
+    },
+    {
+      "well_id": "fde20ecf",
+      "rows": 800,
+      "baseline_rmse": 16.32042791641877,
+      "pf_rmse": 19.192422517068287,
+      "best_alpha_prediction_rmse": 17.35362963463322,
+      "mean_pf_std": 2.8104071617126465
+    },
+    {
+      "well_id": "fdfd57da",
+      "rows": 800,
+      "baseline_rmse": 4.293465310794222,
+      "pf_rmse": 8.878904637264434,
+      "best_alpha_prediction_rmse": 5.960059283707536,
+      "mean_pf_std": 2.193638801574707
+    },
+    {
+      "well_id": "febb4411",
+      "rows": 800,
+      "baseline_rmse": 13.02236364873855,
+      "pf_rmse": 8.216441104122994,
+      "best_alpha_prediction_rmse": 6.251723740760153,
+      "mean_pf_std": 5.825509548187256
+    },
+    {
+      "well_id": "fef8af96",
+      "rows": 800,
+      "baseline_rmse": 44.572641536035704,
+      "pf_rmse": 52.569761128463604,
+      "best_alpha_prediction_rmse": 47.733315575795736,
+      "mean_pf_std": 3.002624273300171
+    },
+    {
+      "well_id": "ff0aea78",
+      "rows": 800,
+      "baseline_rmse": 30.687527596728792,
+      "pf_rmse": 2.9315200921869486,
+      "best_alpha_prediction_rmse": 18.423324748828538,
+      "mean_pf_std": 2.1154043674468994
+    },
+    {
+      "well_id": "ff8bb73a",
+      "rows": 800,
+      "baseline_rmse": 9.856706523987093,
+      "pf_rmse": 7.1165173590357655,
+      "best_alpha_prediction_rmse": 7.733907952703283,
+      "mean_pf_std": 5.029773712158203
+    },
+    {
+      "well_id": "ffefef30",
+      "rows": 800,
+      "baseline_rmse": 7.0351215963199545,
+      "pf_rmse": 10.60854555043743,
+      "best_alpha_prediction_rmse": 8.20879145015736,
+      "mean_pf_std": 2.671260118484497
+    }
+  ],
+  "pf_feature_model": {
+    "validation_type": "grouped_by_well_sampled_rows",
+    "validation_rows": 618007,
+    "train_sample_per_well": 900,
+    "residual_blend": 0.6,
+    "residual_clip": 60.0,
+    "base_feature_rmse": 15.115008833918651,
+    "pf_feature_rmse": 14.1695124064382,
+    "absolute_rmse_improvement_vs_base_features": 0.9454964274804514,
+    "relative_rmse_improvement_pct_vs_base_features": 6.255348163334987,
+    "best_base_pf_feature_blend": {
+      "pf_feature_weight": 1.0,
+      "rmse": 14.1695124064382
+    },
+    "blend_sweep": [
+      {
+        "pf_feature_weight": 0.0,
+        "rmse": 15.115008833918651
+      },
+      {
+        "pf_feature_weight": 0.05,
+        "rmse": 15.039680073937609
+      },
+      {
+        "pf_feature_weight": 0.1,
+        "rmse": 14.967091895376825
+      },
+      {
+        "pf_feature_weight": 0.15,
+        "rmse": 14.897284359379697
+      },
+      {
+        "pf_feature_weight": 0.2,
+        "rmse": 14.830296732199397
+      },
+      {
+        "pf_feature_weight": 0.25,
+        "rmse": 14.76616739195567
+      },
+      {
+        "pf_feature_weight": 0.3,
+        "rmse": 14.704933734319544
+      },
+      {
+        "pf_feature_weight": 0.35,
+        "rmse": 14.64663207756325
+      },
+      {
+        "pf_feature_weight": 0.4,
+        "rmse": 14.591297567440149
+      },
+      {
+        "pf_feature_weight": 0.45,
+        "rmse": 14.538964082387954
+      },
+      {
+        "pf_feature_weight": 0.5,
+        "rmse": 14.489664139573932
+      },
+      {
+        "pf_feature_weight": 0.55,
+        "rmse": 14.443428802318543
+      },
+      {
+        "pf_feature_weight": 0.6,
+        "rmse": 14.400287589452446
+      },
+      {
+        "pf_feature_weight": 0.65,
+        "rmse": 14.360268387169334
+      },
+      {
+        "pf_feature_weight": 0.7,
+        "rmse": 14.323397363943899
+      },
+      {
+        "pf_feature_weight": 0.75,
+        "rmse": 14.289698889082251
+      },
+      {
+        "pf_feature_weight": 0.8,
+        "rmse": 14.25919545546471
+      },
+      {
+        "pf_feature_weight": 0.85,
+        "rmse": 14.231907607027098
+      },
+      {
+        "pf_feature_weight": 0.9,
+        "rmse": 14.207853871506021
+      },
+      {
+        "pf_feature_weight": 0.95,
+        "rmse": 14.187050698946763
+      },
+      {
+        "pf_feature_weight": 1.0,
+        "rmse": 14.1695124064382
+      }
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "validation_rows": 124000,
+        "train_sample_rows": 555707,
+        "base_rmse": 14.228030078753163,
+        "pf_feature_rmse": 12.89763371614904
+      },
+      {
+        "fold": 2,
+        "validation_rows": 124000,
+        "train_sample_rows": 555707,
+        "base_rmse": 16.061563864544787,
+        "pf_feature_rmse": 15.365526157394008
+      },
+      {
+        "fold": 3,
+        "validation_rows": 123607,
+        "train_sample_rows": 556200,
+        "base_rmse": 14.835640875534844,
+        "pf_feature_rmse": 13.871859572889358
+      },
+      {
+        "fold": 4,
+        "validation_rows": 123200,
+        "train_sample_rows": 556607,
+        "base_rmse": 15.18356395585962,
+        "pf_feature_rmse": 14.220837075678073
+      },
+      {
+        "fold": 5,
+        "validation_rows": 123200,
+        "train_sample_rows": 556607,
+        "base_rmse": 15.207726733936246,
+        "pf_feature_rmse": 14.380128847180728
+      }
+    ]
+  }
+}

@@ -10,6 +10,7 @@ artifacts/
 outputs/
 models/
 */submissions/*.csv
+*/reports/*-validation.csv
 
 # Kaggle competition data should stay local
 */data/raw/
