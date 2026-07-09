@@ -44,6 +44,7 @@ This deliberately simple baseline won the first local sanity check against local
 | `typewell_gr_residual_hgb` | Add single-point typewell GR matching features to residual model | `15.28302` | `14.395` |
 | `typewell_gr_window_experiment` | Compare short GR windows against rolling typewell windows | sampled `15.20325` | not submitted |
 | `typewell_gr_sequence_residual_hgb` | Match normalized short GR sequences against typewell sequences | sampled `15.11805` | `14.596` |
+| `bagged_shrink_residual_hgb` | Average five sampled residual models; fixed blend beat dynamic shrinkage | sampled `15.04806` | **`14.161`** |
 
 ## Reproduction
 
@@ -70,6 +71,8 @@ The script writes:
 - `rogii-wellbore-geology-prediction/reports/typewell-gr-residual-metrics.json`
 - `rogii-wellbore-geology-prediction/submissions/typewell_gr_sequence_residual_submission.csv`
 - `rogii-wellbore-geology-prediction/reports/typewell-gr-sequence-residual-metrics.json`
+- `rogii-wellbore-geology-prediction/submissions/bagged_shrink_residual_submission.csv`
+- `rogii-wellbore-geology-prediction/reports/bagged-shrink-residual-metrics.json`
 
 The code-competition submissions are packaged as Kaggle kernels:
 
@@ -77,6 +80,7 @@ The code-competition submissions are packaged as Kaggle kernels:
 - Residual correction: `jdow76/rogii-residual-correction`
 - Typewell GR residual correction: `jdow76/rogii-typewell-gr-residual`
 - Typewell GR sequence residual correction: `jdow76/rogii-sequence-gr-residual`
+- Bagged residual correction: `jdow76/rogii-bagged-residual`
 
 ## Notes
 

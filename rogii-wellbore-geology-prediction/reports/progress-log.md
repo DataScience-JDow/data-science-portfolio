@@ -133,3 +133,25 @@ The window feature moved validation in the right direction, but the gain was too
 ### Interpretation
 
 This is the first GR approach that compares the actual shape of the GR curve rather than one value or a few window summaries. The local improvement was larger than the previous window-summary experiment and had much better match coverage, but the public score got worse. That means the sequence-shape signal is probably real on the sampled validation rows, but it does not transfer cleanly to the hidden public wells in this form. The current best remains the simpler residual correction model.
+
+## bagged_shrink_residual_hgb
+
+- Tested a robustness upgrade to the winning residual model instead of adding more GR matching features.
+- Trained five HGB residual models with different random per-well training samples.
+- Averaged their clipped residual predictions, keeping the same `0.60` blend that worked for the original residual model.
+- Also tested dynamic shrinkage, where the correction gets smaller when the five models disagree. The alpha sweep selected the plain fixed `0.60` blend instead, so the final submitted model used bagging without dynamic shrinkage.
+- Validated on `618,007` grouped-by-well sampled rows, with `900` sampled training rows per well per model.
+- Pushed Kaggle kernel `jdow76/rogii-bagged-residual`, version 1, and submitted output as Kaggle submission `54477669`.
+
+### Result
+
+| Metric | Single sampled residual | Bagged residual | Impact |
+| --- | ---: | ---: | ---: |
+| Sampled local RMSE | `15.11501` | `15.04806` | `-0.06694` |
+| Relative sampled improvement | - | - | `0.44%` |
+| Best blend rule | fixed `0.60` | fixed `0.60` | dynamic shrinkage did not help |
+| Kaggle public RMSE | `14.304` previous best | `14.161` | `-0.143` |
+
+### Interpretation
+
+The useful part was not making the model more complicated at prediction time. It was asking five slightly different versions of the same strong residual model, then averaging their answers. That smoothed out some noisy overcorrections and transferred to the public leaderboard. Dynamic shrinkage sounded sensible, but the validation data did not reward it; the simple fixed blend remained best. The current best is now the bagged residual model.
