@@ -44,8 +44,8 @@ This deliberately simple baseline won the first local sanity check against local
 | `typewell_gr_residual_hgb` | Add single-point typewell GR matching features to residual model | `15.28302` | `14.395` |
 | `typewell_gr_window_experiment` | Compare short GR windows against rolling typewell windows | sampled `15.20325` | not submitted |
 | `typewell_gr_sequence_residual_hgb` | Match normalized short GR sequences against typewell sequences | sampled `15.11805` | `14.596` |
-| `bagged_shrink_residual_hgb` | Average five sampled residual models; fixed blend beat dynamic shrinkage | sampled `15.04806` | **`14.161`** |
-| `lightweight_particle_filter_hgb` | Add lightweight particle-filter path features to the residual model | sampled `14.16951` | pending |
+| `bagged_shrink_residual_hgb` | Average five sampled residual models; fixed blend beat dynamic shrinkage | sampled `15.04806` | `14.161` |
+| `lightweight_particle_filter_hgb` | Add lightweight particle-filter path features to the residual model | sampled `14.16951` | **`13.671`** |
 
 ## Reproduction
 

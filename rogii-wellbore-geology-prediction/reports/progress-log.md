@@ -163,7 +163,7 @@ The useful part was not making the model more complicated at prediction time. It
 - Tested the raw PF path directly and as features inside the residual HGB model.
 - Raw PF alone was noisy: sampled RMSE was `17.13177`, worse than the `15.60039` carry-forward baseline. A partial baseline/PF blend helped, with best alpha `0.40` scoring `14.46795`.
 - PF features were much stronger. Adding `pf_delta`, `pf_std`, and PF-vs-prefix-slope features to the residual model improved sampled grouped validation from `15.11501` to `14.16951`.
-- Pushed Kaggle kernel `jdow76/rogii-lightweight-particle-filter`, version 1, and submitted output as Kaggle submission `54480888`. Kaggle accepted the submission, but the public score is still pending.
+- Pushed Kaggle kernel `jdow76/rogii-lightweight-particle-filter`, version 1, and submitted output as Kaggle submission `54480888`.
 
 ### Result
 
@@ -173,8 +173,8 @@ The useful part was not making the model more complicated at prediction time. It
 | Relative sampled improvement | - | - | `6.26%` |
 | Raw PF sampled RMSE | - | `17.13177` | worse than baseline alone |
 | Best baseline/PF path blend | - | `14.46795` | alpha `0.40` |
-| Kaggle public RMSE | `14.161` best current | pending | pending |
+| Kaggle public RMSE | `14.161` previous best | `13.671` | `-0.490` |
 
 ### Interpretation
 
-The particle filter is not good enough to be trusted by itself yet, but it gives the residual model a much better sense of the likely path. That is exactly the pattern from stronger public approaches: use path trackers as signals, then let a model correct them. This is the first local result that looks like a step into the right solution family rather than another small row-level tweak.
+The particle filter is not good enough to be trusted by itself yet, but it gives the residual model a much better sense of the likely path. That is exactly the pattern from stronger public approaches: use path trackers as signals, then let a model correct them. The public score improved from `14.161` to `13.671`, making this the new best confirmed submission.
