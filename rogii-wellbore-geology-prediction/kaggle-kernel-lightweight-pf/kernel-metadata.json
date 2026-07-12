@@ -1,6 +1,6 @@
 {
-  "id": "jdow76/rogii-lightweight-particle-filter",
-  "title": "ROGII Lightweight Particle Filter",
+  "id": "jdow76/rogii-offset-formation-particle-filter",
+  "title": "ROGII Offset Formation Particle Filter",
   "code_file": "kernel.py",
   "language": "python",
   "kernel_type": "script",

@@ -10,7 +10,7 @@ This project starts a baseline for Kaggle's ROGII wellbore geology prediction co
 - Problem type: regression on post-start horizontal-well TVT values
 - Metric: RMSE
 - Status: active
-- Current best public leaderboard score: `14.304`
+- Current best public leaderboard score: `13.322`
 - Kaggle page: <https://www.kaggle.com/competitions/rogii-wellbore-geology-prediction>
 
 ## Project Structure
@@ -46,6 +46,8 @@ This deliberately simple baseline won the first local sanity check against local
 | `typewell_gr_sequence_residual_hgb` | Match normalized short GR sequences against typewell sequences | sampled `15.11805` | `14.596` |
 | `bagged_shrink_residual_hgb` | Average five sampled residual models; fixed blend beat dynamic shrinkage | sampled `15.04806` | `14.161` |
 | `lightweight_particle_filter_hgb` | Add lightweight particle-filter path features to the residual model | sampled `14.16951` | **`13.671`** |
+| `bagged_particle_filter_hgb` | Average five PF-feature models and increase the validated correction blend to `0.86` | sampled `14.01530` | **`13.322`** |
+| `offset_formation_particle_filter_hgb` | Reconstruct formation surfaces from neighboring training wells and add them to the PF model | sampled `12.99580` | pending |
 
 ## Reproduction
 
@@ -76,6 +78,10 @@ The script writes:
 - `rogii-wellbore-geology-prediction/reports/bagged-shrink-residual-metrics.json`
 - `rogii-wellbore-geology-prediction/submissions/lightweight_particle_filter_feature_submission.csv`
 - `rogii-wellbore-geology-prediction/reports/lightweight-particle-filter-metrics.json`
+- `rogii-wellbore-geology-prediction/submissions/bagged_particle_filter_submission.csv`
+- `rogii-wellbore-geology-prediction/reports/bagged-particle-filter-metrics.json`
+- `rogii-wellbore-geology-prediction/submissions/offset_formation_particle_filter_submission.csv`
+- `rogii-wellbore-geology-prediction/reports/offset-formation-particle-filter-metrics.json`
 
 The code-competition submissions are packaged as Kaggle kernels:
 
@@ -85,6 +91,8 @@ The code-competition submissions are packaged as Kaggle kernels:
 - Typewell GR sequence residual correction: `jdow76/rogii-sequence-gr-residual`
 - Bagged residual correction: `jdow76/rogii-bagged-residual`
 - Lightweight particle-filter residual correction: `jdow76/rogii-lightweight-particle-filter`
+- Bagged particle-filter residual correction: `jdow76/rogii-bagged-particle-filter-residual`
+- Offset-formation particle-filter correction: `jdow76/rogii-offset-formation-particle-filter`
 
 ## Notes
 

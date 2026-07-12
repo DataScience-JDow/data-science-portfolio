@@ -178,3 +178,48 @@ The useful part was not making the model more complicated at prediction time. It
 ### Interpretation
 
 The particle filter is not good enough to be trusted by itself yet, but it gives the residual model a much better sense of the likely path. That is exactly the pattern from stronger public approaches: use path trackers as signals, then let a model correct them. The public score improved from `14.161` to `13.671`, making this the new best confirmed submission.
+
+## bagged_particle_filter_hgb
+
+- Trained five PF-feature residual models on different random per-well row samples.
+- Averaged the five clipped residual predictions to reduce sampling noise.
+- Re-ran the correction-strength sweep instead of retaining the earlier `0.60` blend automatically.
+- Found that bagging itself was nearly neutral, improving sampled RMSE from `14.17230` to `14.17183` at the old blend.
+- Found that the PF-aware model was under-correcting: increasing the residual blend from `0.60` to `0.86` lowered sampled grouped RMSE to `14.01530`.
+- Submitted Kaggle kernel `jdow76/rogii-bagged-particle-filter-residual`, version 2, as submission `54594425`.
+
+### Result
+
+| Metric | Previous PF model | Bagged PF with tuned blend | Impact |
+| --- | ---: | ---: | ---: |
+| Sampled grouped RMSE | `14.16951` | `14.01530` | `-0.15421` |
+| Residual blend | `0.60` | `0.86` | stronger correction |
+| Kaggle public RMSE | `13.671` | **`13.322`** | **`-0.349`** |
+| Relative public improvement | - | - | **`2.55%`** |
+
+### Interpretation
+
+The main improvement did not come from averaging five models. The models already agreed closely, so bagging changed local RMSE by less than `0.001`. The important discovery was that the particle-filter features made the residual model reliable enough to trust more of its correction. Applying `86%` instead of `60%` moved predictions farther away from the carry-forward baseline when the learned geometry and PF signals supported that move.
+
+## offset_formation_particle_filter_hgb
+
+- Investigated the six mapped formation columns available in training horizontal wells: `ANCC`, `ASTNU`, `ASTNL`, `EGFDU`, `EGFDL`, and `BUDA`.
+- Rejected direct use after confirming those columns are absent from test horizontal wells; direct validation would leak unavailable information.
+- Reconstructed each formation surface from neighboring training wells using X/Y coordinates and inverse-distance weighting.
+- Sampled `30` control points per training well, queried the nearest `48`, and averaged the nearest `12` controls from other wells.
+- Excluded each training row's own well from its spatial controls so validation mirrors test-time information.
+- Added estimated formation depths, changes from the prediction-start location, and neighbor distance to the PF-feature residual model.
+- Improved all five grouped validation folds and lowered overall sampled RMSE from `14.02771` to `12.99580`.
+- Pushed Kaggle kernel `jdow76/rogii-offset-formation-particle-filter`, version 1, and submitted it as `54596071`.
+
+### Local Result
+
+| Metric | PF feature model | Offset-formation PF model | Impact |
+| --- | ---: | ---: | ---: |
+| Sampled grouped RMSE | `14.02771` | **`12.99580`** | **`-1.03190`** |
+| Best residual blend | `0.86` | `0.90` | stronger correction |
+| Kaggle public RMSE | `13.322` best confirmed | pending | pending |
+
+### Validation Safeguard
+
+The very large apparent gain from using each well's supplied formation columns directly was invalid because the test files do not contain those columns. The retained experiment uses only surfaces reconstructed from other wells. This makes the local result a genuine offset-well test rather than a target-side information leak.

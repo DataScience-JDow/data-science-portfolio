@@ -5,6 +5,7 @@ import glob
 
 import numpy as np
 import pandas as pd
+from scipy.spatial import cKDTree
 from sklearn.ensemble import HistGradientBoostingRegressor
 
 
@@ -20,8 +21,13 @@ ROUGHEN_POSITION = 0.15
 ROUGHEN_VELOCITY = 0.002
 PREFIX_TAIL = 40
 TRAIN_SAMPLE_PER_WELL = 900
-RESIDUAL_BLEND = 0.60
+RESIDUAL_BLEND = 0.90
 RESIDUAL_CLIP = 60.0
+FORMATION_COLUMNS = ("ANCC", "ASTNU", "ASTNL", "EGFDU", "EGFDL", "BUDA")
+CONTROLS_PER_WELL = 30
+NEIGHBORS_TO_QUERY = 48
+NEIGHBORS_TO_AVERAGE = 12
+DISTANCE_FLOOR = 250.0
 
 FEATURE_COLUMNS = [
     "steps_after_ps",
@@ -49,6 +55,13 @@ PF_FEATURE_COLUMNS = FEATURE_COLUMNS + [
     "pf_std",
     "pf_vs_prefix_slope_50",
     "pf_vs_prefix_slope_200",
+]
+OFFSET_FEATURE_COLUMNS = PF_FEATURE_COLUMNS + [
+    *(f"offset_depth_{column.lower()}" for column in FORMATION_COLUMNS),
+    *(f"offset_delta_{column.lower()}" for column in FORMATION_COLUMNS),
+    "offset_depth_mean",
+    "offset_delta_mean",
+    "offset_neighbor_distance",
 ]
 
 
@@ -162,6 +175,10 @@ def well_features(path: Path, include_target: bool) -> pd.DataFrame:
             "gr_missing": suffix["GR"].isna().astype(float).to_numpy(),
             "gr_delta_last": suffix["GR"].to_numpy(dtype=float) - last_known_gr,
             "baseline_tvt": constants["last_known_tvt"],
+            "query_x": suffix["X"].to_numpy(dtype=float),
+            "query_y": suffix["Y"].to_numpy(dtype=float),
+            "start_x": float(last_known["X"]),
+            "start_y": float(last_known["Y"]),
         }
     )
     for column, value in constants.items():
@@ -355,6 +372,87 @@ def add_pf_features(base_features: pd.DataFrame, pf_predictions: pd.DataFrame) -
     return merged
 
 
+def build_control_points() -> pd.DataFrame:
+    frames = []
+    for path in sorted(TRAIN_DIR.glob("*__horizontal_well.csv")):
+        well_id = path.name.split("__", 1)[0]
+        frame = pd.read_csv(path, usecols=["X", "Y", *FORMATION_COLUMNS])
+        positions = np.linspace(0, len(frame) - 1, min(CONTROLS_PER_WELL, len(frame)))
+        positions = np.unique(positions.round().astype(int))
+        sampled = frame.iloc[positions].copy()
+        sampled.insert(0, "well_id", well_id)
+        frames.append(sampled)
+    return pd.concat(frames, ignore_index=True)
+
+
+def predict_surfaces(
+    query_xy: np.ndarray,
+    query_wells: np.ndarray,
+    controls: pd.DataFrame,
+) -> tuple[np.ndarray, np.ndarray]:
+    control_xy = controls[["X", "Y"]].to_numpy(dtype=float)
+    control_values = controls[list(FORMATION_COLUMNS)].to_numpy(dtype=float)
+    control_wells = controls["well_id"].to_numpy()
+    tree = cKDTree(control_xy)
+    k = min(NEIGHBORS_TO_QUERY, len(controls))
+    distances, indices = tree.query(query_xy, k=k, workers=-1)
+    if k == 1:
+        distances = distances[:, None]
+        indices = indices[:, None]
+
+    predictions = np.full((len(query_xy), len(FORMATION_COLUMNS)), np.nan, dtype=np.float32)
+    mean_distances = np.full(len(query_xy), np.nan, dtype=np.float32)
+    for row in range(len(query_xy)):
+        candidate_indices = indices[row]
+        candidate_distances = distances[row]
+        different_well = control_wells[candidate_indices] != query_wells[row]
+        candidate_indices = candidate_indices[different_well][:NEIGHBORS_TO_AVERAGE]
+        candidate_distances = candidate_distances[different_well][:NEIGHBORS_TO_AVERAGE]
+        if len(candidate_indices) == 0:
+            continue
+        values = control_values[candidate_indices]
+        weights = 1.0 / np.maximum(candidate_distances, DISTANCE_FLOOR) ** 2
+        for column in range(values.shape[1]):
+            valid = np.isfinite(values[:, column])
+            if valid.any():
+                predictions[row, column] = np.average(
+                    values[valid, column],
+                    weights=weights[valid],
+                )
+        mean_distances[row] = float(np.average(candidate_distances, weights=weights))
+    return predictions, mean_distances
+
+
+def add_offset_features(frame: pd.DataFrame, controls: pd.DataFrame) -> pd.DataFrame:
+    output = frame.copy()
+    query_wells = output["well_id"].to_numpy()
+    query_values, query_distance = predict_surfaces(
+        output[["query_x", "query_y"]].to_numpy(dtype=float),
+        query_wells,
+        controls,
+    )
+    starts = output[["well_id", "start_x", "start_y"]].drop_duplicates("well_id")
+    start_values, _ = predict_surfaces(
+        starts[["start_x", "start_y"]].to_numpy(dtype=float),
+        starts["well_id"].to_numpy(),
+        controls,
+    )
+    start_lookup = {well_id: values for well_id, values in zip(starts["well_id"], start_values)}
+    predicted_start = np.vstack([start_lookup[well_id] for well_id in query_wells])
+
+    depths = -query_values
+    deltas = -(query_values - predicted_start)
+    for i, column in enumerate(FORMATION_COLUMNS):
+        output[f"offset_depth_{column.lower()}"] = depths[:, i]
+        output[f"offset_delta_{column.lower()}"] = deltas[:, i]
+    output["offset_depth_mean"] = np.nanmean(depths, axis=1)
+    output["offset_delta_mean"] = np.nanmean(deltas, axis=1)
+    output["offset_neighbor_distance"] = query_distance
+    for column in OFFSET_FEATURE_COLUMNS[len(PF_FEATURE_COLUMNS) :]:
+        output[column] = pd.to_numeric(output[column], downcast="float")
+    return output
+
+
 def sample_training_rows(data: pd.DataFrame) -> np.ndarray:
     sampled_indices = []
     for _, local_indices in data.groupby("well_id", sort=False).indices.items():
@@ -370,14 +468,14 @@ def sample_training_rows(data: pd.DataFrame) -> np.ndarray:
     return np.concatenate(sampled_indices)
 
 
-def make_model() -> HistGradientBoostingRegressor:
+def make_model(seed: int) -> HistGradientBoostingRegressor:
     return HistGradientBoostingRegressor(
         max_iter=260,
         learning_rate=0.04,
         max_leaf_nodes=31,
         min_samples_leaf=100,
         l2_regularization=4.0,
-        random_state=43,
+        random_state=seed,
     )
 
 
@@ -403,12 +501,17 @@ def main() -> None:
         pd.concat(train_base_frames, ignore_index=True),
         pd.concat(train_pf_frames, ignore_index=True),
     )
+    controls = build_control_points()
     sampled_indices = sample_training_rows(train_data)
-    print(f"training PF-feature residual model on {len(sampled_indices):,} rows", flush=True)
-    model = make_model()
+    offset_train = add_offset_features(train_data.loc[sampled_indices], controls)
+    print(
+        f"training offset/PF residual model on {len(sampled_indices):,} rows",
+        flush=True,
+    )
+    model = make_model(59)
     model.fit(
-        train_data.loc[sampled_indices, PF_FEATURE_COLUMNS],
-        train_data.loc[sampled_indices, "residual"],
+        offset_train[OFFSET_FEATURE_COLUMNS],
+        offset_train["residual"],
     )
 
     test_base_frames = []
@@ -420,8 +523,13 @@ def main() -> None:
         pd.concat(test_base_frames, ignore_index=True),
         pd.concat(test_pf_frames, ignore_index=True),
     )
-    raw_residual = model.predict(test_data[PF_FEATURE_COLUMNS])
-    blended_residual = RESIDUAL_BLEND * np.clip(raw_residual, -RESIDUAL_CLIP, RESIDUAL_CLIP)
+    test_data = add_offset_features(test_data, controls)
+    raw_residual = model.predict(test_data[OFFSET_FEATURE_COLUMNS])
+    blended_residual = RESIDUAL_BLEND * np.clip(
+        raw_residual,
+        -RESIDUAL_CLIP,
+        RESIDUAL_CLIP,
+    )
     test_data["tvt_prediction"] = test_data["baseline_tvt"] + blended_residual
 
     submission = pd.read_csv(SUBMISSION_TEMPLATE)
